@@ -1,0 +1,143 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 28
+
+f<sub>(x)</sub> = 0,2x<sup>3</sup> + 0,6x<sup>2</sup> -2,6x - 3
+
+f'<sub>(x)</sub> = 0,6x<sup>2</sup> + 1,2x - 2,6, f''<sub>(x)</sub> = 1,2x + 1,2, 
+
+f'''<sub>(x)</sub> = 1,2
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞</span>
+
+Asymptoten: -
+
+Symmetrie: -
+
+Nullstellen:
+
+0,2x<sup>3</sup> + 0,6x<sup>2</sup> - 2,6x - 3 = 0 |:0,2
+
+x<sup>3</sup> + 3x<sup>2</sup> - 13x - 15 = 0
+
+Durch Probieren gefunden x = -1.
+
+Hornerschema:
+
+              1     3     -13    -15
+x<sub>1</sub> = -1            -1     -2      15
+             -------------------------
+              1     2     -15      0
+
+Polynomdivision:
+
+  0,2x<sup>3</sup> + 0,6x<sup>2</sup> - 2,6x - 3 : (x+1) = 0,2x<sup>2</sup>+0,4x-3
+-(0,2x<sup>3</sup> + 0,2x<sup>2</sup>)
+----------------
+          0,4x<sup>2</sup> - 2,6x - 3  
+        -(0,4x<sup>2</sup> + 0,4x)
+        ---------------
+                 -3x - 3 
+               -(-3x - 3)
+               -----------
+                       0   
+
+x<sup>2</sup> + 2x - 15 = 0  (-3)
+
+p, q - Formel:
+
+p = 2, q = -15
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mn>2</mn><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>2</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>15</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>+</mo><mn>15</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± <math mathsize="0.9em"><msqrt><mn>16</mn></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± 4
+
+x<sub>2</sub> = 3
+
+x<sub>3</sub> = -5      <span style="color:red">N<sub>1</sub>(-1|0), N<sub>2</sub>(3|0), N<sub>3</sub>(-5|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+f<sub>(0)</sub> = 0,2 * 0<sup>3</sup> + 0,6 * 0<sup>2</sup> - 2,6 * 0 - 3 = -3 
+
+<span style="color:red">Sy(0|-3)</span>
+
+Extrempunkte: 
+
+0,6x<sup>2</sup> + 1,2x - 2,6 = 0 |*(-3)
+
+A, B, C - Formel:
+
+A = 0,6, B = 1,2, C = -2,6
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>1</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>6</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>1</mn><mo>,</mo><mn>44</mn><mo>+</mo><mn>6</mn><mo>,</mo><mn>24</mn></mrow></msqrt></mrow><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>7</mn><mo>,</mo><mn>68</mn></mrow></msqrt></mrow><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mfrac></math>
+
+        -1,2 ± 2,77     
+x<sub>1,2</sub> = --------------
+             1,2  
+
+x<sub>1</sub> = 1,31, 
+
+f<sub>(1,31)</sub> = 0,2 * 1,31<sup>3</sup> + 0,6 * 1,31<sup>2</sup> - 
+
+-2,6 * 1,31 - 3 = -4,93
+
+x<sub>2</sub> = - 3,31
+
+f<sub>(-3,31)</sub> = 0,2 * (-3,31)<sup>3</sup> + 0,6 * (-3,31)<sup>2</sup> - 
+
+-2,6 * (-3,31) - 3 = 4,93
+
+f''<sub>(1,31)</sub> = 1,2 * 1,31 + 1,2 > 0 --> 
+
+<span style="color:red">Tiefpunkt (1,31|-4,93)</span>
+
+f''<sub>(- 3,31)</sub> = 1,2 * (-3,31) + 1,2 < 0 --> 
+
+<span style="color:red">Hochpunkt (-3,31|4,93)</span>
+
+Wendepunkte:
+
+1,2x + 1,2 = 0 |-1,2
+
+1,2x = - 1,2 | :1,2
+
+x = - 1, f<sub>(-1)</sub> = 0, f'''<sub>(-1)</sub> ≠ 0 
+
+--> <span style="color:red">Wendepunkt (-1|0)</span>
+
+Graph:
+
+  <img src="Aufgabe28.jpg" >
+
+</b></p></pre></body></html>
