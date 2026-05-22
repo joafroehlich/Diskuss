@@ -1,0 +1,137 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 43
+
+
+f<sub>(x)</sub> = x<sup>3</sup> - 12x<sup>2</sup> + 36x - 12
+
+f'<sub>(x)</sub> = 3x<sup>2</sup> - 24x + 36, f''<sub>(x)</sub> = 6x - 24, 
+
+f'''<sub>(x)</sub> = 6
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞</span>
+
+Asymptoten: -
+
+Symmetrie: -
+
+Nullstellen:
+
+x<sup>3</sup> - 12x<sup>2</sup> + 36x - 12 = 0
+
+Wertetabelle:
+
+-1     0     1       2      3        4      5
+-61   -12    13      20     15       4     -7
+
+ 6       7       8 
+-12     -5      20
+
+Vorzeichenwechsel zwischen 0 und 1 --> 
+
+Nullstelle gewählt x<sub>01</sub> = 0,5,
+
+Vorzeichenwechsel zwischen 4 und 5 --> 
+
+Nullstelle gewählt x<sub>02</sub> = 4,4, 
+
+Vorzeichenwechsel zwischen 7 und 8 --> 
+
+Nullstelle gewählt x<sub>03</sub> = 7,2.
+
+Newtonsches Näherungsverfahren:
+
+           f<sub>x0</sub>  
+x<sub>1</sub> = x<sub>0</sub> - -------
+           f'<sub>x0</sub>   
+
+            (0,5)<sup>3</sup> - 12 * (0,5)<sup>2</sup> + 36 * 0,5 - 12
+x<sub>1</sub> = 0,5 - -------------------------------------- 
+                  3 * (0,5)<sup>2</sup> - 24 * 0,5 + 36
+
+x<sub>1</sub> = 0,5 - 0,13 = 0,37                  
+
+            (4,4)<sup>3</sup> - 12 * (4,4)<sup>2</sup> + 36 * 4,4 - 12
+x<sub>2</sub> = 4,4 - -------------------------------------- 
+                3 * (4,4)<sup>2</sup> - 24 * 4,4 + 36
+
+x<sub>2</sub> = 4,4 - 0,06 = 4,34                
+
+            (7,2)<sup>3</sup> - 12 * (7,2)<sup>2</sup> + 36 * 7,2 - 12
+x<sub>3</sub> = 7,2 - -------------------------------------- 
+                  3 * (7,2)<sup>2</sup> - 24 * 7,2 + 36
+
+x<sub>3</sub>  = 7,2 - (-0,09) = 7,29                  
+
+<span style="color:red">N<sub>1</sub>(0,37|0), N<sub>2</sub>(4,34|0), N<sub>3</sub>(7,29|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+f<sub>(0)</sub> = 0<sup>3</sup> - 12 * 0<sup>2</sup> + 36 * 0 - 12 = -12
+
+<span style="color:red">Sy(0|-12)</span>
+
+Extrempunkte: 
+
+3x<sup>2</sup> - 24x + 36 = 0 
+
+A, B, C - Formel:
+
+A = 3, B = -24, C = 36
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>24</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>24</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>3</mn><mo>&#xd7;</mo><mn>36</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>3</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>24</mn><mo>&#xb1;</mo><msqrt><mrow><mn>576</mn><mo>&#x2212;</mo><mn>432</mn></mrow></msqrt></mrow><mn>6</mn></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>24</mn><mo>&#xb1;</mo><msqrt><mn>144</mn></msqrt></mrow><mn>6</mn></mfrac></math>
+
+        24 ± 12    
+x<sub>1,2</sub> = ----------
+           6  
+
+x<sub>1</sub> = 6, f(6) = 6<sup>3</sup> - 12 * 6<sup>2</sup> + 36 6 - 12 = -12
+ 
+x<sub>2</sub> = 2, f(2) = 2<sup>3</sup> - 12 * 2<sup>2</sup> + 36 * 2 - 12 = 20
+
+f''<sub>(6)</sub> = 6 * 6 - 24 > 0 --> <span style="color:red">Tiefpunkt (6|-12)</span>
+
+f''<sub>(2)</sub> = 6 * 2 - 24 < 0 --> <span style="color:red">Hochpunkt (2|20)</span>
+
+Wendepunkt:
+
+6x - 24 = 0 |+24
+
+6x = 24| :6
+
+x = 4, f<sub>(4)</sub> = 4<sup>3</sup> - 12 * 4<sup>2</sup> + 36 * 4 - 12 = 4, 
+
+f'''<sub>(4)</sub> ≠ 0 
+
+--> <span style="color:red">Wendepunkt (4|4)</span>
+
+Graph:
+
+  <img src="Aufgabe43.jpg" >
+
+</b></p></pre></body></html>
