@@ -1,0 +1,147 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 50
+
+f<sub>(x)</sub> = (1/48)x<sub>4</sub> - x<sup>2</sup> + 9
+
+f'<sub>(x)</sub> = (1/12)x<sup>3</sup> - 2x, f''<sub>(x)</sub> = 0,25x<sup>2</sup> - 2, 
+
+f'''<sub>(x)</sub> = 0,5x
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Wertebereich: <span style="color:red">-3 ≤ f(x) < ∞</span>    
+
+(siehe Extrempunkte)
+
+Asymptoten: -
+
+Symmetrie: nur gerade Exponenten -->
+
+f<sub>(-x)</sub> = (1/48) * (-x)<sub>4</sub> - (-x)<sup>2</sup> + 9 = 
+
+= (1/48) * x<sub>4</sub> - x<sup>2</sup> + 9 = f(x)
+
+--> <span style="color:red">achsensymmetrisch zur y-Achse</span>
+
+Nullstellen:
+
+(1/48)x<sub>4</sub> - x<sup>2</sup> + 9 = 0
+
+Substitution z = x<sup>2</sup>
+
+(1/48)z<sup>2</sup> - z + 9 = 0 |*48
+
+z<sup>2</sup> - 48z + 432 = 0
+
+p, q - Formel:
+
+p = -48, q = 432
+
+z<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mfenced><mrow><mo>&#x2212;</mo><mn>48</mn></mrow></mfenced><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>48</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>432</mn></mrow></msqrt></math>
+
+z<sub>1,2</sub> = 24 ± <math mathsize="0.9em"><msqrt><mrow><mn>576</mn><mo>&#x2212;</mo><mn>432</mn></mrow></msqrt></math>
+
+z<sub>1,2</sub> = 24 ± <math mathsize="0.9em"><msqrt><mn>144</mn></msqrt></math>
+
+z<sub>1,2</sub> = 24 ± 12
+
+z<sub>1</sub> = 36 
+
+z<sub>2</sub> = 12
+
+Rücksubstitution:
+
+36 = x<sub>1,2</sub><sup>2</sup> |ⱱ
+
+x<sub>1,2</sub> = ± 6
+
+12 = x<sub>3,4</sub><sup>2</sup> |ⱱ
+
+x<sub>3,4</sub> = ± 3,46
+
+<span style="color:red">N<sub>1</sub>(6|0), N<sub>2</sub>(-6|0), N<sub>3</sub>(3,46|0), N<sub>4</sub>(-3,46|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+f<sub>(0)</sub> = (1/48) * 0<sub>4</sub> - 0<sup>2</sup> + 9 = 9
+
+<span style="color:red">Sy(0|9)</span>
+
+Extrempunkte: 
+
+(1/12)x<sup>3</sup> - 2x = 0 | *12
+
+x<sup>3</sup> - 24x = 0
+
+x * (x<sup>2</sup> - 24) = 0
+
+x<sub>1</sub> = 0, f(0) = 9
+
+x<sup>2</sup> - 24 = 0 |+24
+
+x<sup>2</sup> = 24 |ⱱ
+
+x<sub>2,3</sub> = ± 4,9 
+
+f<sub>(4,9)</sub> = (1/48) * 4,9<sub>4</sub> - 4,9<sup>2</sup> + 9 = -3
+
+f<sub>(-4,9)</sub> = (1/48) * (-4,9)<sub>4</sub> - (-4,9)<sup>2</sup> + 9 = -3  
+
+f''<sub>(0)</sub> = 0,25 * 0<sup>2</sup> - 2 < 0 --> <span style="color:red">Hochpunkt (0|9)</span>
+
+f''<sub>(4,9)</sub> = 0,25 * 4,9<sup>2</sup> - 2 > 0 --> 
+
+<span style="color:red">Tiefpunkt (4,9|-3)</span>
+
+f''<sub>(-4,9)</sub> = 0,25 * (-4,9)<sup>2</sup> - 2 < 0 --> 
+
+<span style="color:red">Tiefpunkt (-4,9|-3)</span>
+
+Wendepunkt:
+
+0,25x<sup>2</sup> - 2 = |+2
+
+0,25x<sup>2</sup> = 2 | :0,25
+
+x<sup>2</sup> = 8 |ⱱ
+
+x<sub>1,2</sub> = ± 2,83
+
+x<sub>1</sub> = 2,83, 
+
+f<sub>(2,83)</sub> = (1/48) * 2,83<sub>4</sub> - 2,83<sup>2</sup> + 9 = 2,33
+
+x<sub>2</sub> = -2,83, 
+
+f(-2,83) = (1/48) * (-2,83)<sub>4</sub> - (-2,83)<sup>2</sup> + 9 = 2,33
+
+f'''(2,83) ≠ 0 --> <span style="color:red">Wendepunkt (2,83|2,33)</span>
+
+f'''(-2,83) ≠ 0 --> <span style="color:red">Wendepunkt (-2,83|2,33)</span>
+
+Graph:
+
+   <img src="Aufgabe50.jpg" >
+
+</b></p></pre></body></html>

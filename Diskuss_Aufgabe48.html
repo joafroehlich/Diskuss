@@ -1,0 +1,207 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 48
+
+f<sub>(x)</sub> = 0,25x<sup>4</sup> - 0,25x<sup>3</sup> - 2x<sup>2</sup> + 3x
+
+f'<sub>(x)</sub> = x<sup>3</sup> - 0,75x<sup>2</sup> - 4x, f''<sub>(x)</sub> = 3x<sup>2</sup> - 1,5x - 4
+
+f'''<sub>(x)</sub> = 6x - 1,5
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Wertebereich: <span style="color:red">-8 ≤ f<sub>(x)</sub> < ∞</span>
+
+Asymptoten: -
+
+Symmetrie: -
+
+Nullstellen:
+
+0,25x<sup>4</sup> - 0,25x<sup>3</sup> - 2x<sup>2</sup> + 3x = 0
+
+0,25x * (x<sup>3</sup> - x<sup>2</sup> - 8x + 12) = 0
+
+0,25x = 0 |:0,25
+
+x<sub>1</sub> = 0 
+
+x<sup>3</sup> - x<sup>2</sup> - 8x + 12 = 0
+
+Durch Probieren gefunden x = 2
+
+Hornerschema:
+
+           1   -1      - 8     12
+x<sub>2</sub> = 2          2        2    -12           
+          ------------------------
+           1    1       -6      0
+
+Polynomdivision:
+
+  x<sup>3</sup> - x<sup>2</sup> - 8x + 12 : (x - 2) = x<sup>2</sup> + x - 6
+-(x<sup>3</sup> - 2x<sup>2</sup>)
+------------
+        x<sup>2</sup> - 8x + 12  
+      -(x<sup>2</sup> - 2x)
+      -----------
+            -6x + 12 
+          -(-6x + 12)
+          ------------
+                   0 
+
+x<sup>2</sup> + x - 6 = 0
+
+p, q - Formel:
+
+p = 1, q = -6
+
+x<sub>3,4</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>3,4</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>6</mn></mrow></msqrt></math>
+
+x<sub>3,4</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>
+
+x<sub>3,4</sub> = - 0,5 ± 2,5
+
+x<sub>3</sub> = 2  (Berührpunkt, Extrempunkt)
+
+x<sub>4</sub> = -3
+
+<span style="color:red">N<sub>1,2</sub>(2|0), N<sub>3</sub>(0|0), N<sub>4</sub>(-3|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+f<sub>(0)</sub> = 0,25 * 0<sup>4</sup> - 0,25 * 0<sup>3</sup> - 2 * 0<sup>2</sup> + 3 * 0 = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte: 
+
+x<sup>3</sup> - 9x<sup>2</sup> + 18x = 0
+
+x<sup>3</sup> - 0,75x<sup>2</sup> - 4x + 3 = 0
+
+Wegen Berührpunkt x<sub>1</sub> = 2
+
+Hornerschema:
+
+           1     -0,75    -4       3
+x<sub>1</sub> = 2            2        2,5    -3
+          ---------------------------
+           1     1,25     -1,5     0
+
+Polynomdivision:
+
+  x<sup>3</sup> - 0,75x<sup>2</sup> - 4x + 3 : (x - 2) = x<sup>2</sup> + 1,25x - 1,5
+-(x<sup>3</sup> - 2x<sup>2</sup>)
+------------
+    1,25x<sup>2</sup> - 4x + 3  
+  -(1,25x<sup>2</sup> - 2,5x)
+  ---------------
+            -1,5x + 3 
+          -(-1,5x + 3)
+         -------------
+                    0 
+
+x<sup>2</sup> + 1,25x - 1,5 = 0
+
+p, q - Formel:
+
+p = 1,25, q = -1,5
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mn>1</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>390625</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>,</mo><mn>890625</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,625 ± 1,375
+
+x<sub>2</sub> = -2 
+
+f<sub>(-2)</sub> = 0,25 * (-2)<sup>4</sup> - 0,25 * (-2)<sup>3</sup> - 
+
+-2 * (-2)<sup>2</sup> + 3 * (-2) = -8
+
+x<sub>3</sub> = 0,75
+
+f(0,75) = 0,25 * (0,75)<sup>4</sup> - 0,25 * (0,75)<sup>3</sup> - 
+
+-2 * (0,75)<sup>2</sup> + 3 * (0,75) = 1,1
+
+f''<sub>(2)</sub> = 3 * 2<sup>2</sup> - 1,5 * 2 - 4 > 0 --> 
+
+<span style="color:red">Tiefpunkt (2|0)</span>
+
+f''<sub>(-2)</sub> = 3 * (-2)<sup>2</sup> - 1,5 * (-2) - 4 > 0 --> 
+
+<span style="color:red">Tiefpunkt (-2|-8)</span>
+
+f''<sub>(0,75)</sub> = 3 * 0,75<sup>2</sup> - 1,5 * 0,75 - 4 < 0 --> 
+
+<span style="color:red">Hochpunkt (0,75|1,1)</span>
+
+Wendepunkt:
+
+3x<sup>2</sup> - 1,5x - 4 = 0
+
+A, B, C - Formel:
+
+A = 3, B = -1,5, C = -4
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>3</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>3</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>&#xb1;</mo><msqrt><mrow><mn>2</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>48</mn></mrow></msqrt></mrow><mn>6</mn></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>&#xb1;</mo><msqrt><mrow><mn>50</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>48</mn></mrow></msqrt></mrow><mn>6</mn></mfrac></math>
+
+         1,5 ± 7,09
+x<sub>1,2</sub> = -------------
+             6
+
+x<sub>1</sub> = 1,43
+
+f<sub>(1,43)</sub> = 0,25 * (1,43)<sup>4</sup> - 0,25 * (1,43)<sup>3</sup> - 
+
+- 2 * (1,43)<sup>2</sup> + 3 * (1,43) = 0,51
+
+x<sub>2</sub> = -0,93
+
+f<sub>(-0,93)</sub> = 0,25*(-0,93)<sup>4</sup> - 0,25*(-0,93)<sup>3</sup> - 
+
+- 2*(-0,93)<sup>2</sup> + 3*(-0,93) = - 4,14
+
+f'''<sub>(1,43)</sub> = 6 * 1,43 - 1,5 ≠ 0 --> 
+
+<span style="color:red">Wendepunkt (1,43|0,51)</span>
+
+f'''<sub>(-0,93)</sub> = 6 * (-0,93) - 1,5 ≠ 0 --> 
+
+<span style="color:red">Wendepunkt (-0,93|-4,14)</span>
+
+Graph:
+
+   <img src="Aufgabe48.jpg" >
+
+</b></p></pre></body></html>
