@@ -1,0 +1,185 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 61
+
+f<sub>(x)</sub> = 3x<sup>4</sup> - 6x<sup>3</sup> + 6x - 3
+
+f'<sub>(x)</sub> = 12x<sup>3</sup> - 18x<sup>2</sup> + 6, f''<sub>(x)</sub> = 36x<sup>2</sup> - 36x, 
+
+f'''<sub>(x)</sub> = 72x - 36
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Wertebereich:  <span style="color:red">-0,5 ≤ f<sub>(x)</sub> < ∞</span>     
+
+(siehe Extrempunkte)
+
+Asymptoten: -
+
+Symmetrie: -
+
+Nullstellen:
+
+3x4 - 6x<sup>3</sup> + 6x - 3 = 0
+
+Durch Probieren gefunden x<sub>1</sub> = 1
+
+Hornerschema:
+
+                3   -6        0       6     -3       
+x<sub>2</sub> = 1               3       -3      -3      3    
+             ---------------------------------
+                3   -3       -3       3      0 
+
+Polynomdivision:
+
+  3xx<sup>4</sup> - 6x<sup>3</sup> + 6x - 3 : (x - 1) = 3x<sup>3</sup>-3x<sup>2</sup>-3x+3
+-(3xx<sup>4</sup> + 3x<sup>3</sup>)
+-------------
+       -3x<sup>3</sup> + 6x - 3  
+     -(-3x<sup>3</sup> + 3x<sup>2</sup>)
+    ---------------
+             -3x<sup>2</sup> + 6x - 3 
+           -(-3x<sup>2</sup> + 3x)
+           -------------
+                    3x - 3
+                  -(3x - 3)
+                 -----------
+                         0
+ 
+Durch Probieren gefunden x<sub>2</sub> = 1
+
+Hornerschema:
+
+               3    -3      -3        3       
+x<sub>2</sub> = 1               3       0       -3    
+             --------------------------
+               3     0      -3        0 
+
+Polynomdivision:
+
+  3x<sup>3</sup> - 3x<sup>2</sup> - 3x + 3 : (x - 1) = 3x<sup>2</sup> - 3
+-(3x<sup>3</sup> - 3x<sup>2</sup>)
+-------------
+       -3x + 3  
+     -(-3x + 3)
+    -----------
+             0 
+
+3x<sup>2</sup> - 3 = 0 |+3
+
+3x<sup>2</sup> = 3 |:3
+
+x<sup>2</sup> = 1|ⱱ
+
+x<sub>3,4</sub> = ± 1
+
+x<sub>1,2,3</sub> = 1 (dreifache Nullstelle, Sattelpunkt)
+
+<span style="color:red">N<sub>1,2,3</sub> (1|0), N<sub>4</sub>(-1|0)</span>
+ 
+Schnittpunkt mit der y-Achse:
+
+f<sub>(0)</sub> = 3 * 0x<sup>4</sup> - 6 * 0<sup>3</sup> + 6 0 - 3 = -3
+
+<span style="color:red">Sy(0|-3)</span>
+
+Extrempunkte: 
+
+12x<sup>3</sup> - 18x<sup>2</sup> + 6 = 0
+
+Hornerschema:
+
+               12     -18      0       6       
+x<sub>1</sub> = 1                 12     -6      -6   
+             ----------------------------
+               12      -6     -6       0 
+
+Polynomdivision:
+
+  12x<sup>3</sup> - 18x<sup>2</sup> + 6 : (x - 1) = 12x<sup>2</sup> - 6x - 6
+-(12x<sup>3</sup> - 12x<sup>2</sup>)
+---------------
+         -6x<sup>2</sup> + 6  
+       -(-6x<sup>2</sup> + 6x)
+       -------------
+               -6x + 6 
+             -(-6x + 6)
+            ------------
+                     0
+
+12x<sup>2</sup> - 6x - 6 = 0
+
+A, B, C - Formel:
+
+A = 12, B = -6, C = -6
+
+x<sub>2,3</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>12</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>12</mn></mrow></mfrac></math>
+
+x<sub>2,3</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>6</mn><mo>&#xb1;</mo><msqrt><mrow><mn>36</mn><mo>+</mo><mn>288</mn></mrow></msqrt></mrow><mn>24</mn></mfrac></math>
+
+x<sub>2,3</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>6</mn><mo>&#xb1;</mo><msqrt><mn>324</mn></msqrt></mrow><mn>24</mn></mfrac></math>
+
+        6 ± 18     
+x<sub>2,3</sub> = --------
+          24 
+
+x<sub>2</sub> = 1, f(1) = 0
+ 
+x<sub>3</sub> = -0,5 
+
+f<sub>(-0,5)</sub> = 3 * (-0,5)x<sup>4</sup> - 6 * (-0,5)<sup>3</sup> + 
+
++ 6 * (-0,5) - 3 = -5,06
+ 
+f''<sub>(1)</sub> = 36 * 1<sup>2</sup> - 36 * 1 = 0
+
+f''<sub>(-0,5)</sub> = 36 * (-0,5)<sup>3</sup> - 36 * (-0,5) > 0 --> 
+
+<span style="color:red">Tiefpunkt (-0,5|-5,06)</span>
+
+Wendepunkt:
+
+36x<sup>2</sup> - 36x = 0
+
+36x * (x - 1) = 0
+
+36x = 0 | :36
+
+x<sub>1</sub> = 0, f(0) = -3
+
+x - 1 = 0 |+1
+
+x<sub>2</sub> = 1, f(1) = 0
+
+f'''<sub>(0)</sub> = 72 * 0 - 36 ≠ 0 --> <span style="color:red">Wendepunkt (0|-3)</span>
+
+f'''<sub>(1)</sub> = 72 * 1 - 36 ≠ 0, f'(1) = 0, 
+
+f''<sub>(1)</sub> = 0 --> <span style="color:red">Sattelpunkt (1|0)</span>
+
+Graph:
+
+   <img src="Aufgabe61.jpg" >
+
+</b></p></pre></body></html>
