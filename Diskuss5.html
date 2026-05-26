@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<span style="color:blue"><p class="Text2"><b>Kurvendiskussion<br>Anwendungsaufgaben zu <br>ganzrationalen Funktionen</p></b></span> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+        
+          <!--//Aufgabe 71-->                  
+
+  <pre><b><p class="Aufgabe">Aufgabe 71
+
+Der Innenbogen eines parabelförmigen Bauwerks 
+wird durch die Gleichung 
+f<sub>(x)</sub> = 187,5 - 0,01579x<sup>2</sup> -  0,000001988x<sup>4</sup> 
+beschrieben.
+a) Wie hoch und wie breit ist der Bogen?
+b) Unter welchem Innenwinkel trifft der rechte 
+Bogen auf die Grundfläche? 
+c) In welcher Höhe kann ein Flugzeug mit einer 
+Breite von 18 m durch den Bogen fliegen, wenn ein
+vertikaler und horizontaler Sicherheitsabstand 
+von 10 m zu dem Bogen vorgeschrieben ist? 
+
+<button  onclick="window.open('Diskuss_Aufgabe71.html');" >Lösung</button></pre></p>
+
+<!--//Aufgabe 72-->
+
+<pre><p class ="Aufgabe" >Aufgabe 72
+
+Ein Betrieb hat fixe Kosten von 10 GE. Seine 
+Kostenfunktion 3. Grades hat einen Wendepunkt bei 
+(10;120) und dort eine Steigung von 1. Sein Erlös 
+beträgt 25,3 GE/ME. Wie hoch ist sein maximaler 
+Gewinn G? 
+           
+G = <input type="text" id="Eintrag72" maxlength="5" size="1" style= background-color:yellow > GE. </input> </input> <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="278,8") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="278,8" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="278,8"; window.open('Diskuss_Aufgabe72.html');           
+                          document.getElementById("Pruef72").disabled= true;}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 73-->  
+
+  <pre><p class="Aufgabe">Aufgabe 73
+
+Die Kostenfunktion eines Betriebes lautet:
+K<sub>(x)</sub> = (1/6)x<sup>3</sup> - 6x<sup>2</sup> + 84x + 30
+Er erlöst 44 GE/ME. Bei welcher Produktions-
+menge x erzielt er den höchsten Gewinn?
+
+<button  onclick="window.open('Diskuss_Aufgabe73.html');">Lösung</button></pre></p>
+
+<!--//Aufgabe 74-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 74
+
+Eine Kostenfunktion 3. Grades hat an der Stelle 
+x = 0 die Steigung 2. An der Stelle x = 8 liegt 
+ihr Wendepunkt mit der Steigung 0,4. Die fixen 
+Kosten betragen 20 GE. Wie hoch snd die Kosten K 
+im Wendepunkt? 
+
+"K = <input type="text" id="Eintrag74" maxlength="4" size="1" style= background-color:yellow ></input> GE. <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button> </p></pre>
+                      <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="27,5") {alert("Richtig"); document.getElementById("Pruef74").disabled= true;
+                          }  
+                           
+                          else if (Eintrag74.value!=="27,5" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag74").value="27,5"; window.open('Diskuss_Aufgabe74.html');           
+                          document.getElementById("Pruef74").disabled= true;}
+                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 75-->   
+
+  <pre><p class="Aufgabe">Aufgabe 75
+  
+Eine Kostenfunktion 3. Grades hat einen Wendepunkt
+bei (4|30), und dort eine Steigung von 0,2. Die 
+fixen Kosten betragen 10 GE.
+a) Berechnen Sie Gewinnschwelle und -grenze, wenn
+der Erlös 8,3 GE/ME beträgt.
+b) Wie hoch ist der maximale Gewinn G?
+ 
+<button  onclick="window.open('Diskuss_Aufgabe75.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 76-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 76
+
+Die Fieberkurve eines Patienten lässt sich durch 
+die Funktion F(t) in °C beschreiben, wenn t die 
+Anzahl der Tage angibt:
+F(t) = -0,0625t4 + (7/12)t<sup>3</sup> - 1,875t<sup>2</sup> + 2,25t + 39
+a) Welche Temperatur hatte der Patient zu Beginn
+der Messung?
+b) Welche hatte er am 5. Tag?
+c) Welche maximale Temperatur T hatte er?
+T = <input type="text" id="Eintrag76" maxlength="4" size="1" style= background-color:yellow >°. </input> <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button>
+An welchem Tag?</p></pre> 
+     
+                      <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="39,9") {alert("Richtig"); document.getElementById("Pruef76").disabled= true;
+                          }  
+                           
+                          else if (Eintrag76.value!=="39,9" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag76").value="39,9"; window.open('Diskuss_Aufgabe76.html');           
+                          document.getElementById("Pruef76").disabled= true;}
+                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 77-->   
+
+  <pre><p class="Aufgabe">Aufgabe 77
+
+Die Tagestemperatur O an der Oberfläche eines 
+Sees lässt sich durch 
+O(t) = - (1/300)t<sup>3</sup> + (3/25)t<sup>2</sup> - (27/25)t + 19
+beschreiben, wenn O die Temperatur in °C und t 
+die Zeit in Stunden angibt.
+a) Wie hoch ist die Temperatur im Wendepunkt des 
+Graphen? 
+b) Nach wie viel Stunden betrug die Temperatur 
+18°C?
+c) Wann war die Temperatur am höchsten? 
+d) Wie groß war die Temperaturdifferenz an 
+diesem Tag?
+
+<button  onclick="window.open('Diskuss_Aufgabe77.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 78
+
+Die Messung der Oberflächentemperatur O eines 
+Bergsees im Verlaufe eines Tages ergab die Werte:
+Um 0.00 waren es 19°C, der niedrigste Wert in
+den ersten 12 Stunden von 17,8°C um 6.00 Uhr und 
+der höchste um 17.00.
+a) Wie lautet die Funktionsgleichung 3. Grades,
+die diesen Sachverhalt beschreibt?
+b) Um wieviel Uhr stieg die Temperatur am 
+stärksten? Um <input type="text" id="Eintrag78" maxlength="5" size="1" style= background-color:yellow > Uhr. <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button>
+c) Wie groß ist die Änderungsrate um 22.00 Uhr?</p></pre>
+ 
+                      <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="11.30") {alert("Richtig"); document.getElementById("Pruef78").disabled= true;
+                          }  
+                           
+                          else if (Eintrag78.value!=="11.30" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag78").value="11.30"; window.open('Diskuss_Aufgabe78.html');           
+                          document.getElementById("Pruef78").disabled= true;}
+                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 79-->                      
+
+<pre><p class="Aufgabe">Aufgabe 79
+
+Eine Firma produziert wöchentlich x Geräte. Die
+fixen Kosten betragen 2 000 €, die variablen 
+Kosten0,8x<sup>2</sup> + 60x. Jedes Gerät kostet 180 €.
+a) Ab welcher Stückzahl macht der Betrieb Gewinn?
+b) Bei welcher Stückzahl ist der Gewinn am 
+größten?
+c) Ab welchem Verkaufspreis macht die Firma
+keinen Gewinn mehr? 
+<button  onclick="window.open('Diskuss_Aufgabe79.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 80
+
+Ein Betrieb produziert mit der Kostenfunktion
+K<sub>(x)</sub> = 0,0002x<sup>3</sup> - 0,18x<sup>2</sup> + 54x + 5000
+und einer Umsatzfunktion U<sub>(x)</sub> = 41,5x.
+a) Zeigen Sie, dass K<sub>(x)</sub> keinen Extremwert hat.
+b) Welche betriebswirtschaftliche Bedeutung hat 
+der Wendepunkt der Kostenfunktion?
+c) Berechnen Sie das Betriebsoptimum, wenn die
+Stückkostenfunktion ihr Minimum bei x = 500 hat. 
+d) Die Gewinnschwelle liegt bei 250 ME. Wo liegt 
+die Gewinngrenze? Bei <input type="text" id="Eintrag80" maxlength="5" size="1" style= background-color:yellow > ME <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button>
+e) Bei welcher Produktionsmenge entsteht das 
+Gewinnmaximum?</p></pre>
+ 
+                      <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="778,5") {alert("Richtig"); document.getElementById("Pruef80").disabled= true;
+                          }  
+                           
+                          else if (Eintrag80.value!=="778,5" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag80").value="778,5"; window.open('Diskuss_Aufgabe80.html');           
+                          document.getElementById("Pruef80").disabled= true;}
+                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+
+<!--//Aufgabe 81-->                      
+
+<pre><p class="Aufgabe">Aufgabe 81
+
+Die Tabelle zeigt die Kosten K<sub>(x)</sub> eines Betriebes 
+abhängig von der gefertigten Menge x.
+x     0        2       5         8
+K<sub>(x)</sub> 64/3     31      24,25     40
+a) Ermitteln Sie die ganzrationale Kostenfunktion  
+3. Grades.
+b) Wie groß sind das Kostenminimum und -maximum?
+c) Wo liegt die Gewinnschwelle, wenn die Gewinn-
+grenze 8 ME und der Erlös 5 GE/ME betragen?
+d) Wie groß ist der maximale Gewinn? 
+<button  onclick="window.open('Diskuss_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 82
+
+Fixkosten Kf von 21 600 GE und variable Kosten 
+Kv<sub>(x)</sub> von 0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x und E<sub>(x)</sub> = 73x.
+a) Wie hoch ist der Kostenanstieg bei einer 
+Steigerung der Produktion von 100 auf 101 ME?
+Wie groß ist die Änderungsrate für 100 ME?
+b) Wo liegt die Gewinnzone?
+c) Wie groß ist die Produktionsmenge M im
+Betriebsoptimum? M = <input type="text" id="Eintrag82" maxlength="3" size="1" style= background-color:yellow > ME <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="600") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          }  
+                           
+                          else if (Eintrag82.value!=="600" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="600"; window.open('Diskuss_Aufgabe82.html');           
+                          document.getElementById("Pruef82").disabled= true;}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+
+<!--//Aufgabe 83-->                      
+
+<pre><p class="Aufgabe">Aufgabe 83
+
+Ein Betrieb arbeitet mit der Kostenfunktion
+K<sub>(x)</sub> = x<sup>3</sup> - 5x<sup>2</sup> + 11x + 5
+und mit der Erlösfunktion E<sub>(x)</sub> = 10x.
+a) Wie hoch ist der maximale Gewinn?
+b) Bei welcher Produktionsmenge liegt das
+Betriebsoptimum? 
+c) Bei welcher Produktionsmenge liegt das 
+Betriebsminimum?
+<button  onclick="window.open('Diskuss_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 84
+
+Die Steigerung E der Aktivität von Zellen, die 
+Tumore angreifen, hängt von der Dosis x eines 
+Präparates in μl/kg des Körpergewichts der 
+Patienten ab.
+Die Steigerung lässt sich durch
+E<sub>(x)</sub> = (5/9)(85 - 8x - 50/x) beschreiben.
+a) Bei welcher Dosis ist die Wirkung am größten?
+Bei x = <input type="text" id="Eintrag84" maxlength="3" size="1" style= background-color:yellow > μl/kg <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button>
+b) Welche Dosis ist für einen Patienten von 85 kg 
+optimal?
+c) Gibt es eine Dosis, die zu keiner Steigerung 
+führt?</p></pre>
+
+ 
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="2,5") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
+                          }  
+                           
+                          else if (Eintrag84.value!=="2,5" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="2,5"; window.open('Diskuss_Aufgabe84.html');           
+                          document.getElementById("Pruef84").disabled= true;}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 85-->                      
+
+<pre><p class="Aufgabe">Aufgabe 85
+
+Die Kostenfunktion 
+K<sub>(x)</sub> = 0,5x<sup>3</sup> - 8,25x<sup>2</sup> + 50,375x + 20
+gibt die Kosten in 1000 € an, die für x Einheiten 
+zu je 10 000 Stück bei der Herstellung anfallen. 
+a) Bei welcher Produktionsmenge sind die 
+Stückkosten am niedrigsten? 
+b) Bei welcher sind die Grenzkosten am 
+niedrigsten?
+c) Für welche Produktionsmenge ist bei einem 
+Stückpreis von 2,20 € der Ertrag positiv?
+d) Für welche Produktionsmenge ist bei einem 
+Stückpreis von 2,20 € der Ertrag am größten?
+<button  onclick="window.open('Diskuss_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 86-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 86
+
+Ein Händler verkauft ein Bauteil zu einem Preis 
+von 60 €. Er arbeitet mit der Kostenfunktion 
+K<sub>(x)</sub> = (1/8)x<sup>3</sup> - 2x<sup>2</sup> + 20x + 350.
+a) Berechnen Sie die Gewinnzone.
+b) Bei welcher verkauften Menge ist der maximale 
+Gewinn? Bei<input type="text" id="Eintrag86" maxlength="3" size="1" style= background-color:yellow > ME <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button>
+c) Bei welcher produzierten Menge hat er minimale 
+Stückkosten? </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="2,5") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;
+                          }  
+                           
+                          else if (Eintrag86.value!=="2,5" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag86").value="2,5"; window.open('Diskuss_Aufgabe86.html');           
+                          document.getElementById("Pruef86").disabled= true;}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 87-->                      
+
+<pre><p class="Aufgabe">Aufgabe 87
+
+Eine Firma verkauft im Monat 10 000 Artikel zu je 
+10 €. Ihre Produktionskosten setzen sich zusammen 
+aus 50 000 € Fixkosten und 2 € pro produziertem 
+Artikel. 
+a) Ab welcher Stückzahl erzielt sie Gewinn?
+Wird der Verkaufspreis um je 0,20 €/Stück 
+gesenkt, erhöht sich die verkaufte Menge um je 
+500 Stück.
+b) Bei welchem Stückpreis entsteht maximaler 
+Gewinn?
+c) Bei welchem Stückpreis wird am meisten 
+verkauft?
+<button  onclick="window.open('Diskuss_Aufgabe87.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 88
+
+Von einem Lebensmittel verkauft ein Händler 
+monatlich 10 000 kg zu einem Preis von 10 €/kg. 
+Bei einer Preissenkung von 0,25 €/kg kann er mit
+einer Verkaufssteigerung von 1 000 kg/Monat 
+rechnen. Bei welchem Verkaufspreis erzielt er 
+maximalen Gewinn, wenn er Selbstkosten von 
+7 €/kg hat? Bei <input type="text" id="Eintrag88" maxlength="4" size="1" style= background-color:yellow > €. <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button> </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="9,75") {alert("Richtig"); document.getElementById("Pruef88").disabled= true;
+                          }  
+                           
+                          else if (Eintrag88.value!=="9,75" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag88").value="9,75"; window.open('Diskuss_Aufgabe88.html');           
+                          document.getElementById("Pruef88").disabled= true;}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 89-->                      
+
+<pre><p class="Aufgabe">Aufgabe 89
+
+Die Angebotspreisfunktion eines Produzenten 
+lautetA<sub>(x)</sub> = 0,5x + 3
+Die Nachfragepreisfunktion nach diesem Produkt 
+lautet N<sub>(x)</sub> = - 0,5x<sup>2</sup> + 20
+Auf das Angebot erhebt der Staat die Steuern s.
+Welche Steuer sollte der Staat erheben, damit 
+seineEinnnahmen maximal sind aber Marktgleich-
+gewicht herrscht?
+<button  onclick="window.open('Diskuss_Aufgabe89.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 90-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 90
+
+Bei welcher Steuer s pro Mengeneinheit sind die
+Steuereinnahmen maximal, wenn die Angebots-
+preisfunktion A<sub>(x)</sub> = (1/3) x + 3 und die 
+Nachfragepreisfunktion N<sub>(x)</sub> = 0,25x<sup>2</sup> + 25 
+betragen? s = <input type="text" id="Eintrag90" maxlength="5" size="1" style= background-color:yellow > GE/ME €. <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button> </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="14,11") {alert("Richtig"); document.getElementById("Pruef90").disabled= true;
+                          }  
+                           
+                          else if (Eintrag90.value!=="14,11" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag90").value="14,11"; window.open('Diskuss_Aufgabe90.html');           
+                          document.getElementById("Pruef90").disabled= true;}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 91-->                      
+
+<pre><p class="Aufgabe">Aufgabe 91
+
+Ein Produzent liefert einem Großhändler eine Ware 
+zu 36 €/Stück. Seine Kosten ermittelt er mit der 
+Funktion 0,1x<sup>2</sup> + 10x + 850 für die ersten 
+150 Stück. Danach arbeitet er mit einer linearen 
+Kostenfunktion.
+Die Gesamtkostenfunktion K<sub>(x)</sub> soll an der Stelle 
+x = 150 differenzierbar sein.
+a) Wie lautet die Kostenfunktion K₂ für x ≥ 150?
+b) Ab welcher Stückzahl macht der Hersteller 
+Gewinn?
+c) Bei welcher Stückzahl ist der Gewinn am 
+größten?
+<button  onclick="window.open('Diskuss_Aufgabe91.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 92-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 92
+
+Einige Länder erheben beim Anbieter eine Steuer s
+auf Luxusartikel. 
+a) Bei welcher Menge liegt das Marktgleichgewicht
+vor der Einführung der Steuer, wenn die Angebots-
+funktion A<sub>(x)</sub> = 0,5x + 2 und die Nachfragefunktion 
+N<sub>(x)</sub> = -0,25x<sup>2</sup> + 14?
+b) Wie groß ist der Steuersatz, wenn die 
+Steuereinnahme S maximal sein soll?
+Er beträgt <input type="text" id="Eintrag92" maxlength="4" size="1" style= background-color:yellow > GE/ME. <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button>
+c) Bei welcher Menge liegt dann das 
+Marktgleichgewicht? GE/ME €.  </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="7,45") {alert("Richtig"); document.getElementById("Pruef92").disabled= true;
+                          }  
+                           
+                          else if (Eintrag92.value!=="7,45" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag92").value="7,45"; window.open('Diskuss_Aufgabe92.html');           
+                          document.getElementById("Pruef92").disabled= true;}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+                      
+<!--//Aufgabe 93-->                      
+
+<pre><p class="Aufgabe">Aufgabe 93
+
+Bei einer Marktuntersuchung stellt ein Hersteller 
+fest, welche Anzahl von seinem Produkt bei 
+unterschiedlichen Preisen verkauft wird.
+Preis in €    7,40     7    6,60    6,20    5,8
+Anzahl       20       40   60      80     100 
+a) Wie lautet die lineare Preisabsatzfunktion p?
+b) Wo liegen Gewinnschwelle und Gewinngrenze, 
+wenn die Kostenfunktion 
+K<sub>(x)</sub> = 0,001x<sup>3</sup>-0,1x<sup>2</sup> + 5x + 80 lautet? 
+c) Wie hoch ist der maximale Gesamtgewinn?
+<button  onclick="window.open('Diskuss_Aufgabe93.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 94-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 94
+
+Für eine ganzrationale Kostenfunktion 3. Grades
+existiert die folgende Wertetabelle.
+x in ME         0     1     2     3     
+K<sub>(x)</sub> in GE     24    38    40    42
+a) Bei welcher Menge hat die Grenzkostenfunktion
+ein Minimum?
+b) In welchem Bereich liegt die Gewinnzone, wenn 
+E<sub>(x)</sub> = 14x? Gewinngrenze bei<input type="text" id="Eintrag94" maxlength="1" size="1" style= background-color:yellow > ME.<button id="Pruef94" onclick="Aufgabe94()">Prüfen</button>  
+c) Wie hoch ist der maximale Gewinn? </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="4") {alert("Richtig"); document.getElementById("Pruef94").disabled= true;
+                          }  
+                           
+                          else if (Eintrag94.value!=="4" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag94").value="4"; window.open('Diskuss_Aufgabe94.html');           
+                          document.getElementById("Pruef94").disabled= true;}
+                               
+                          else if (Eintrag94.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+                      
+<!--//Aufgabe 95-->                      
+
+<pre><p class="Aufgabe">Aufgabe 95
+
+Ein Unternehmen beschreibt seinen Gewinn mit
+G<sub>(x)</sub> = - (1/3)x<sup>3</sup> + 2x<sup>2</sup> + 96x - 200 für x(0;25)
+a) Bei welcher Stückzahl entsteht der maximale 
+Gewinn?
+b) Wie hoch ist er? 
+<button  onclick="window.open('Diskuss_Aufgabe95.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 96-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 96
+
+Ein Betrieb hat Grenzkosten von konstant 100 GE.
+a) Bei welcher verkauften Menge hat er maximalen
+Gewinn, wenn er mit der Erlösfunktion 
+E<sub>(x)</sub> = - 0,5x<sup>2</sup> + 500x arbeitet?
+Bei <input type="text" id="Eintrag96" maxlength="3" size="1" style= background-color:yellow > ME <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button>
+b) Zu welchem Preis p bietet er dabei an?  
+c) Wie hoch ist der maximale Gewinn? </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe96() { 
+                                                
+                          if (Eintrag96.value=="400") {alert("Richtig"); document.getElementById("Pruef96").disabled= true;
+                          }  
+                           
+                          else if (Eintrag96.value!=="400" && Eintrag96.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag96").value="400"; window.open('Diskuss_Aufgabe96.html');           
+                          document.getElementById("Pruef96").disabled= true;}
+                               
+                          else if (Eintrag96.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+<!--//Aufgabe 97-->                      
+
+<pre><p class="Aufgabe">Aufgabe 97
+
+Ein Monopolist arbeitet mit der Preisabsatz-
+funktion p<sub>(x)</sub> = 0,01 * (x - 100)<sup>2</sup> und der 
+Kostenfunktion K<sub>(x)</sub> = 0,01x<sup>3</sup> - x<sup>2</sup> + 40x + 300.
+a) Wie hoch sind der maximale Preis und die 
+Sättigungsmenge S? 
+b) Berechnen Sie die Gewinnzone?
+c) Bei welcher Menge entsteht der maximale 
+Gewinn?
+<button  onclick="window.open('Diskuss_Aufgabe97.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 98-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 98
+
+Ein Monopolist arbeitet mit einer Kostenfunktion
+K<sub>(x)</sub> = x<sup>3</sup> - 10x<sup>2</sup> + 43x + 72 und einer linearen 
+Nachfragefunktion pN<sub>(x)</sub>. Sein Höchstpreis ist 
+70 GE und die Sättigungsmenge 20 ME.
+a) Bei welcher Menge liegt sein Betriebsoptimum?
+b) Berechnen Sie die Gewinnzone.
+GG = <input type="text" id="Eintrag98" maxlength="4" size="1" style= background-color:yellow > ME<button id="Pruef98" onclick="Aufgabe98()">Prüfen</button> 
+c) Wie hoch ist der maximale Gewinn? 
+d) Wie hoch ist sein Gewinn, wenn er mit seiner
+Grenzkostenfunktion als Angebotsfunktion arbeitet?   </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe98() { 
+                                                
+                          if (Eintrag98.value=="8,66") {alert("Richtig"); document.getElementById("Pruef98").disabled= true;
+                          }  
+                           
+                          else if (Eintrag98.value!=="8,66" && Eintrag98.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag98").value="8,66"; window.open('Diskuss_Aufgabe98.html');           
+                          document.getElementById("Pruef98").disabled= true;}
+                               
+                          else if (Eintrag98.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 99-->                      
+
+<pre><p class="Aufgabe">Aufgabe 99
+
+Die Kostenfunktion eines Monopolisten lautet
+K<sub>(x)</sub> = 0,04x<sup>3</sup> - 0,6x<sup>2</sup> + 3x + 2
+seine Nachfragefunktion pN<sub>(x)</sub> = - 0,16x + 2,8. 
+a) Wo liegt seine Gewinnschwelle?
+b) Bei welcher Produktionsmenge entstehen sein 
+maximaler Erlös und Gewinn?
+c) Bei welcher Produktionsmenge liegt sein 
+Betriebsminimum? 
+<button  onclick="window.open('Diskuss_Aufgabe99.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 100-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 100
+
+Monopolist hat eine Preisabsatzfunktion 
+p<sub>(x)</sub> = - 7x + 49 und eine Kostenfunktion 
+K<sub>(x)</sub> = x<sup>3</sup> - 6x<sup>2</sup> + 15x + 32.
+a) Wo liegt die langfristige Preisuntergrenze?
+b) Wo liegt die kurzfristige Preisuntergrenze?
+c) Wo liegt die Gewinnzone?
+d) Welche Koordinaten hat der Cournotsche Punkt?
+Der Betrieb hat 8% höhere Lohnkosten. Die 
+Lohnkosten machen 75% der variablen Kosten aus.
+e) Wie hoch ist jetzt der Gesamtgewinn? 
+G = <input type="text" id="Eintrag100" maxlength="5" size="1" style= background-color:yellow > GE <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button>
+f) Wie hoch sind die Durchschnittskosten ud der 
+Durchschnittsgewinn? </p></pre>
+
+ 
+                      <script>
+                        function Aufgabe100() { 
+                                                
+                          if (Eintrag100.value=="32,93") {alert("Richtig"); document.getElementById("Pruef100").disabled= true;
+                          }  
+                           
+                          else if (Eintrag100.value!=="32,93" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag100").value="32,93"; window.open('Diskuss_Aufgabe100.html');           
+                          document.getElementById("Pruef100").disabled= true;}
+                               
+                          else if (Eintrag100.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+<!--//Aufgabe 101-->                      
+
+<pre><p class="Aufgabe">Aufgabe 101
+
+Ein Hersteller hat neben einer Preisabsatzfunktion 
+p<sub>(x)</sub> = -80,625x + 7256,25 eine Kostenfunktion
+K<sub>(x)</sub> = 0,5x<sup>3</sup> - 45x<sup>2</sup> + 1450x + 54 000.
+a) Wie hoch sind sein maximaler Gewinn und die
+Koordinaten des Cournotschen Punktes?
+b) Wo liegt seine Gewinnzone?
+c) Berechnen Sie sein Betriebsminimum B und seine 
+kurzfristige Preisuntergrenze. 
+<button  onclick="window.open('Diskuss_Aufgabe101.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 102-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 102
+
+Ein Monopolist produziert 20 Stück eines Bauteils 
+zu Gesamtkosten von 6 000 €. 60 Stück zu 18 000 €. 
+Beidiesen Mengen arbeitet er kostenneutral. Als 
+Kostenfunktion benutzt er eine quadratische 
+Funktion mit Fixkosten von 5 400 €. als Erlös-
+funktion eine lineare Funktion.
+Bei welcher verkauften Menge erzielt er maximalen 
+Gewinn? Bei <input type="text" id="Eintrag102" maxlength="2" size="1" style= background-color:yellow > ME. <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe102() { 
+                                                
+                          if (Eintrag102.value=="40") {alert("Richtig"); document.getElementById("Pruef102").disabled= true;
+                          }  
+                           
+                          else if (Eintrag102.value!=="40" && Eintrag102.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag102").value="40"; window.open('Diskuss_Aufgabe102.html');           
+                          document.getElementById("Pruef102").disabled= true;}
+                               
+                          else if (Eintrag102.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+<!--//Aufgabe 103-->                      
+
+<pre><p class="Aufgabe">Aufgabe 103
+
+Ein Hersteller arbeitet mit einer Kostenfunktion 
+3. Grades. Er hat Fixkosten von 720 €, durch-
+schnittliche variable Kosten von 50 € bei einer 
+produzierten Menge von 100 Stück, Grenzkosten von 
+48,03 € bei einem Stück und Durchschnittskosten 
+für 20 Stück von 70 €. Sein Erlös beträgt 
+53 €/Stück.
+a) Bei welcher Menge liegt sein Betriebsminimum?
+b) Wie hoch ist sein maximaler Gewinn?
+<button  onclick="window.open('Diskuss_Aufgabe103.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 104-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 104
+
+Ein Betrieb hat die Kostenfunktion
+K<sub>(x)</sub> = 5x<sup>3</sup> - 50x<sup>2</sup> + 215x + 360 und eine lineare 
+Preisabsatzfunktion mit einer Sättigungsmenge
+von 20 ME und einem Höchstpreis von 350 GE.
+a) Wie groß ist die kostengünstigste Produktions-
+menge? Es sind <input type="text" id="Eintrag104" maxlength="1" size="1" style= background-color:yellow > ME <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button>
+b) Wie groß ist sein maximaler Gewinn?
+c) Wie groß ist sein maximaler Gewinn, wenn er 
+die Grenzkostenfunktion als Preisabsatzfunktion 
+einsetzt?</p></pre>
+
+ 
+                      <script>
+                        function Aufgabe104() { 
+                                                
+                          if (Eintrag104.value=="6") {alert("Richtig"); document.getElementById("Pruef104").disabled= true;
+                          }  
+                           
+                          else if (Eintrag104.value!=="6" && Eintrag104.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag104").value="6"; window.open('Diskuss_Aufgabe104.html');           
+                          document.getElementById("Pruef104").disabled= true;}
+                               
+                          else if (Eintrag104.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>                                           
+                      
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+         
+
+        </body></html>
+
+                      
+                    
