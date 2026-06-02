@@ -1,0 +1,144 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 83
+
+Ein Betrieb arbeitet mit der Kostenfunktion
+K<sub>(x)</sub> = x<sup>3</sup> - 5x<sup>2</sup> + 11x + 5
+und mit der Erlösfunktion E<sub>(x)</sub> = 10x.
+a) Wie hoch ist der maximale Gewinn?
+b) Bei welcher Produktionsmenge liegt das 
+Betriebsoptimum? 
+c) Bei welcher Produktionsmenge liegt das 
+Betriebsminimum?
+
+a) 
+
+G<sub>(x)</sub> = 10x - (x<sup>3</sup> - 5x<sup>2</sup> + 11x + 5)
+
+G<sub>(x)</sub> = - x<sup>3</sup> + 5x<sup>2</sup> - x - 5
+
+G'<sub>(x)</sub> = - 3x<sup>2</sup> + 10x - 1
+
+G''<sub>(x)</sub> = - 6x + 10
+
+- 3x<sup>2</sup> + 10x - 1 = 0
+
+A, B, C - Formel:
+
+A = -3, B = 10, C = -1
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>10</mn><mo>&#xb1;</mo><msqrt><mrow><msup><mn>10</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>10</mn><mo>&#xb1;</mo><msqrt><mrow><mn>100</mn><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>10</mn><mo>&#xb1;</mo><msqrt><mn>88</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfrac></math>
+
+        -10 ± 9,38    
+x<sub>1,2</sub> = -------------
+             -6  
+
+x<sub>1</sub> = 3,23 
+
+G<sub>(3,23)</sub> = - 3,23<sup>3</sup> + 5 * 3,23<sup>2</sup> - 3,23 - 5 = 10,24 
+
+x<sub>2</sub> = 0,1 
+
+G<sub>(0,1)</sub> = - 0,1<sup>3</sup> + 5 * 0,1<sup>2</sup> - 0,1 - 5 = -5,01 
+
+--> Verlust
+
+G''<sub>(3,23)</sub> = - 6 * 3,23 + 10 < 0 --> 
+
+Hochpunkt (3,23|10,24)
+
+<span style="color:red">Der Gewinn ist bei 3,23 ME am größten und beträgt 
+10,24 GE.</span>
+
+<img src="Aufgabe83.jpg" >
+
+b)
+
+         x<sup>3</sup> - 5x<sup>2</sup> + 11x + 5                    5
+k<sub>(x)</sub> = --------------------- = x<sup>2</sup> - 5x + 11 + ---
+                  x                            x
+
+                   5
+k'<sub>(x)</sub> = 2x - 5 - ----    
+                  x<sup>2</sup>
+
+              10  
+k''<sub>(x)</sub> = 2 + ---- immer größer als 0
+              x<sup>3</sup>    
+
+           5
+2x - 5 - ---- = 0 | *x<sup>2</sup>
+          x<sup>2</sup>    
+
+2x<sup>3</sup> - 5x<sup>2</sup> - 5 = 0
+
+Newtonsches Näherungsverfahren:
+
+Wertetabelle:
+x       1     2     3     4       5
+k'<sub>(x)</sub>  -8    -9     4    43     120         
+
+Vorzeichenwechsel zwischen 2 und 3 --> 
+gewählt x<sub>01</sub> = 2,7
+
+                               5
+             2 * 2,7 - 5 <sup>2</sup> - ------
+                              2,7<sup>2</sup> 
+x<sub>1</sub> = 2,7 - -------------------------- 
+                       10
+                  2 + -----
+                       2,7<sup>3</sup>
+                       
+x<sub>1</sub> = 2,7 - (-0,12) = 2,82                       
+
+k''<sub>(2,82)</sub> > 0 --> Tiefpunkt (2,82|6,63)
+
+<span style="color:red">Das Betriebsoptimum liegt bei einer Produktions-
+menge von 2,82 ME.</span> 
+
+c)
+
+         Kv<sub>(x)</sub>    x<sup>3</sup> - 5x<sup>2</sup> + 11x
+kv<sub>(x)</sub> = ------ = ---------------- = x<sup>2</sup> - 5x + 11
+           x             x
+
+k'v'<sub>(x)</sub> = 2x - 5
+
+2x - 5 = 0 +5
+
+2x = 5 |:2
+
+x = 2,5 ME, kv<sub>(2,5)</sub> = 4,75 GE
+
+k''v<sub>(x)</sub> = 2 > 0 --> Minimum bei x = 2,5 ME
+
+<span style="color:red">Das Betriebsminimum liegt bei einer Produktions-
+menge von 2,5 ME.</span>
+
+   <img src="Aufgabe83_1.jpg" >
+
+</b></p></pre></body></html>

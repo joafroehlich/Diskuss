@@ -1,0 +1,213 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 82
+
+Ein Betrieb hat Fixkosten Kf von 21 600 GE und 
+variable Kosten Kv<sub>(x)</sub> von 0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x 
+und E<sub>(x)</sub> = 73x.
+a) Wie hoch ist der Kostenanstieg bei einer 
+Steigerung der Produktion von 100 auf 101 ME? 
+Wie groß ist die Änderungsrate für 100 ME?
+b) Wo liegt die Gewinnzone?
+c) Wie groß ist die Produktionsmenge M im 
+Betriebsoptimum? 
+
+a) 
+
+K<sub>(x)</sub> = 0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x + 21 600
+
+K'<sub>(x)</sub> = 0,0024x<sup>2</sup> - 1,8x + 264
+
+K<sub>(100)</sub> = 39 800 GE
+
+K<sub>(101)</sub> = 39 907,3 GE
+
+<span style="color:red">Der Anstieg beträgt</span> 
+39 907,3 GE - 39 800 GE = <span style="color:red">107,3 GE/ME</span>
+
+<span style="color:red">K'<sub>(100)</sub> = 108 GE/ME</span>
+
+Der Kostenanstieg von 100 ME auf 101 ME 
+entspricht etwa der Änderungsrate für x = 100 ME.
+
+b) 
+
+Die x-Koordinaten der Gewinnschwelle und -grenze 
+entsprechen den Nullstellen der Gewinnfunktion.
+
+G<sub>(x)</sub> = E<sub>(x)</sub> - K<sub>(x)</sub>
+
+G<sub>(x)</sub> = 73x - (0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x + 21 600)
+
+G<sub>(x)</sub> = - 0,0008x<sup>3</sup> + 0,9x<sup>2</sup> - 191x - 21 600
+
+G'<sub>(x)</sub> = - 0,0024x<sup>2</sup> + 1,8x - 191
+
+Newtonsches Näherungsverfahren.
+
+Wertetabelle:
+
+  400     500     600     700     800
+-5200    7900  15 000  11 300    -8000
+
+Vorzeichenwechsel zwischen 400 und 500 --> 
+
+gewählt x<sub>01</sub> = 440
+
+Vorzeichenwechsel zwischen 700 und 800 --> 
+
+gewählt x<sub>02</sub> = 759
+
+             -0,0008 * 440<sup>3</sup> + 0,9 * 440<sup>2</sup> - 
+x<sub>1</sub> = 440 - ----------------------------------
+            -0,0024 * 440<sup>2</sup> + 1,8 * 440 - 191
+
+     - 191 * 440 - 21 600
+--------------------------------
+-0,0024 * 440<sup>2</sup> + 1,8 * 440 - 191                          
+
+x<sub>1</sub> = 436,7
+
+                 -0,0008 * 759<sup>3</sup> + 0,9 * 759<sup>2</sup> - 
+x<sub>21</sub> = 759 - -------------------------------------
+               -0,0024 * 759<sup>2</sup> + 1,8 * 759 - 191
+
+       - 191 * 759 - 21 600
+---------------------------------
+-0,0024 * 759<sup>2</sup> + 1,8 * 759 - 191               
+
+x<sub>21</sub> = 769,2 
+
+              -0,0008 * 769,2<sup>3</sup> + 0,9 * 769,2<sup>2</sup> - 
+x<sub>2</sub> = 769,2 - ------------------------------------
+             -0,0024 * 769,2<sup>2</sup> + 1,8 * 769,2 - 191
+
+        - 191 * 769,2 - 21 600
+--------------------------------------
+ -0,0024 * 769,2<sup>2</sup> + 1,8 * 769,2 - 191             
+        
+x2<sub>2</sub> = 768,7 
+       
+<span style="color:red">Die Gewinnzone liegt zwischen 
+436,7 ME und 768,7 ME.</span>
+
+<img src="Aufgabe82.jpg" >
+
+c)
+
+         0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x + 21 600 
+k<sub>(x)</sub> = -----------------------------------
+                         x
+
+                                 21 600  
+k<sub>(x)</sub> = 0,0008x<sup>2</sup> - 0,9x + 264 + ---------
+                                    x  
+
+                         21 600 
+k'<sub>(x)</sub> = 0,0016x - 0,9 - --------
+                           x<sup>2</sup>
+
+                   21 600  
+k''<sub>(x)</sub> = 0,0016 + -------- --> 
+                     x<sup>3</sup>
+
+immer > 0, weil x > 0                     
+
+                 21 600 
+0,0016x - 0,9 - -------- = 0 | *x<sup>2</sup>
+                    x<sup>2</sup> 
+
+0,0016x<sup>3</sup> - 0,9x<sup>2</sup> - 21 600 = 0
+
+Wertetabelle:
+
+x          300        400       500    
+k'<sub>(x)</sub>  -59 400   -63 2005   -46 600      
+
+x      600        700
+k'<sub>(x)</sub>    0     86 200
+
+Hornerschema:
+
+Nullstelle bei x1 = 600
+
+Hornerschema:
+
+            0,0016     -0,9        0     -21 600
+x<sub>1</sub> = 600                0,96      36      21 600 
+           --------------------------------------
+            0,0016      0,06      36           0
+                                                                                    
+k''<sub>(x)</sub> > 0 --> 
+                                            
+k<sub>(600)</sub> = 0,0008 * 600<sup>2</sup> - 0,9 * 600 + 264 + 
+
+   21 600
++ --------- = 48 
+     600  
+
+--> Minimum (600 ME|48 GE)
+ 
+Polynomdivision:
+
+  0,0016x<sup>3</sup> - 0,9x<sup>2</sup> - 2 600 : (x - 600) = 
+-(0,0016x<sup>3</sup> - 0,96x<sup>2</sup>)
+---------------------------
+             0,06x<sup>2</sup> - 21 600  
+           -(0,06x<sup>2</sup> - 36x)
+           -------------------
+                      36x - 21 600 
+                    -(36x - 21 600)
+                    ----------------
+                                 0
+
+Ergebnis = 0,0016x<sup>2</sup> + 0,006x + 36                                  
+
+0,0016x<sup>2</sup> + 0,06x + 36 = 0 |:0,0016
+
+x<sup>2</sup> + 37,5 x + 22 500 = 0
+
+p, q - Formel:
+
+p = 37,5, q = 22 500
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mn>37</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mn>37</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>22500</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -18,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>351</mn><mo>,</mo><mn>5625</mn><mo>&#x2212;</mo><mn>22500</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -18,75 ± <math mathsize="0.9em"><msqrt><mrow><mo>&#x2212;</mo><mn>22148</mn><mo>,</mo><mn>4375</mn></mrow></msqrt></math> --> 
+
+keine weiteren Nullstellen
+
+<span style="color:red">Das Produktionsmenge x im 
+Betriebsoptimum = 600 ME.</span> 
+
+Die Kosten liegen dabei bei 
+
+K<sub>(600)</sub> = 0,0008 * 600<sup>3</sup> - 0,9 * 600<sup>2</sup> + 264 * 600 + 
+
++ 21 600 = 28 800 GE.
+
+<img src="Aufgabe82_1.jpg" >
+
+</b></p></pre></body></html>

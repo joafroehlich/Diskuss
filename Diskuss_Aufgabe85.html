@@ -1,0 +1,216 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 85
+
+Die Kostenfunktion 
+K<sub>(x)</sub> = 0,5x<sup>3</sup> - 8,25x<sup>2</sup> + 50,375x + 20
+gibt die Kosten in 1000 € an, die für x Einheiten 
+zu je 10 000 Stück bei der Herstellung anfallen. 
+a) Bei welcher Produktionsmenge sind die 
+Stückkosten am niedrigsten? 
+b) Bei welcher sind die Grenzkosten am 
+niedrigsten?
+c) Für welche Produktionsmenge ist bei einem 
+Stückpreis von 2,20 € der Ertrag positiv?
+d) Für welche Produktionsmenge ist bei einem 
+Stückpreis von 2,20 € der Ertrag am größten?
+
+a) 
+
+        K<sub>(x)</sub>    0,5x<sup>3</sup> - 8,25x<sup>2</sup> + 50,375x + 20 
+k<sub>(x)</sub> = ----- = -------------------------------
+         x                    x
+ 
+                                 20
+k<sub>(x)</sub> = 0,5x<sup>2</sup> - 8,25x + 50,375 + ---- 
+                                  x
+
+                         20
+k'<sub>(x)</sub> = x - 8,25 - ----
+                         x<sup>2</sup> 
+
+              40  
+k''<sub>(x)</sub> = 1 + ----  immer > 0 für x > 0 
+              x<sup>3</sup>   
+
+            20
+x - 8,25 - ---- = 0 | *x<sup>2</sup>
+            x<sup>2</sup> 
+
+x<sup>3</sup> - 8,25x<sup>2</sup> - 20 = 0
+
+Newtonsches Näherungsverfahren:
+
+Wertetabelle:
+
+  x         6        7         8         9 
+k'<sub>(x)</sub>    -101,25   -81,25     -36       40,75
+
+Vorzeichenwechsel zwischen 8 und 9, 
+gewählt x01 = 8,5 
+
+                                             20
+             0,5*8,5<sup>2</sup> - 8,25*8,5 + 50,375 + ----- 
+                                             8,5  
+x<sub>1</sub> = 8,5 - -------------------------------------- 
+                                   20  
+                    8,5 - 8,25 - ------
+                                  8,5<sup>2</sup> 
+
+x<sub>1</sub> = 8,5 - (-0,03) = 8,53
+
+k''<sub>(8,53)</sub> > 0 --> Tiefpunkt (8,53|18,73)
+
+18,73 steht für 
+
+18,73 * 1 000 = 18 730 € /10 000 Stück --> 
+
+Stückkosten = 1,873 €.
+
+<span style="color:red">Bei einer Produktionsmenge x = 8,53, entspricht 
+8,53 * 10 000 = 85 300 Stück, sind die Stück-
+kosten am niedrigsten und betragen 1,873 €.</span>
+
+b)
+
+Grenzkosten entsprechen K'<sub>(x)</sub>.
+
+K'<sub>(x)</sub> = 1,5x<sup>2</sup> - 16,5x + 50,375
+
+K''<sub>(x)</sub> = 3x - 16,5
+
+3x - 16,5 = 0 | +16.5
+
+3x = 16,5 | :3
+
+x = 5,5, 
+
+K'<sub>(5,5)</sub> = 1,5 * 5,5<sup>2</sup> - 16,5 * 5,5 + 50,375 = 5
+
+K'''<sub>(x)</sub> = 3 > 0 --> Tiefpunkt (5,5|5)
+
+<span style="color:red">Bei einer Produktionsmenge von 
+5,5 * 10 000 = 55 000 Stück sind die Grenzkosten 
+am niedrigsten.</span>
+
+ <img src="Aufgabe85_1.jpg" >
+
+ c) 
+
+10 000 Stück kosten 
+
+2,2 €/Stück * 10 000 Stück = 22 000 €
+
+Eine Einheit von 1 000 kostet 
+
+22 000 €/1 000 = 22 €/Einheit = Erlös E<sub>(x)</sub>
+
+Der Ertrag ist zwischen Gewinnschwelle und 
+Gewinngrenze positiv.
+
+G<sub>(x)</sub> = 22x - (0,5x<sup>3</sup> - 8,25x<sup>2</sup> + 50,375x + 20)
+
+G<sub>(x)</sub> = - 0,5x<sup>3</sup> + 8,25x<sup>2</sup> - 28,375x - 20
+
+Newtonsches Näherungsverfahren:
+
+Wertetabelle:
+
+x       5        6       7        8     9       
+G<sub>(x)</sub>  -18,125   -1,25   14,125   25    28,375   
+
+x        10        11           12
+G<sub>(x)</sub>     21,25      0,625      -36,5
+
+Vorzeichenwechsel zwischen 6 und 7 --> 
+
+gewählt x<sub>01</sub> = 6
+
+Vorzeichenwechsel zwischen 11 und 12 --> 
+
+gewählt x<sub>02</sub> = 11
+
+Newton Näherungsverfahren:
+
+          -0,5 * 6<sup>3</sup> + 8,25 * 6<sup>2</sup> - 28,375 * 6 - 20 
+x<sub>1</sub> = 6 - -----------------------------------------  
+              -1,5 * 6<sup>2</sup> + 16,5 * 6 - 28,375
+              
+x<sub>1</sub> = 6 - (-0,08) = 6,08              
+ 
+           -0,5*11<sup>3</sup> + 8,25*11<sup>2</sup> - 28,375*11 - 20 
+x<sub>2</sub> = 11 - -------------------------------------- 
+             -1,5 * 11<sup>2</sup> + 16,5 * 11 - 28,375 
+             
+x<sub>2</sub> = 11 - (-0,02) = 11,02              
+ 
+<span style="color:red">Der Ertrag ist zwischen einer Produktionsmenge 
+von 6,08 und 11,02 positiv.</span>
+
+d)
+
+G'<sub>(x)</sub> =- 1,5x<sup>2</sup> + 16,5x - 28,375
+
+G''<sub>(x)</sub> = - 3x + 16,5
+
+-1,5x<sup>2</sup> + 16,5x - 28,375 = 0
+
+A, B, C - Formel:
+
+A = -1,5, B = 16,5, C = -28,375
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>16</mn><mo>,</mo><mn>5</mn><mo>&#xb1;</mo><msqrt><mrow><mn>16</mn><mo>,</mo><msup><mn>5</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>28,375</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>16</mn><mo>,</mo><mn>5</mn><mo>&#xb1;</mo><msqrt><mrow><mn>272</mn><mo>,</mo><mn>25</mn><mo>&#x2212;</mo><mn>170</mn><mo>,</mo><mn>25</mn></mrow></msqrt></mrow><mrow><mo>-</mo><mn>3</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>16</mn><mo>,</mo><mn>5</mn><mo>&#xb1;</mo><msqrt><mn>102</mn></msqrt></mrow><mrow><mo>-</mo><mn>3</mn></mrow></mfrac></math>
+
+        -16,5 ± 10,1    
+x<sub>1,2</sub> = ---------------
+             -3  
+
+x<sub>1</sub> = 8,87
+
+G<sub>(8,87)</sub> = - 0,5 * 8,87<sup>3</sup> + 8,25 * 8,87 - 
+
+- 28,375 * 8,87 - 20 = 28,47
+
+x<sub>2</sub> = 2,13
+
+G<sub>(2,13)</sub> = - 0,5 * 2,13<sup>3</sup> + 8,25 * 2,13<sup>2</sup> - 
+
+- 28,375 * 2,13 - 20 = - 47,8 
+
+--> Verlust
+
+G''<sub>(8,87)</sub> = - 3 * 8,87 + 16,5 < 0 --> 
+
+Hochpunkt (8,87|28,47)
+
+<span style="color:red">Bei einer Produktionsmenge von 
+8,87 * 10 000 = 88 700 Stück ist der Ertrag am 
+größten.</span> 
+
+   <img src="Aufgabe85.jpg" >
+
+</b></p></pre></body></html>

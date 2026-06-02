@@ -1,0 +1,199 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 94
+
+Für eine ganzrationale Kostenfunktion 3. Grades 
+existiert die folgende Wertetabelle.
+
+x in ME           0      1      2      3     
+K<sub>(x)</sub> in GE       24     38     40     42
+
+a) Bei welcher Menge hat die Grenzkostenfunktion 
+ein Minimum?
+b) In welchem Bereich liegt die Gewinnzone, 
+wenn E<sub>(x)</sub> = 14x? 
+c) Wie hoch ist der maximale Gewinn?
+
+a)
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d
+
+K<sub>(0)</sub> = 24 --> d = 24
+
+K<sub>(1)</sub> = 38 = a *1<sup>2</sup> + b * 1<sup>2</sup> + c * 1 * 24 |-24
+
+a + b + c = 14     (1)
+
+K<sub>(2)</sub> = 40 = a * 2<sup>3</sup> + b * 2<sup>2</sup> + c * 2 + 24 |-24
+
+8a + 4b + 2c = 16    (2)
+
+K<sub>(3)</sub> = 42 = a * 3<sup>3</sup> + b * 3<sup>2</sup> + c * 3 + 24 |-24
+
+27a + 9b +3c = 18     (3)
+
+(2) + (1) * (-2)
+
+ 8a + 4b + 2c =  16
+-2a - 2b - 2c = -28
+--------------------
+ 6a + 2b      = -12     (4)
+
+(3) + (1) * (-3)
+
+27a + 9b + 3c =  18
+-3a - 3b - 3c = -42
+--------------------
+24a + 6b      = -24     (5)
+
+(5) + (4) * (-3)
+
+ 24a + 6b = -24
+-18a - 6b =  36
+-------------------
+       6a = 12 | :6
+
+a = 2
+
+a in (4) eingesetzt:
+
+6 * 2 + 2b = -12 |-12
+
+2a = - 24 |2
+
+b = -12
+
+a und b in (1) eingesetzt:
+
+2 - 12 + c = 14 |+10
+
+c = 24
+
+K<sub>(x)</sub> = 2x<sup>3</sup> - 12x<sup>2</sup> + 24x + 24
+
+K'<sub>(x)</sub> = 6x<sup>2</sup> - 24x + 24
+
+K''<sub>(x)</sub> = 12x - 24
+
+K'''<sub>(x)</sub> = 12 > 0 --> Tiefpunkt
+
+12x - 24 = 0| :12
+
+x = 2
+
+K'<sub>(2)</sub> = 6 * 2<sup>2</sup> - 24 * 2 + 24 = 0
+
+<span style="color:red">Die Grenzkostenfunktion K'<sub>(x)</sub> hat an der Stelle 
+x = 2 ein Minimum.</span>
+
+b)
+
+G<sub>(x)</sub> = 14x - (2x<sup>3</sup> - 12x<sup>2</sup> + 24x + 24)
+
+G<sub>(x)</sub> = -2x<sup>3</sup> + 12x<sup>2</sup> - 10x - 24
+
+- 2x<sup>3</sup> + 12x<sup>2</sup> - 10x - 24 = 0
+
+Durch Probieren gefunden x1<sub>1</sub> = 3
+
+Hornerschema:
+
+             -2     12     -10     -24
+x<sub>1</sub> = 3              -6      18      24   
+            ----------------------------
+             -2      6       8       0
+
+Polynomdivision:
+
+  -2x<sup>3</sup> + 12x<sup>2</sup> - 10x - 24 : (x - 3) = -2x<sup>2</sup>+6x+8
+-(-2x<sup>3</sup> +  6x<sup>2</sup>)
+---------------
+          6x<sup>2</sup> - 10x - 24   
+        -(6x<sup>2</sup> - 18x)
+        -------------
+                 8x - 24
+               -(8x - 24)
+               -----------
+                       0
+
+- 2x<sup>2</sup> + 6x + 8 = 0 | : (-2)
+
+x<sup>2</sup> - 3x - 4 = 0
+
+p, q - Formel:
+
+p = -3, q = -4
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>3</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>3</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>2,3</sub> = 1,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>2</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = 1,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = 1,5 ± 2,5
+
+<span style="color:red">x<sub>2</sub> = 4 ME = Gewinngrenze</span>, 
+
+<span style="color:red">x<sub>1</sub> = 3 ME = Gewinnschwelle</span>
+
+x<sub>3</sub> = -1 keine Lösung
+
+c)
+
+G'<sub>(x)</sub> = - 6x<sup>2</sup> + 24x - 10
+
+G''<sub>(x)</sub> = - 12x + 24
+
+- 6x<sup>2</sup> + 24x - 10 = 0
+
+A, B, C - Formel:
+
+A = -6, B = 24, C = -10
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>24</mn><mo>&#xb1;</mo><msqrt><mrow><msup><mn>24</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>10</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>24</mn><mo>&#xb1;</mo><msqrt><mrow><mn>576</mn><mo>&#x2212;</mo><mn>240</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>12</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>24</mn><mo>&#xb1;</mo><msqrt><mn>336</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>12</mn></mrow></mfrac></math>
+
+        -24 ± 18,3    
+x<sub>1,2</sub> = ------------
+           -12  
+
+x<sub>1</sub> = 3,53 ME
+
+G<sub>(3,53)</sub> = -2 * 3,53<sup>3</sup> + 12 * 3,53<sup>2</sup> - 
+
+- 10 * 3,53 - 24 = 2,26 GE 
+
+x<sub>2</sub> = 0,475 keine Lösung, außerhalb der Gewinnzone
+
+K''<sub>(3,53)</sub> = - 12 * 3,53 - 10 < 0 --> 
+
+Hochpunkt (3,53|2,26)
+
+<span style="color:red">Der maximale Gewinn beträgt 2,26 GE.</span>
+
+   <img src="Aufgabe94.jpg" >
+
+</b></p></pre></body></html>

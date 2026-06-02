@@ -1,0 +1,152 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 78
+
+Die Messung der Oberflächentemperatur O eines 
+Bergsees im Verlaufe eines Tages ergab die Werte:
+Um 0.00 waren es 19°C, der niedrigste Wert in den
+ersten 12 Stunden von 17,8°C um 6.00 Uhr und der 
+höchste um 17.00.
+a) Wie lautet die Funktionsgleichung 3. Grades, 
+die diesen Sachverhalt beschreibt?
+b) Um wieviel Uhr stieg die Temperatur am 
+stärksten?
+c) Wie groß ist die Änderungsrate um 22.00 Uhr?
+
+a) Allgemeine Form der gesuchten Funktion mit t 
+für die Zeit bzw. Anzahl der Stunden.
+
+O<sub>(t)</sub> = at<sup>3</sup> + bt<sup>2</sup> + ct + d
+
+O'<sub>(t)</sub> = 3at<sup>2</sup> + 2bt + c
+
+O''<sub>(t)</sub> = 6at + 2b
+ 
+O<sub>(0)</sub> = 19 = d
+
+O<sub>(6)</sub> = 17,8 = a * 6<sup>3</sup> + b * 6<sup>2</sup> + c * 6 + 19
+
+17,8 = a * 216 + b * 36 + c * 6 + 19 |-19
+
+216a + 36b + 6c = - 1,2     (1)
+
+O'<sub>(6)</sub> = 0 = 3a * 6<sup>2</sup> + 2b * 6 + c 
+
+O'<sub>(6)</sub> = 108a + 12b + c = 0     (2)
+
+O'<sub>(17)</sub> = 0 = 3a * 17<sup>2</sup> + 2b * 17 + c
+
+867a + 34b + c = 0     (3)
+
+(3) + 2 * (-1)
+
+ 867a + 34b + c = 0
+-108a - 12b - c = 0
+--------------------
+ 759a + 22b     = 0     (4)
+
+(1) + 2 * (-6)
+
+ 216a + 36b + 6c = -1,2
+-648a - 72b - 6c = 0
+----------------------
+-432a - 36b      = -1,2     (5)
+
+(4) * 36 + (5) * 22
+
+27 324a + 792b = 0
+-9 504a - 792b = -26,4
+-----------------------
+17 820a        = -26,4 |:15840
+
+        1   
+a = - -----
+       675  
+
+a in (4) eingesetzt: 
+  
+   759
+- ----- + 22b = 0 |*675
+   675
+
+-759 + 14 850b = 0 |+759
+
+14 850b = 759 | :14 850
+
+       759        253       23 
+b = --------- = -------- = -----
+     14 850      4 950      450
+
+a und b in (2) eingesetzt:
+
+   108      12 * 23
+- ----- + ---------- + c = 0 |*1 350
+   675        450
+
+- 216 + 828 + 1 350c = 0 |-612
+
+1 350c = 612 | :1 350
+
+         612        68         34
+c = - -------- = - ------ = - ----
+       1 350        150        75  
+
+           <span style="color:red"></span>1         23       34 
+O<sub>(t)</sub> = - -----t<sup>3</sup> + -----t<sup>2</sup> - ----t + 19
+          675        450      75</span>   
+
+b) 
+
+Der Temperaturanstieg ist dort am stärksten, 
+wo die erste Ableitung der Funktion ein Maximum 
+hat. Dort ist die 2. Ableitung = 0. 
+
+            3         46        34
+O'<sub>(t)</sub> = - ----- t<sup>2</sup> + ----- t - ----
+           675        450       75
+ 
+             6       2 * 23  
+O''<sub>(t)</sub> = - -----t + --------- = 0 |*1 350
+            675        450  
+
+-12t + 138 = 0 |+12t
+
+12t = 138 |:12
+
+t = 11,5 h --> <span style="color:red">Uhrzeit 11.30</span>
+
+c) 
+
+Änderungsrate -- 1. Ableitung
+
+             3          2 * 23         34 
+O'<sub>(22)</sub> = - ----- 22<sup>2</sup> + --------- 22 - ---- 
+            675           450          75 
+
+<span style="color:red">O'<sub>(22)</sub> = -0,36</span> -->            
+
+die Temperatur fällt um etwa 0,36°/h.
+
+   <img src="Aufgabe78.jpg" >
+
+</b></p></pre></body></html>

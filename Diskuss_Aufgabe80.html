@@ -1,0 +1,181 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 80
+
+Ein Betrieb produziert mit der Kostenfunktion
+K<sub>(x)</sub> = 0,0002x<sup>3</sup> - 0,18x<sup>2</sup> + 54x + 5000
+und einer Umsatzfunktion U<sub>(x)</sub> = 41,5x.
+a) Zeigen Sie, dass K<sub>(x)</sub> keinen Extremwert hat.
+b) Welche betriebswirtschaftliche Bedeutung hat 
+der Wendepunkt der Kostenfunktion?
+c) Berechnen Sie das Betriebsoptimum, wenn die 
+Stückkostenfunktion ihr Minimum bei x = 500 hat. 
+d) Die Gewinnschwelle liegt bei 250 ME. Wo liegt 
+die Gewinngrenze? 
+e) Bei welcher Produktionsmenge entsteht das 
+Gewinnmaximum?
+  
+K'<sub>(x)</sub> = 0,0006x<sup>2</sup> - 0,36x + 54
+
+K''<sub>(x)</sub> = 0,0012x - 0,36
+
+U<sub>(x)</sub> = 41,5x
+
+G<sub>(x)</sub> = 41,5x - (0,0002x<sup>3</sup> - 0,18x<sup>2</sup> + 54x + 5 000)
+
+G<sub>(x)</sub> = -0,0002x<sup>3</sup> + 0,18x<sup>2</sup> - 12,5x - 5 000
+
+G'<sub>(x)</sub> = -0,0006x<sup>2</sup> + 0,36x - 12,5
+
+G''<sub>(x)</sub> = -0,0012x + 0,36
+
+a) 
+
+Bedingung K'<sub>(x)</sub> = 0
+
+0,0006x<sup>2</sup> - 0,36x + 54 | :0,0006
+
+x<sup>2</sup> - 600x + 90 000 = 0
+
+p, q - Formel:
+
+p = -600, q = 90 000
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>00</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>00</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>9</mn><mn>0000</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mrow><mn>90000</mn><mo>&#x2212;</mo><mn>9</mn><mn>0000</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mn>0</mn></msqrt></math>
+
+x<sub>1,2</sub> = 300, K<sub>(300)</sub> = 10 400
+
+K''<sub>(300)</sub> = 0,0012 * 300 - 0,36 = 0 
+
+K'''<sub>(x)</sub> = 0,0012 ≠ 0 Grad der Ableitung ungerade 
+
+--> <span style="color:red">kein Extrempunkt</span>, 
+
+sondern Wendepunkt (300|10 400).  
+
+b)
+
+<span style="color:red">Im Wendepunkt von K<sub>(x)</sub> hat die Grenzkosten-
+funktion K'<sub>(x)</sub> ein Minimum.</span>
+
+c) 
+
+Das Betriebsoptimum entsteht bei der Menge, bei 
+der die Stückkosten minimal sind.
+
+K<sub>(500)</sub> = 12 000 GE
+
+<span style="color:red">Betriebsoptimum (500|12 000)</span>
+
+d)
+
+Nullstellen: 
+
+x<sub>1</sub> = 250
+
+Hornerschema:
+
+            -0,0002     0,18     -12,5     -5000       
+x<sub>1</sub> = 250               -0,05      32,5      5000 
+            -------------------------------------
+            -0,0002     0,13      20           0
+
+Polynomdivision:
+
+  -0,0002x<sup>3</sup> + 0,18x<sup>2</sup> - 12,5x - 5000 : (x-250) = 
+-(-0,0002x<sup>3</sup> + 0,05x<sup>2</sup>)
+----------------------
+              0,13x<sup>2</sup> - 12,5x - 5000  
+            -(0,13x<sup>2</sup> - 32,5x)
+            ------------------
+                       20x - 5000 
+                     -(20x - 5000)
+                     -------------
+                               0
+                               
+Ergebnis = 0,0002x<sup>2</sup> + 0,13x + 20                               
+
+-0,0002x<sup>2</sup> + 0,13x + 20 = 0 |:(-0.0002)
+
+x<sup>2</sup> - 650x - 100 000 = 0
+
+p, q - Formel:
+
+p = -650, q = -100 000
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>50</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>50</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>-</mo><mn>100000</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mrow><mn>105625</mn><mo>+</mo><mn>100000</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mn>205625</mn></msqrt></math>
+
+x<sub>1,2</sub> = 325 ± 453,5
+
+<span style="color:red">x<sub>1</sub> = 778,5   Gewinngrenze</span>
+
+x<sub>2</sub> = - 128,5 keine Lösung
+
+e)
+
+G'<sub>(x)</sub> = -0,0006x<sup>2</sup> + 0,36x - 12,5 = 0 |:(-0,0006)
+
+x<sup>2</sup> - 600x + 20 833 = 0
+
+p, q - Formel:
+
+p = -600, q = 20 833
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>00</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mn>00</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>20833</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mrow><mn>90000</mn><mo>&#x2212;</mo><mn>20833</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = -3 ± <math mathsize="0.9em"><msqrt><mn>69167</mn></msqrt></math>
+
+x<sub>1,2</sub> = 300 ± 263
+
+x<sub>1</sub> = 563
+
+G<sub>(563)</sub> = -0,0002 * 563<sup>3</sup> + 0,18 * 563<sup>2</sup> - 
+
+- 12,5 * 563 - 5 000 = 9 326 GE 
+
+x<sub>1,2</sub> = 37
+
+G<sub>(37)</sub> = -0,0002 * 37<sup>3</sup> + 0,18 * 37<sup>2</sup> - 12,5 *37 - 
+
+- 5 000 = -5 208 GE --> Verlust
+
+G''<sub>(563)</sub> = - 0,0012 * 563 + 0,36 < 0 --> 
+
+Hochpunkt (563|9 326) 
+
+<span style="color:red">Bei 563 ME ist der Gewinn am größten und beträgt</span> 
+9 326 GE.
+
+  <img src="Aufgabe80.jpg" >
+
+</b></p></pre></body></html>

@@ -1,0 +1,157 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 101
+
+Ein Hersteller hat neben einer Preisabsatzfunktion 
+p<sub>(x)</sub> = -80,625x + 7256,25 eine Kostenfunktion
+K<sub>(x)</sub> = 0,5x<sup>3</sup> - 45x<sup>2</sup> + 1450x + 54 000.
+a) Wie hoch sind sein maximaler Gewinn und die 
+Koordinaten des Cournotschen Punktes?
+b) Wo liegt seine Gewinnzone?
+c) Berechnen Sie sein Betriebsminimum B und seine 
+kurzfristige Preisuntergrenze.
+
+a) 
+
+E<sub>(x)</sub> = p<sub>(x)</sub> * x = 
+
+= (-80,625x + 7256,25) * x = -80,625x<sup>2</sup> + 7256,25x
+
+G<sub>(x)</sub> = -80,625x<sup>2</sup> + 7256,25x - 
+
+- (0,5x<sup>3</sup> - 45x<sup>2</sup> + 1450x + 54 000)
+
+G<sub>(x)</sub> = - 0,5x<sup>3</sup> - 35,625x<sup>2</sup> + 5806,25x - 54 000
+
+G'<sub>(x)</sub> = - 1,5x<sup>2</sup> - 71,25x + 5806,25
+
+G''<sub>(x)</sub> = -3x - 71,25 < 0 für alle x > 0 
+
+--> Hochpunkt
+
+-1,5x<sup>2</sup> - 71,25x + 5806,25 = 0 
+
+A, B, C - Formel:
+
+A = -1,5, B = -71,25, C = 5806,25
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>71</mn><mo>,</mo><mn>25</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>71</mn><mo>,</mo><mn>25</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mo>&#xd7;</mo><mn>5806</mn><mo>,</mo><mn>25</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>71</mn><mo>,</mo><mn>25</mn><mo>&#xb1;</mo><msqrt><mrow><mn>5076</mn><mo>,</mo><mn>5625</mn><mo>+</mo><mn>34837</mn><mo>,</mo><mn>5</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>71</mn><mo>,</mo><mn>25</mn><mo>&#xb1;</mo><msqrt><mn>39914</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfrac></math>
+
+        71,25 ± 199,8     
+x<sub>1,2</sub> = ---------------
+             -3 
+
+x<sub>1</sub> = 42,85 ME
+
+G<sub>(42,85)</sub> = -0,5 * 42,85<sup>3</sup> - 35,625 * 42,85<sup>2</sup> + 
+
++ 5806,25 * 42,85 - 54 000  
+
+G<sub>(42,85)</sub> = 90 047 GE
+
+p<sub>(42,85)</sub> = -80,625 * 42,85 + 7256,25 = 3 802 GE/ME
+
+x<sub>2</sub> = -90,35 keine Lösung
+
+<span style="color:red">Der maximale Gewinn beträgt 90 047 GE.
+
+Die Koordinaten des Cournotschen Punktes 
+sind (42,85|3 802)</span>
+
+b) 
+
+-0,5x<sup>3</sup> - 35,625x<sup>2</sup> + 5806,25x - 54 000 = 0
+
+Durch Probieren gefunden x<sub>1</sub> = 10
+
+Hornerschema:
+
+         -0,5     -35,625     5806,25     -54 000
+x<sub>1</sub> = 10            -5         -406,25      54 000    
+        ------------------------------------------
+         -0,5     -40,625     5 400             0
+
+Polynomdivision:
+
+  -0,5x<sup>3</sup> - 35,625x<sup>2</sup> + 5806,25x - 54 000 : (x - 10) 
+-(-0,5x<sup>3</sup> + 5x<sup>2</sup>)
+ ---------------
+         -40,625x<sup>2</sup> + 5806,25x - 54 000 
+       -(-40,625x<sup>2</sup> + 406,25x)
+          -------------------   
+                     5 400x - 54 000
+                   -(5 400x - 54 000)
+                   ------------------
+                                   0
+
+Ergebnis = -0,5x<sup>2</sup> - 40,625x + 5 400                                   
+
+-0,5x<sup>2</sup> - 40,625x + 5 400 = 0 |:(-0,5)
+
+x<sup>2</sup> + 81,25x - 10 800 = 0
+
+p, q - Formel:
+
+p = 81,25, q = -10 800
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mn>81</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mn>81</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>10800</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -40,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>1650</mn><mo>,</mo><mn>4</mn><mo>+</mo><mn>10800</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -40,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>12450</mn><mo>,</mo><mn>4</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -40,625 ± 111,6
+
+x<sub>2</sub> = 71 ME = Gewinngrenze 
+
+x<sub>1</sub> = 10 ME = Gewinnschwelle
+
+<span style="color:red">Die Gewinnzone liegt zwischen 10 und 71 ME.</span>
+
+c)
+
+         Kv<sub>(x)</sub>     0,5x<sup>3</sup> - 45x<sup>2</sup> + 1 450x
+kv<sub>(x)</sub> = ------- = ------------------------ 
+           x                 x  
+           
+kv<sub>(x)</sub> = 0,5x<sup>2</sup> - 45x + 1 450           
+
+k'v<sub>(x)</sub> = x - 45
+
+k''v<sub>(x)</sub> = 1 > 0 --> Tiefpunkt
+
+x - 45 = 0 |+45
+
+<span style="color:red">x = 45 ME = Betriebsminimum</span>
+
+<span style="color:red">p<sub>(45)</sub></span> = -80,625 * 45 + 7 256,25 = <span style="color:red">3 628 GE/ME
+
+= kurzfristige Preisuntergrenze</span>
+
+   <img src="Aufgabe101.jpg" >
+
+</b></p></pre></body></html>

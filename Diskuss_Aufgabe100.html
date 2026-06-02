@@ -1,0 +1,303 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 100
+
+Ein Monopolist hat eine Preisabsatzfunktion 
+p<sub>(x)</sub> = - 7x + 49 und eine Kostenfunktion 
+K<sub>(x)</sub> = x<sup>3</sup> - 6x<sup>2</sup> + 15x + 32.
+a) Wo liegt die langfristige Preisuntergrenze?
+b) Wo liegt die kurzfristige Preisuntergrenze?
+c) Wo liegt die Gewinnzone?
+d) Welche Koordinaten hat der Cournotsche Punkt?
+Der Betrieb hat 8% höhere Lohnkosten. Die 
+Lohnkosten machen 75% der variablen Kosten aus.
+e) Wie hoch ist jetzt der Gesamtgewinn? 
+f) Wie hoch sind die Durchschnittskosten ud der 
+Durchschnittsgewinn?
+
+a) 
+
+Langfristige Preisuntergrenze entspricht dem 
+Betriebsoptimum.
+
+        K<sub>(x)</sub>     x<sup>3</sup> - 6x<sup>2</sup> + 15x + 32
+k<sub>(x)</sub> = ------ = --------------------- 
+          x               x
+          
+                       32          
+k<sub>(x)</sub> = x<sup>2</sup> - 6x + 15 + ----
+                       x
+
+                  32  
+k'<sub>(x)</sub> = 2x - 6 - ----
+                  x<sup>2</sup> 
+
+              64  
+k''<sub>(x)</sub> = 2 + ---- > 0 für alle x > 0 --> Tiefpunkt
+              x<sup>3</sup> 
+
+          32 
+2x - 6 - ---- = 0 |*x<sup>2</sup>
+          x<sup>2</sup>     
+
+2x<sup>3</sup> - 6x<sup>2</sup> - 32 = 0
+
+Durch Probieren gefunden x<sub>1</sub> = 4
+
+Hornerschema:
+
+              2     -6     0     -32
+x<sub>1</sub> = 4               8     8      32    
+           --------------------------
+              2      2     8       0
+
+Polynomdivision:
+
+  2x<sup>3</sup> - 6x<sup>2</sup> - 32 : (x - 4) = 2x<sup>2</sup> + 2x + 8
+-(2x<sup>3</sup> - 8x<sup>2</sup>)
+ ------------
+        2x<sup>2</sup> - 32 
+      -(2x<sup>2</sup> - 8x)
+      -----------   
+              8x - 32
+            -(8x - 32)
+            ----------
+                    0
+
+2x<sup>2</sup> + 2x + 8 = 0|:2
+
+x<sup>2</sup> + x + 4 = 0
+
+p, q - Formel:
+
+p = 1, q = 4
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>25</mn><mo>&#x2212;</mo><mn>4</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>75</mn></mrow></msqrt></math> --> keine weiteren Nullstellen
+
+<span style="color:red">Die langfristige Preisuntergrenze liegt bei 4 ME.</span>
+
+b)
+
+Kurzfristige Preisuntergrenze entspricht dem 
+Betriebsminimum.
+
+         Kv<sub>(x)</sub>     x<sup>3</sup> - 6x<sup>2</sup> + 15x
+kv<sub>(x)</sub> = ------- = ---------------- = x<sup>2</sup> - 6x + 15
+           x              x
+
+k'v<sub>(x)</sub> = 2x - 6
+
+k''v<sub>(x)</sub> = 2 > 0 --> Tiefpunkt
+
+2x - 6 = 0 |+6
+
+2x = 6 | :2
+
+x = 3 ME
+
+<span style="color:red">Die kurzfristige Preisuntergrenze liegt bei 3 ME.</span>
+
+c)
+
+E<sub>(x)</sub> = p<sub>(x)</sub> * x = (-7x + 49) * x = - 7x<sup>2</sup> + 49x
+
+G<sub>(x)</sub> = - 7x<sup>2</sup> + 49x - (x<sup>3</sup> - 6x<sup>2</sup> + 15x + 32)
+
+G<sub>(x)</sub> = - x<sup>3</sup> - x<sup>2</sup> + 34x - 32
+
+G'<sub>(x)</sub> = - 3x<sup>2</sup> - 2x + 34
+
+G''<sub>(x)</sub> = -6x - 2 < 0 für alle x > 0 --> Hochpunkt
+
+-x<sup>3</sup> - x<sup>2</sup> + 34x - 32 = 0 | *(-1)
+
+x<sup>3</sup> + x<sup>2</sup> - 34x + 32 = 0
+
+Durch Probieren gefunden x<sub>1</sub> = 1
+
+Hornerschema:
+
+              1     1     -34     32
+x<sub>1</sub> = 1              1       2    -32    
+           --------------------------
+              1     2     -32      0
+
+Polynomdivision:
+
+  x<sup>3</sup> + x<sup>2</sup> - 34x + 32 : (x - 1) = x<sup>2</sup> + 2x - 32
+-(x<sup>3</sup> - x<sup>2</sup>)
+-----------
+      2x<sup>2</sup> - 34x + 32 
+    -(2x<sup>2</sup> - 2x)
+    ------------   
+          -32x + 32
+        -(-32x + 32)
+        -------------
+                  0
+
+x<sup>2</sup> + 2x - 32 = 0
+
+p, q - Formel:
+
+p = 2, q = -32
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mn>2</mn><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>2</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>32</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>+</mo><mn>32</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± <math mathsize="0.9em"><msqrt><mn>33</mn></msqrt></math>
+
+x<sub>2,3</sub> = -1 ± 5,74
+
+<span style="color:red">x<sub>2</sub> = 4,74 ME = Gewinngrenze</span> 
+
+<span style="color:red">x<sub>1</sub> = 1 ME = Gewinnschwelle</span>
+
+x<sub>3</sub> = -6,74 keine Lösung
+
+d)
+
+Der Cournotsche Punkt gibt an, bei welcher Menge 
+und welchem Preis ein Monopolist maximalen Gewinn 
+macht.
+
+G'<sub>(x)</sub> = - 3x<sup>2</sup> - 2x + 34
+
+-3x<sup>2</sup> - 2x + 34 = 0
+
+A, B, C - Formel:
+
+A = -3, B = -2, C = 34
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfenced><mo>&#xd7;</mo><mn>34</mn><mo>&#xA0;</mo></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>4</mn><mo>+</mo><mn>408</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>2</mn><mo>&#xb1;</mo><msqrt><mn>412</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mfrac></math>
+
+        2 ± 20,3     
+x<sub>1,2</sub> = ----------
+           -6 
+
+x<sub>1</sub> = 3.05 ME 
+
+p<sub>(3,05)</sub> = -7 * 3,05 + 49 = 27,65 GE/ME
+
+x<sub>2</sub> = - 3,73, liegt außerhalb der Gewinnzone
+
+<span style="color:red">C(3,05|27,65)</span>
+
+e)
+
+Lohnkosten = 
+
+75% der variablen Kosten = 0,75 * Kv<sub>(x)</sub>
+
+= 0,75 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x)
+
+Lohnkosten nach der Lohnsteigerung um 8% = 
+
+= 1,08 * 0,75 * Kv<sub>(x)</sub>
+
+= 1,08 * 0,75 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x)
+
+Variable Kosten nach der Lohnsteigerung = 
+
+= 1,08 * 0,75 * Kv<sub>(x)</sub> + 0,25 * Kv<sub>(x)</sub>
+
+= 1,08 * 0,75 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x) + 
+
++ 0,25 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x)
+
+= 1,06 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x)
+
+Kneu<sub>(x)</sub> = 1,06 * (x<sup>3</sup> - 6x<sup>2</sup> + 15x) + 32
+
+Kneu<sub>(x)</sub> = 1,06x<sup>3</sup> - 6,36x<sup>2</sup> + 15,9x + 32 
+
+Gneu<sub>(x)</sub> = -7x<sup>2</sup> + 49x - 
+
+- (1,06x<sup>3</sup> - 6,36x<sup>2</sup> + 15,9x + 32)
+
+Gneu<sub>(x)</sub> = - 1,06x<sup>3</sup> - 0,64x<sup>2</sup> + 33,1x - 32
+
+G'neu<sub>(x)</sub> = - 3,18x<sup>2</sup> - 1,28x + 33,1
+
+G''neu<sub>(x)</sub> = -6,36x - 1,28 < 0 für alle x > 0 
+
+--> Hochpunkt
+
+-3,18x<sup>2</sup> - 1,28x + 33,1 = 0
+
+ A, B, C - Formel:
+
+A = -3,18, B = -1,28, C = 33,1
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>-</mo><mfenced><mrow><mo>-</mo><mn>1</mn><mo>,</mo><mn>28</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>28</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>18</mn></mrow></mfenced><mo>&#xd7;</mo><mn>33</mn><mo>,</mo><mn>1</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>18</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>1</mn><mo>,</mo><mn>28</mn><mo>&#xb1;</mo><msqrt><mrow><mn>1</mn><mo>,</mo><mn>6384</mn><mo>+</mo><mn>421,032</mn></mrow></msqrt></mrow><mrow><mo>-</mo><mn>6</mn><mo>,</mo><mn>36</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>1</mn><mo>,</mo><mn>28</mn><mo>&#xb1;</mo><msqrt><mrow><mn>422</mn><mo>,</mo><mn>67</mn></mrow></msqrt></mrow><mrow><mo>-</mo><mn>6</mn><mo>,</mo><mn>36</mn></mrow></mfrac></math>
+
+        1,28 ± 20,56     
+x<sub>1,2</sub> = --------------
+           -6,36 
+
+x<sub>1</sub> = 3,03 ME
+
+Gneu<sub>(3,03)</sub> = -1,06 * 3,03<sup>3</sup> - 0,64 * 3,03<sup>2</sup> + 
+
++ 33,1 * 3,03 - 32 = 32,93 GE
+
+x<sub>2</sub> = -3,43, liegt außerhalb der Gewinnzone
+
+<span style="color:red">Der maximale Gewinn nach der Lohnsteigerung 
+beträgt 32,93 GE.</span>
+
+f)
+
+<span style="color:red">Durchschnittskosten nach der Lohnsteigerung:</span>
+
+Kneu<sub>(3,03)</sub>     
+---------- =  
+   3,03                             
+   
+   1,06*(3,03<sup>3</sup> - 6,36*3,03<sup>2</sup> + 15,9*3,30 + 32) GE   
+= ----------------------------------------------   
+                       3,03 ME
+
+<span style="color:red">= 16,92 GE/ME</span>   
+
+<span style="color:red">Durchschnittsgewinn nach der Lohnsteigerung:</span>
+
+Gneu<sub>(3,03)</sub>   32,93 GE
+--------- = ---------- <span style="color:red">= 10,87 GE/ME</span>
+  3,03       3,03 ME
+
+   <img src="Aufgabe100.jpg" >
+
+</b></p></pre></body></html>

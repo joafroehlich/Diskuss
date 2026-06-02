@@ -1,0 +1,164 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 75
+
+Eine Kostenfunktion 3. Grades hat einen 
+Wendepunkt bei (4|30), und dort eine Steigung 
+von 0,2. Die fixen Kosten betragen 10 GE.
+a) Berechnen Sie Gewinnschwelle und -grenze, 
+wenn der Erlös 8,3 GE/ME beträgt.
+b) Wie hoch ist der maximale Gewinn G?
+
+a)
+
+x = Mengeneinheiten ME
+
+G<sub>(x)</sub> = E<sub>(x)</sub> - K<sub>(x)</sub>
+ 
+E<sub>(x)</sub> = 8,3 * x  GE
+
+K<sub>(x)</sub> = Kv<sub>(x)</sub> + Kf
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d
+
+K'<sub>(x)</sub> = 3ax<sup>2</sup> + 2bx + c
+
+K''<sub>(x)</sub> = 6ax + 2b
+
+Bedingungen:
+
+K<sub>(0)</sub> = 10 --> d = 10 
+
+K<sub>(4)</sub> = 30 --> 30 = a * 4<sup>3</sup> + b * 4<sup>2</sup> + c  * 4 + 10
+
+= 64a + 16b + 4c + 10 = 30 | -10
+
+= 64a + 16b + 4c = 20     (1)
+
+K'<sub>(4)</sub> = 0,2 --> 3a * 4<sup>2</sup> + 2b * 4 + c 
+
+= 48a + 8b + c = 0,2     (2)
+
+K''<sub>(4)</sub> = 0 --> 6a * 4 + 2b = 24a + 2b = 0    (3)
+
+(1) + (2) * (-4)
+
+  64a + 16b + 4c = 20
+-192a - 32b - 4c = -0,8
+------------------------
+-128a - 16b      = 19,2     (4)
+
+(4) + (3) * (8)
+
+-128a - 16b = 19,2
+ 192a + 16b = 0
+------------------------
+  64a       = 19,2 |:64
+
+            = 0,3
+
+In (3) eingesetzt:
+
+24 * 0,3 + 2b = 0  -7,2
+
+2b = -7,2 |:2
+
+b = -3,6
+
+In (1) eingesetzt:
+ 
+64 * 0,3 + 16 * (-3,6) + 4c = 20
+
+19,2 - 57,6 + 4c = 20 |+38,4
+
+4c = 58,4 | :4
+
+c = 14,6
+
+K<sub>(x)</sub> = 0,3x<sup>3</sup> - 3,6x<sup>2</sup> + 14,6x + 10
+
+G<sub>(x)</sub> = 8,3x - (0,3x<sup>3</sup> - 3,6x<sup>2</sup> + 14,6x + 10)
+
+G<sub>(x)</sub> = - 0,3x<sup>3</sup> + 3,6x<sup>2</sup> - 6,3x - 10
+
+G'<sub>(x)</sub> = - 0,9x<sup>2</sup> + 7,2x - 6,3
+
+G'<sub>(x)</sub> = - 1,8x + 7,2
+
+G<sub>(x)</sub> = 0
+
+Am Graphen ungefähr abgelesen:
+
+x<sub>1</sub> = 3,6, x2 = 9,4
+
+Näherungsverfahren von Newton:
+
+           G<sub>(x0)</sub>
+x<sub>1</sub> = x<sub>0</sub> - ------
+           G'<sub>(x0)</sub>    
+
+
+             0,0208 
+x<sub>1</sub>' = 3,6 - -------- = 3,6 ME = Gewinnschwelle
+             7,956  
+
+             -0,2992
+x<sub>2</sub>' = 9,4 - ---------- = 9,38 ME = Gewinngrenze
+             -18,144              
+    
+b) 
+
+G'<sub>(x)</sub> = - 0,9x<sup>2</sup> + 7,2x - 6,3
+      
+G''<sub>(x)</sub> = - 1,8x + 7,2
+
+A, B, C - Formel:
+
+A = -0,9, B = 7,2, C = -6,3
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>7</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>0</mn><mo>,</mo><mn>9</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>6</mn><mo>,</mo><mn>3</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>0</mn><mo>,</mo><mn>9</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>51</mn><mo>,</mo><mn>84</mn><mo>&#x2212;</mo><mn>22</mn><mo>,</mo><mn>68</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>8</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>2</mn><mo>&#xb1;</mo><msqrt><mrow><mn>29</mn><mo>,</mo><mn>16</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>8</mn></mrow></mfrac></math>
+
+        -7,2 ± 5,4     
+x<sub>1,2</sub> = ------------
+          -1,8  
+
+x<sub>1</sub> = 1
+ 
+x<sub>2</sub> = 7, G(7) = 19,4 
+
+G''<sub>(1)</sub> = -1,8 * 1 + 7,2 > 0 --> Tiefpunkt 
+
+G''<sub>(7)</sub> = -1,8 * 7 + 7,2 < 0 --> 
+
+Hochpunkt (7 ME|19,4 GE)
+  
+Bei einem Verkauf von 7 ME erzielt der Betrieb 
+den Höchstgewinn von 19,4 GE.
+
+   <img src="Aufgabe75.jpg" >
+
+</b></p></pre></body></html>

@@ -1,0 +1,196 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 102
+
+Ein Betrieb hat die Kostenfunktion
+K<sub>(x)</sub> = 5x<sup>3</sup> - 50x<sup>2</sup> + 215x + 360 und eine lineare 
+Preisabsatzfunktion mit einer Sättigungsmenge von 
+20 ME und einem Höchstpreis von 350 GE.
+a) Wie groß ist die kostengünstigste 
+Produktionsmenge? 
+b) Wie groß ist sein maximaler Gewinn?
+c) Wie groß ist sein maximaler Gewinn, wenn er 
+die Grenzkostenfunktion als Preisabsatzfunktion 
+einsetzt?
+
+a)
+
+Betriebsoptimum:
+
+       K<sub>(x)</sub>    5x<sup>3</sup> - 50x<sup>2</sup> + 215x + 360
+k<sub>(x)</sub> = ---- = ------------------------- 
+        x                 x
+        
+                          360 
+k<sub>(x)</sub> = 5x<sup>2</sup> - 50x + 215 + -----
+                           x
+
+                    360 
+k'<sub>(x)</sub> = 10x - 50 - -----
+                     x<sup>2</sup>
+
+               720  
+k''<sub>(x)</sub> = 10 + ----- > 0 für alle x > 0  
+                x<sup>3</sup> 
+
+--> Tiefpunkt                
+
+            360   
+10x - 50 - ----- = 0 |*x<sup>2</sup>
+             x<sup>2</sup>  
+
+10x<sup>3</sup> - 50x<sup>2</sup> - 360 = 0
+
+Durch Probieren gefunden x<sub>1</sub> = 6.
+
+Hornerschema:
+
+             10     -50     0     -360
+x<sub>1</sub> = 6               60    60      360   
+           ----------------------------
+             10      10    60        0
+
+Polynomdivision:
+
+  10x<sup>3</sup> - 50x<sup>2</sup> - 360 : (x -6) = 10x<sup>2</sup> + 10x + 60
+-(10x<sup>3</sup> - 60x<sup>2</sup>)
+ --------------
+         10x<sup>2</sup> - 360
+       -(10x<sup>2</sup> - 60x)
+       -------------   
+                60x - 360
+              -(60x - 360)
+              ------------
+                        0
+
+10x<sup>2</sup> + 10x + 60 = 0 | :10
+
+x<sup>2</sup> + x + 6 = 0
+
+p, q - Formel:
+
+p = 1, q = 6
+
+x<sub>2,3</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>6</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>25</mn><mo>&#x2212;</mo><mn>6</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = -0,5 ± <math mathsize="0.9em"><msqrt><mrow><mo>&#x2212;</mo><mn>5</mn><mo>,</mo><mn>75</mn></mrow></msqrt></math>
+
+ --> keine weiteren Lösungen 
+
+<span style="color:red">Das Betriebsoptimum liegt bei 6 ME.</span>
+
+b)
+
+Allgemeine Form der Nachfragefunktion: 
+
+pN<sub>(x)</sub> = mx + b
+
+Bedingung für Höchstpreis x = 0:
+
+350 = b
+
+Bedingung für Sättigungsmenge pN<sub>(x)</sub> = 0:
+
+0 = m * 20 + 350 | -350
+
+20m = - 350 | :20
+
+m = - 17,5
+
+pN<sub>(x)</sub> = - 17,5x + 350
+
+E<sub>(x)</sub> = pN<sub>(x)</sub> * x
+
+E<sub>(x)</sub> = (-17,5x + 350) * x = -17,5x<sup>2</sup> + 350x
+
+G<sub>(x)</sub> = -17,5x<sup>2</sup> + 350x - (5x<sup>3</sup> - 50x<sup>2</sup> + 215x + 360)
+
+G<sub>(x)</sub> = -5x<sup>3</sup> + 32,5x<sup>2</sup> + 135x - 360
+
+G'<sub>(x)</sub> = -15x<sup>2</sup> + 65x + 135
+
+G''<sub>(x)</sub> = -30x + 65
+
+-15x<sup>2</sup> + 65x + 135 = 0
+
+A, B, C - Formel:
+
+A = -15, B = 65, C = 135
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mfrac><mrow><mo>&#x2212;</mo><mn>65</mn><mo>&#xb1;</mo><msqrt><mrow><msup><mn>65</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>15</mn></mrow></mfenced><mo>&#xd7;</mo><mn>135</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>15</mn></mrow></mfenced></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>65</mn><mo>&#xb1;</mo><msqrt><mrow><mn>4225</mn><mo>+</mo><mn>8100</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>30</mn></mrow></mfrac></math>
+
+x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>65</mn><mo>&#xb1;</mo><msqrt><mn>12325</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>30</mn></mrow></mfrac></math>
+
+        -65 ± 111     
+x<sub>1,2</sub> = ------------
+           -30 
+
+x<sub>1</sub> = 5,87
+
+G<sub>(5,87)</sub> = -5 * 5,87<sup>3</sup> + 32,5 * 5,87<sup>2</sup> + 
+
++ 135 * 5,87 - 360 = 541 GE 
+
+<span style="color:red">Der maximale Gewinn beträgt 541 GE.</span>
+
+c)
+
+Grenzkostenfunktion K'<sub>(x)</sub>:
+
+K'<sub>(x)</sub> = 15x<sup>2</sup> - 100x + 215
+
+Marktgleichgewicht:
+
+15x<sup>2</sup> - 100x + 215 = - 17,5x + 350 |+17,5x
+
+15x<sup>2</sup> - 82,5x + 215 = 350 |-350
+
+15x<sup>2</sup> - 82,5x - 135 = 0 |:15
+
+x<sup>2</sup> -5,5x - 9 = 0
+
+p, q - Formel:
+
+p = -5,5, q = -9
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>5</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>5</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>7</mn><mo>,</mo><mn>5625</mn><mo>+</mo><mn>9</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>,</mo><mn>5625</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,75 ± 4,07
+
+x<sub>1</sub> = 6,82 ME
+
+<span style="color:red">G<sub>(6,82)</sub></span> = -5 * 6,82<sup>3</sup> + 32,5 * 6,82<sup>2</sup> + 
+
++ 135 * 6,82 - 360 <span style="color:red">= 486 GE</span> 
+
+   <img src="Aufgabe102.jpg" >
+
+</b></p></pre></body></html>

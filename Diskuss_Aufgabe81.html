@@ -1,0 +1,240 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 81
+
+Die Tabelle zeigt die Kosten K<sub>(x)</sub> eines Betriebes 
+abhängig von der gefertigten Menge x.
+
+x        0        2       5         8
+K<sub>(x)</sub>  64/3       31      24,25     40
+
+a) Ermitteln Sie die ganzrationale Kostenfunktion 
+3. Grades.
+b) Wie groß sind das Kostenminimum und -maximum?
+c) Wo liegt die Gewinnschwelle, wenn die 
+Gewinngrenze 8 ME und der Erlös 5 GE/ME betragen?
+d) Wie groß ist der maximale Gewinn? 
+
+a) 
+
+Allgemeine Funktion: (Die zu emittelnde Funktion 
+ist keine typische Kostenfunktion, da sie nicht 
+monoton ansteigt. Sie hat lokale Extrempunkte.)
+
+K<sub>(x)</sub> = ax<sup>3</sup> + bx<sup>2</sup> + cx + d
+
+K<sub>(0)</sub> = 64/3 --> d = 64/3
+
+K<sub>(2)</sub> = 31 = a*2<sup>3</sup> + b*2<sup>2</sup> + c * 2 + 64/3 |-(64/3)
+
+8a + 4b + 2c = (29/3)     (1)
+
+K<sub>(5)</sub> = 24,25 = a*5<sup>3</sup> + b*5<sup>2</sup> + c*5 + 64/3 |-(64/3)
+ 
+125a + 25b + 5c = (35/12)     (2)
+
+K<sub>(8)</sub> = 40 = a*8<sup>3</sup> + b*8<sup>2</sup> + c*8 + 64/3 |-(64/3)
+
+512a + 64b + 8c = (56/3)     (3)
+
+3 + 1 * (-4)
+
+ 512a + 64b + 8c =  (56/3)
+-32a  - 16b - 8c = -(116/3)
+-------------------------------
+480a  + 48b      = -20     (4)
+
+2 * 2 + 1 * (-5)
+
+ 250a + 50b + 10c =  (35/6)
+-40a  - 20b - 10c = -(145/3)
+----------------------------------
+ 210a + 30b       = -(255/6)     (5)
+
+4 * (-30) + 5 * 48
+
+-14 400a - 1 440b =    600
+ 10 080a + 1 440b = -2 040
+--------------------------------
+-4 320a           = -1 440 |:-4320
+
+a = 1/3
+
+In (4) eingesetzt:
+
+480/3 + 48b = - 20 |-160
+
+48b = - 180 | :48
+
+b = -3,75
+
+a und b in (1) eingesetzt:
+
+8/3 - 4 * 3,75 + 2c = 29/3 |-8/3
+
+-15 + 2c = 7 |+15
+
+2c = 22 |:2
+
+c = 11
+
+<span style="color:red">K<sub>(x)</sub> = (1/3)x<sup>3</sup> - 3,75x<sup>2</sup> + 11x + 64/3</span>
+
+b)
+
+K'<sub>(x)</sub> = x<sup>2</sup> - 7,5x + 11
+
+K''<sub>(x)</sub> = 2x - 7,5
+
+x<sup>2</sup> - 7,5x + 11 = 0
+
+p, q - Formel:
+
+p = -7,5, q = 11
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>11</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>14</mn><mo>,</mo><mn>0625</mn><mo>&#x2212;</mo><mn>11</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>3</mn><mo>,</mo><mn>0625</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± 1,75 
+
+x<sub>1</sub> = 5,5 
+
+K<sub>(5,5)</sub> = (1/3) * 5,5<sup>3</sup> - 3,75 * 5,5<sup>2</sup> + 11 * 5,5 + 
+
++ 64/3 = 23,85
+
+x<sub>1,2</sub> = 2 
+
+K<sub>(2)</sub> = (1/3) * 2<sup>3</sup> - 3,75 * 2<sup>2</sup> + 11*2 + 64/3 = 31 
+
+K''<sub>(5,5)</sub> = 2 * 5,5 - 7,5 > 0 --> 
+
+<span style="color:red">Tiefpunkt (5,5|23,85)</span>
+ 
+K''<sub>(2)</sub> = 2 * 2 - 7,5 < ---> <span style="color:red">Hochpunkt (2|31)</span>
+
+c)
+
+E<sub>(x)</sub> = 5x
+
+G<sub>(x)</sub> = E<sub>(x)</sub> - K<sub>(x)</sub> 
+
+G<sub>(x)</sub> = 5x - ((1/3)x<sup>3</sup> - 3,75x<sup>2</sup> + 11x + 64/3)
+
+G<sub>(x)</sub> = - (1/3)x<sup>3</sup> + 3,75x<sup>2</sup> - 6x - 64/3
+
+G'<sub>(x)</sub> = - x<sup>2</sup> + 7,5x - 6
+
+G''<sub>(x)</sub> = - 2x + 7,5
+
+Nullstellen: 
+
+x<sub>1</sub> = 8
+
+Hornerschema:
+
+            -1/3     3,75     -6     -64/3       
+x<sub>1</sub> = 8               -8/3   104/12     64/3 
+            -------------------------------
+            -1/3    13/12    8/3       0
+
+Polynomdivision:
+
+  -1/3x<sup>3</sup> + 3,75x<sup>2</sup> - 6x - 64/3 : (x - 8) = 
+-(-1/3x<sup>3</sup> - 8/3x<sup>2</sup>)
+------------------
+        (13/12)x<sup>2</sup> -      6x        - 64/3  
+       -((13/12)x<sup>2</sup> - (104/12)x)
+       ------------------------
+                       (8/3)x - 64/3 
+                     -((8/3)x - 64/3)
+                     -----------------
+                                    0 
+
+Ergebnis = -(1/3)x<sup>2</sup> + (13/12x + 8/3                                    
+
+-(1/3)x<sup>2</sup> + (13/12)x + 8/3 = 0 |*(-3)
+
+x<sup>2</sup> - 3,25x - 8 = 0
+
+p, q - Formel:
+
+p = -3,25, q = -8
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>25</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>+</mo><mn>8</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>2</mn><mo>,</mo><mn>640625</mn><mo>+</mo><mn>8</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,625 ± <math mathsize="0.9em"><msqrt><mrow><mn>10</mn><mo>,</mo><mn>640625</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,625 ± 3,26
+
+<span style="color:red">x<sub>1</sub> = 4,89    Gewinnschwelle</span>
+
+x<sub>2</sub> = -1,635 keine Lösung
+
+d)
+
+G'<sub>(x)</sub> = - x<sup>2</sup> + 7,5x - 6 = 0 | :(- 1)
+
+x<sup>2</sup> - 7,5x + 6 = 0
+
+p, q - Formel:
+
+p = -7,5, q = 6
+
+x<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>6</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>14</mn><mo>,</mo><mn>0625</mn><mo>&#x2212;</mo><mn>6</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± <math mathsize="0.9em"><msqrt><mrow><mn>8</mn><mo>,</mo><mn>0625</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 3,75 ± 2,84
+
+x<sub>1</sub> = 6,59
+
+G<sub>(6,59)</sub> = -(1/3) * 6,59<sup>3</sup> + 3,75 * 6,59<sup>2</sup> - 
+
+- 6 * 6,59 - 64/3 = 6,58 GE 
+
+x<sub>2</sub> = 0,91
+
+G<sub>(0,91)</sub> = - (1/3) * 0,91<sup>3</sup> + 3,75 * 0,91<sup>2</sup> - 
+
+- 6 * 0,91 - 64/3 = - 23,94 GE 
+
+--> Verlust
+
+G''<sub>(6,59)</sub> = - 2 * 6,59 + 7,5 < 0 --> 
+
+Hochpunkt (6,59|6,58) 
+
+<span style="color:red">Bei 6,59 ME ist der Gewinn am größten und beträgt 
+6,58 GE.</span>
+
+   <img src="Aufgabe81.jpg" >
+
+</b></p></pre></body></html>
