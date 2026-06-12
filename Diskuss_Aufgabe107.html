@@ -1,0 +1,139 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 107
+
+          -0,5
+f<sub>(x)</sub> = ---------         
+        (x - 3)<sup>2</sup>
+
+Quotientenregel erste Ableitung:
+
+u = -0,5, u' = 0 
+
+v = (x - 3)<sup>2</sup> 
+
+Kettenregel:
+
+v' = 2 * (x - 3)
+
+         0 * (x - 3)<sup>2</sup> - 2 * (x - 3) * (- 0,5) 
+f'<sub>(x)</sub> = -------------------------------------- 
+                       (x - 3)<sup>4</sup>
+                       
+           x - 3        1                     
+f'<sub>(x)</sub> = ---------- = --------                       
+         (x - 3)<sup>4</sup>    (x - 3)<sup>3</sup>
+
+Quotientenregel zweite Ableitung:
+
+u = 1, u' = 0
+
+v = (x - 3)<sup>3</sup> 
+
+Kettenregel:
+
+v' = 3 * (x - 3)<sup>2</sup>
+
+          0 * (x - 3)<sup>3</sup> - 3 * (x - 3)<sup>2</sup> * 1         
+f''<sub>(x)</sub> = ---------------------------------  
+                     (x - 3)<sup>6</sup>  
+
+          -3 * (x - 3)<sup>2</sup>       -3                      
+f''<sub>(x)</sub> = --------------- = ---------                        
+            (x - 3)<sup>6</sup>       (x - 3)<sup>4</sup>             
+
+Polstellen, Nenner = 0:
+
+(x – 3)<sup>2</sup> = 0 |ⱱ
+
+x - 3 = 0 |+3
+
+<span style="color:red">x = 3</span> 
+
+Nenner = 0 und Zähler ≠ 0 --> <span style="color:red">senkrechte Asymptote</span>
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞, x ≠ 3</span>
+
+Waagerechte Asymptote:
+
+         -0,5
+<span style="color:red">f<sub>(x)</sub></span> = ---------- = <span style="color:red">0</span> für x --> ± ∞
+       (x – 3)<sup>2</sup>
+
+f<sub>(x)</sub> ist < 0 für alle x
+
+Wertebereich:  <span style="color:red">-∞ < f<sub>(x)</sub> < 0</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+           -0,5          -0,5
+f<sub>(-x)</sub> = ----------- = --------- 
+         (-x - 3)<sup>2</sup>     (x + 3)<sup>2</sup>
+
+            0,5
+-f<sub>(-x)</sub> = ---------- 
+          (x + 3)<sup>2</sup>         
+
+f<sub>(x)</sub> ≠ f(-x) <span style="color:red">keine Achsensymmetrie</span>
+
+f<sub>(x)</sub> ≠ -f(-x) <span style="color:red">keine Punktsymmetrie</span> 
+
+Nullstellen:
+
+          -0,5
+f<sub>(x)</sub> = ---------- = 0 |*(x – 3)<sup>2</sup>
+        (x – 3)<sup>2</sup>
+
+-0,5 = 0 --> Widerspruch --> <span style="color:red">keine Nullstellen</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0
+
+         -0,5         0,5
+f<sub>(0)</sub> = --------- = - ----- = -0,056
+       (0 - 3)²        9
+
+<span style="color:red">Sy(0|-0,056)</span>
+    
+Extrempunkte:
+
+             1
+f′<sub>(x)</sub> = ----------- = 0 | *(x - 3)<sup>3</sup>
+         (x - 3)<sup>3</sup> 
+
+1 = 0 Widerspruch --> <span style="color:red"></span>keine Extrempunkte
+
+Wendepunkte:
+  
+            -3
+f''<sub>(x)</sub> = --------- = 0 |*(x - 3)<sup>4</sup>
+         (x - 3)<sup>4</sup>
+
+-3 = 0 Widerspruch --> <span style="color:red"></span>keine Wendepunkte
+
+Graph:
+
+    <img src="Aufgabe107.jpg" >
+
+</b></p></pre></body></html>

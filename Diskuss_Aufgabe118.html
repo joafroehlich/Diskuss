@@ -1,0 +1,252 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 118
+
+         x - 1
+f<sub>(x)</sub> = ---------         
+        x<sup>2</sup> + 1
+
+Quotientenregel erste Ableitung:
+
+u = x - 1, u' = 1
+
+v = x<sup>2</sup> + 1, v' = 2x
+
+         1 * (x<sup>2</sup> + 1) - 2x * (x - 1)
+f'<sub>(x)</sub> = -----------------------------  
+                  (x<sup>2</sup> + 1)<sup>2</sup>
+                  
+         x<sup>2</sup> + 1 - 2x<sup>2</sup> + 2x     -x<sup>2</sup> + 2x + 1
+f'<sub>(x)</sub> = ------------------- = --------------
+              (x<sup>2</sup> + 1)<sup>2</sup>         (x<sup>2</sup> + 1)<sup>2</sup>
+
+Quotientenregel zweite Ableitung:
+
+u = -x<sup>2</sup> + 2x + 1, u' = -2x + 2
+
+v = (x<sup>2</sup> + 1)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * 2x * (x<sup>2</sup> + 1) = 4x * (x<sup>2</sup> + 1)
+
+          (-2x+2)*(x<sup>2</sup>+1)<sup>2</sup> - 4x*(x<sup>2</sup>+1)*(-x<sup>2</sup>+2x+1)
+f''<sub>(x)</sub> = --------------------------------------- 
+                        (x<sup>2</sup> + 1)<sup>4</sup>
+
+         (x<sup>2</sup>+1)*[(-2x+2)(x<sup>2</sup>+1) - 4x*(-x<sup>2</sup>+2x+1)
+f''<sub>(x)</sub> = --------------------------------------
+                         (x<sup>2</sup> + 1)<sup>4</sup>
+
+          -2x<sup>3</sup> + 2x<sup>2</sup> - 2x + 2 + 4x<sup>3</sup> - 8x<sup>2</sup> - 4x       
+f''<sub>(x)</sub> = -------------------------------------- 
+                          (x<sup>2</sup> + 1)<sup>3</sup>
+                          
+          2x<sup>3</sup> - 6x<sup>2</sup> - 6x + 2
+f''<sub>(x)</sub> = --------------------
+               (x<sup>2</sup> + 1)<sup>3</sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 2x<sup>3</sup> - 6x<sup>2</sup> - 6x + 2, u' = 6x<sup>2</sup> - 12x - 6
+
+           u'    6 * (x<sup>2</sup> - 2x - 1)
+f'''<sub>(x)</sub> = --- = -------------------  
+           v        (x<sup>2</sup> + 1)<sup>3</sup>  
+
+x<sup>2</sup> + 1 ist immer > 0 für alle x
+
+x<sup>2</sup> - 2x - 1 = 0
+
+p, q - Formel
+
+p = -2, q = -1
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>-</mo><mn>2</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mn>2</mn></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± 1,41
+
+x<sub>1</sub> = 2,41
+
+x<sub>2</sub> = -0,41   
+
+--> f'''<sub>(x)</sub> ist ≠ 0 für alle x ≠ 2,41 und -0,41
+
+Polstellen, Nenner = 0:
+
+x<sup>2</sup> + 1 ist > 0 für alle x --> 
+
+<span style="color:red">keine senkrechte Asymptote</span>
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞</span>
+
+Waagerechte Asymptote:
+
+         x - 1
+<span style="color:red">f<sub>(x)</sub></span>  = --------- <span style="color:red">geht gegen 0 für x --> ± ∞ </span>        
+        x<sup>2</sup> + 1
+
+Wertebereich: <span style="color:red">-1,21 ≤ f<sub>(x)</sub> ≤ 0,21, f<sub>(x)</sub> ≠ 0</span>
+(siehe Extrempunkte)
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+           (-x) - 1      -x - 1           
+f<sub>(-x)</sub> = ------------- = --------    
+          (-x)<sup>2</sup> + 1      x<sup>2</sup> + 1
+         
+         -(x + 1)
+f<sub>(-x)</sub> = ---------- ≠ f<sub>(x)</sub>
+          x<sup>2</sup> + 1      
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+           x + 1
+-f<sub>(-x)</sub> = -------- ≠ f<sub>(x)</sub>
+          x<sup>2</sup> + 1      
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+ x - 1
+-------- = 0 |*(x<sup>2</sup> + 1)
+ x<sup>2</sup> + 1     
+
+x - 1 = 0 | +1
+
+x = 1        <span style="color:red">N(1|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0
+
+         0 - 1
+f<sub>(0)</sub> = -------- = -1
+        0<sup>2</sup> + 1
+
+<span style="color:red">Sy(0|-1)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ -x<sup>2</sup> + 2x + 1      
+-------------- = 0 |*(x<sup>2</sup> + 1)<sup>2</sup>
+   (x<sup>2</sup> + 1)<sup>2</sup>
+
+-x<sup>2</sup> + 2x + 1 = 0 |*(-1)
+
+x<sup>2</sup> - 2x - 1 = 0
+
+p, q - Formel
+
+p = -2, q = -1
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>-</mo><mn>2</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mn>2</mn></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± 1,41
+
+                         2,41 -1 
+x<sub>1</sub> = 2,41, f<sub>(2,41)</sub> = ------------- = 0,21
+                      2,41<sup>2</sup> + 1 
+
+                           -0,41 - 1 
+x<sub>2</sub> = -0,41, f<sub>(-0,41)</sub> = -------------- = -1,21
+                         (-0,41)<sup>2</sup> + 1     
+
+             2*(2,41)<sup>3</sup>-6*(2,41)<sup>2</sup>-6*2,41+2  
+f''<sub>(2,41)</sub> = ------------------------------- < 0 
+                       (2,41<sup>2</sup> + 1)<sup>3</sup>  
+
+--> <span style="color:red"></span>Hochpunkt (2,41|0,21)
+
+            2*(-0,41)<sup>3</sup>-6*(-0,41)<sup>2</sup>-6*(-0,41)+2  
+f''<sub>(-0,41)</sub> = ---------------------------------- > 0 
+                         (2,41<sup>2</sup> + 1)<sup>3</sup>  
+
+--> <span style="color:red"></span>Tiefpunkt (-0,41|- 1,21)
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+                     
+ 2x<sup>3</sup> - 6x<sup>2</sup> - 6x + 2        
+-------------------- = 0 |*(x<sup>2</sup> + 1)<sup>3</sup>
+      (x<sup>2</sup> + 1)<sup>3</sup>
+
+Hornerschema:
+
+Durch Probieren gefunden x<sub>1</sub> = -1
+
+              2     -6     -6     2
+x<sub>1</sub> = -1             -2      8    -2
+             ------------------------
+              2     -8      2     0
+
+2x<sup>2</sup> - 8x + 2 = 0 |:2
+
+x<sup>2</sup> - 4x + 1 = 0
+
+p, q - Formel
+
+p = -4, q = 1
+
+x<sub>2,3</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>-</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>1</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = 2 ± <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mo>&#x2212;</mo><mn>1</mn></mrow></msqrt></math>
+
+x<sub>2,3</sub> = 2 ± <math mathsize="0.9em"><msqrt><mn>3</mn></msqrt></math>
+
+x<sub>2,3</sub> = 2 ± 1,73
+
+                      3,73 - 1 
+x<sub>2</sub> = 3,73, f<sub>(3,73)</sub> = ----------- = 0,18
+                      3,73<sup>2</sup> + 1 
+
+                       0,27 - 1 
+x<sub>3</sub> = 0,27, f<sub>(-0,41)</sub> = ----------- = -0,68
+                      (0,27)<sup>2</sup> + 1     
+
+                     -1 - 1 
+x<sub>1</sub> = -1, f<sub>(-1)</sub> = ----------- = -1
+                   (-1)<sup>2</sup> + 1     
+
+<span style="color:red">WP<sub>1</sub>(-1|-1), WP<sub>2</sub>(3,73|0,18), WP<sub>3</sub>(0,27|-0,68)</span>
+
+Graph:
+               
+   <img src="Aufgabe118.jpg" >
+
+</b></p></pre></body></html>

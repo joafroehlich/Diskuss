@@ -1,0 +1,198 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 116
+
+          x<sup>2</sup>
+f<sub>(x)</sub> = -------         
+        3x - 3
+
+Quotientenregel erste Ableitung:
+
+u = x<sup>2</sup>, u' = 2x
+
+v = 3x - 3, v' = 3
+
+          2x * (3x - 3) - 3 * x<sup>2</sup>
+f'<sub>(x)</sub> = -------------------------- 
+                (3x - 3)<sup>2</sup>
+                
+          6x<sup>2</sup> - 6x - 3x<sup>2</sup>      3x<sup>2</sup> - 6x      
+f'<sub>(x)</sub> = ------------------ = ----------- 
+             (3x - 3)<sup>2</sup>        (3x - 3)<sup>2</sup> 
+
+Quotientenregel zweite Ableitung:
+
+u = 3x<sup>2</sup> - 6x, u' = 6x - 6
+
+v = (3x - 3)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * 3 * (3x - 3) = 6 * (3x - 3)
+
+          (6x-6)*(3x-3)<sup>2</sup> - 6*(3x-3)*(3x<sup>2</sup>-6x)
+f''<sub>(x)</sub> = ------------------------------------
+                       (3x - 3)<sup>4</sup>
+
+          (3x-3)*[(6x-6)(3x-3) - 6*(3x<sup>2</sup>-6x)
+f''<sub>(x)</sub> = -----------------------------------
+                       (3x - 3)<sup>4</sup>
+
+           18x<sup>2</sup> - 36x + 18 - 18x<sup>2</sup> + 36x
+f''<sub>(x)</sub> = ------------------------------- 
+                     (3x - 3)<sup>3</sup>
+                     
+             18          
+f''<sub>(x)</sub> = ----------
+          (3x - 3)<sup>3</sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 18, u' = 0
+
+           u'       0         
+f'''<sub>(x)</sub> = --- = ---------- = 0 für alle x ≠ 1
+           v     (3x - 3)<sup>3</sup>
+
+Polstellen, Nenner = 0:
+
+3x - 3 = 0 |+3
+
+3x = 3 |:3
+
+<span style="color:red">x = 1</span>
+
+Nenner = 0 und Zähler = 1<sup>2</sup> = 1 ≠ 0 
+
+--> <span style="color:red">senkrechte Asymptote</span>
+
+Definitionsbereich: <span style="color:red">-∞ < x < ∞, x ≠ 1</span>
+
+Zählergrad größer als Nennergrad 
+
+--> Näherungskurve
+
+                                        2
+ f<sub>(x)</sub> = x<sup>2</sup> : 3x - 3 = (1/3)x + 1/3 - --------
+      -(x<sup>2</sup> - x)                       3x - 3  
+      ----------
+               x
+             -(x - 1)
+              --------
+                   -2 
+
+                  2        
+(1/3)x + 1/3 - ------- geht gegen 
+                3x - 3
+
+<span style="color:red">(1/3)x + 1/3</span> für x --> ± ∞
+
+Wertebereich: -∞ <span style="color:red">< f<sub>(x)</sub> < 0 und 2 ≤ f<sub>(x)</sub> < ∞</span>
+(siehe Extrempunkte)
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+           (-x)<sup>2</sup>           x<sup>2</sup>
+f<sub>(-x)</sub> = ------------ = ---------  
+         3*(-x) - 3     -3x - 3     
+         
+           x<sup>3</sup>  
+f<sub>(-x)</sub>= ---------- ≠ f<sub>(x)</sub>
+        -(3x + 3)
+
+<span style="color:red">keine Achsensymmetrie</span>
+
+            x<sup>3</sup>  
+-f<sub>(-x)</sub>= -------- ≠ f<sub>(x)</sub>
+         3x + 3
+
+<span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+    x<sup>2</sup>
+--------- = 0 |*(3x - 3))
+ 3x - 3
+    
+x<sup>2</sup> = 0 |ⱱ
+
+<span style="color:red">x<sub>1,2</sub> = 0 --> Berührpunkt</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+            0<sup>2</sup>
+f<sub>0</sub> = ----------- = 0 
+        3 * 0 - 3 
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+  3x<sup>2</sup> - 6x      
+----------- = 0 |*(3x - 3)<sup>2</sup>
+ (3x - 3)<sup>2</sup> 
+
+3x<sup>2</sup> - 6x = 0
+
+3x * (x - 2) = 0
+
+3x = 0 |:3
+
+x<sub>1</sub> = 0, f(0) = 0 
+
+x - 2 = 0 |+2
+
+                    2<sup>2</sup>        4
+x<sub>2</sub> = 2; f(2) = ----------- = ---
+                3 * 2 - 3     3
+
+               18      
+f''<sub>(2)</sub> = -------------- > 0 --> <span style="color:red">Tiefpunkt (2|4/3)</span>
+          (3 * 2 - 3)<sup>3</sup>         
+
+             18 
+f''<sub>(0)</sub> = ---------- < 0 --> <span style="color:red">Hochpunkt (0|0)</span>
+          3 * 0 - 3
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+                     
+    18          
+---------- = 0 |*(3x - 3)<sup>3</sup>
+ (3x - 3)<sup>3</sup> 
+
+18 = 0 --> Widerspruch --> <span style="color:red">keine Wendepunkte </span>
+
+Graph: 
+               
+   <img src="Aufgabe116.jpg" >
+
+</b></p></pre></body></html>

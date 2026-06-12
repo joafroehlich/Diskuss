@@ -1,0 +1,190 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 112
+
+        4x + 4
+f<sub>(x)</sub> = --------
+       (x - 1)<sup>2</sup>
+
+Quotientenregel erste Ableitung:
+
+u = 4x + 4, u' = 4
+
+v = (x - 1)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * (x - 1)
+
+         4 * (x - 1)<sup>2</sup> - 2 * (x - 1) * (4x + 4)
+f'<sub>(x)</sub> = ---------------------------------------
+                      (x - 1)<sup>4</sup>
+
+         (x - 1) * [4(x - 1) - 2(4x + 4)] 
+f'<sub>(x)</sub> = ----------------------------------- 
+                      (x - 1)<sup>4</sup> 
+                      
+         4x - 4 - 8x - 8     -(4x + 12)
+f'<sub>(x)</sub> = ----------------- = ------------
+             (x - 1)<sup>3</sup>         (x - 1)<sup>3</sup>
+
+Quotientenregel zweite Ableitung:
+
+u = -(4x + 12), u' = -4
+
+v = (x - 1)<sup>3</sup>
+
+Kettenregel:
+
+v' = 3 * (x - 1)<sup>2</sup>
+
+          -4*(x - 1)<sup>3</sup> - 3*(x - 1)<sup>2</sup> * - (4x + 12)
+f''<sub>(x)</sub> = ----------------------------------------
+                         (x - 1)<sup>6</sup>
+
+          (x - 1)<sup>2</sup> * [- 4(x - 1) + 3*(4x + 12)]
+f''<sub>(x)</sub> = --------------------------------------- 
+                          (x - 1)<sup>6</sup>  
+                          
+          -4x + 4 + 12x + 36     8x + 40
+f''<sub>(x)</sub> = -------------------- = ----------
+               (x - 1)<sup>4</sup>          (x - 1)<sup>4</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 8x + 40, u' = 8
+            
+           u'        8
+f'''<sub>(x)</sub> = --- = ---------- ≠ 0 für alle x ≠ 1
+           v      (x - 1)<sup>4</sup>
+
+Polstellen, Nenner = 0:
+
+(x - 1)<sup>2</sup> = 0 |ⱱ
+
+x - 1 = 0 |+1
+
+<span style="color:red">x = 1</span>
+
+Nenner = 0 und Zähler = 4 + 4 = 8 ≠ 0 --> 
+
+senkrechte Asymptote
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞, x ≠ 1</span>
+
+Waagerechte Asymptote:
+
+         4x + 4                       
+f<sub>(x)</sub> = ---------- geht gegen <span style="color:red">0</span> für x --> ± ∞
+        (x - 1)<sup>2</sup> 
+          
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞, f<sub>(x)</sub> ≠ 0</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+         -4x + 4      -4x + 4              
+f<sup>(-x)</sup> = ---------- = ---------- = ≠ f<sub>(x)</sub>
+        (-x - 1)<sup>2</sup>     (x + 1)<sup>2</sup>    
+
+--> <span style="color:red">keine Achsensymmetrie</span>         
+
+          -(-4x + 4)      4x - 4
+-f<sup>(-x)</sup> = ------------ = ---------- ≠ f<sub>(x)</sub>        
+            (x + 1)<sup>2</sup>     (x + 1)<sup>2</sup>
+
+--> <span style="color:red">keine Punktsymmetrie </span>         
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+          4x + 4                       
+f<sub>(x)</sub> = ---------- = 0 |*(x - 1)<sup>2</sup>
+        (x - 1)<sup>2</sup> 
+    
+4x + 4 = 0 |-4
+
+4x = -4 |:4
+
+<span style="color:red">x = -1</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0 
+
+        4 * 0 + 4                       
+f<sub>(x)</sub> = ----------- = 4
+        (0 - 1)<sup>2</sup> 
+
+<span style="color:red">Sy(0|4)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+-(4x + 12) 
+---------- = 0 |*(x - 1)<sup>3</sup>
+ (x - 1)<sup>3</sup>
+
+-4x - 12 = 0 |+4x
+
+4x = -12 |:4
+
+                 4 * (-3) + 4
+x = -3; f<sub>(-3)</sub> = -------------- = -0,5
+                   (-3 - 1)<sup>2</sup>
+
+           8 * (-3) + 40
+f''<sub>(-3)</sub> = ---------------- > 0 --> 
+             (-3 - 1)4
+
+<span style="color:red">Tiefpunkt (-3|-0,5)</span>             
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+ 8x + 40
+--------- = 0 |*(x - 1)<sup>4</sup>
+ (x - 1)<sup>4</sup>
+
+8x + 40 = 0 |-40
+
+8x = -40 |:8
+
+x = -5
+
+         4 * (-5) + 4    -16     -4
+f<sub>(-5)</sub> = -------------- = ---- = ----  
+           (-5 - 1)<sup>2</sup>      36      9
+
+f'''<sub>(-5)</sub> ≠ 0           
+
+<span style="color:red">Wendepunkt (-5|-4/9)</span>
+
+Graph: 
+               
+   <img src="Aufgabe112.jpg" >
+
+</b></p></pre></body></html>

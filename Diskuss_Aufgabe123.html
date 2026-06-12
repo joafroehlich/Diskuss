@@ -1,0 +1,192 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 123
+
+        (9 - x<sup>2</sup>) 
+f<sub>(x)</sub> = ----------         
+        (1 - x<sup>2</sup>)
+
+Quotientenregel erste Ableitung:
+
+u = 9 - x<sup>2</sup>, u' = -2x
+
+v = 1 - x<sup>2</sup>, v' = -2x
+
+         -2x * (1 - x<sup>2</sup>) - (-2x) * (9 - x<sup>2</sup>)
+f'<sub>(x)</sub> = ----------------------------------- 
+                     (1 - x<sup>2</sup>)<sup>2</sup>
+                      
+         -2x + 2x<sup>3</sup> + 18x - 2x<sup>3</sup> 
+f'<sub>(x)</sub> = ----------------------- 
+               (1 - x<sup>2</sup>)<sup>2</sup>
+
+           16x  
+f'<sub>(x)</sub> = ----------
+        (1 - x<sup>2</sup>)<sup>2</sup>
+ 
+Quotientenregel zweite Ableitung:
+
+u = 16x, u' = 16
+
+v = (1 - x<sup>2</sup>)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * (-2) * (1 - x<sup>2</sup>) = - 4x * (1 - x<sup>2</sup>) 
+
+          16*(1 - x<sup>2</sup>)<sup>2</sup> - (-4x) * (1 - x<sup>2</sup>) * 16x
+f''<sub>(x)</sub> = --------------------------------------- 
+                       (1 - x<sup>2</sup>)<sup>4</sup>
+
+          (1 - x<sup>2</sup>) * [16 * (1 - x<sup>2</sup>) + 64x<sup>2</sup>]      
+f''<sub>(x)</sub> = ----------------------------------- 
+                             (1 - x<sup>2</sup>)<sup>4</sup>
+                             
+          16 - 16x<sup>2</sup> + 64x<sup>2</sup>
+f''<sub>(x)</sub> = ------------------ 
+              (1 - x<sup>2</sup>)<sup>3</sup>
+
+           48x<sup>2</sup> + 16
+f''<sub>(x)</sub> = ------------ 
+           (1 - x<sup>2</sup>)<sup>3</sup>     
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 48x<sup>2</sup> + 16, u' = 96x
+
+           u'                    
+f'''<sub>(x)</sub> = --- 
+           v     
+           
+              96x  
+f'''<sub>(x)</sub> = ----------- ≠ 0 für alle x ≠ 0, 1, -1
+           (1 - x<sup>2</sup>)<sup>3</sup>  
+
+Polstellen, Nenner = 0:
+
+1 - x<sup>2</sup> = 0|+x<sup>2</sup>
+
+x<sup>2</sup> = 1|ⱱ
+
+<span style="color:red">x = ± 1</span>
+
+Nenner = 0 und Zähler = 9 - (±1)<sup>2</sup> = 8 ≠ 0 
+
+--> <span style="color:red">senkrechte Asymptote </span>  
+
+Definitionsbereich: <span style="color:red">-∞ < x < ∞, x ≠ 1, - 1</span>
+
+Waagerechte Asymptote:
+
+                                    8           
+f<sub>(x)</sub> = -x<sup>2</sup> + 9 : -x<sup>2</sup> + 1 = 1 + ----------
+     -(-x<sup>2</sup> + 1)                 (-x<sup>2</sup> + 1)
+     ----------
+             8
+        8
+1 + --------- geht gegen <span style="color:red">1</span> für x --> ± ∞ 
+    (-x<sup>2</sup> + 1)
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < 1, 9 ≤ f<sub>(x)</sub> < ∞</span>  
+(siehe Asymptoten und Extrempunkte) 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+        (9 - (-x)<sup>2</sup>)     9 - x<sup>2</sup>
+f<sub>(-x)</sub> = ------------ = --------- = f<sub>(x)</sub>
+        (1 - (-x)<sup>2</sup>)     1 - x<sup>2</sup>
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+           -(9 - x<sup>2</sup>)
+-f<sub>(-x)</sub> = ------------ ≠ f<sub>(x)</sub>
+            1 - x<sup>2</sup>
+
+--> <span style="color:red">keine Punktsymmetrie </span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+ (9 - x<sup>2</sup>) 
+---------- = 0 |*(1 - x<sup>2</sup>)
+ (1 - x<sup>2</sup>)
+
+9 - x<sup>2</sup> = 0 |+x<sup>2</sup>
+
+x<sup>2</sup> = 9 |ⱱ
+
+x<sub>1,2</sub> = ± 3
+
+<span style="color:red">N<sub>1</sub>(3|0), N<sub>2</sub>(-3|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+         9 - 0<sup>2</sup>
+f<sub>(0)</sub> = -------- = 9
+        (1 - 0<sup>2</sup>)
+
+<span style="color:red">Sy(0|9)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+   16x  
+---------- = 0 |*(1 - x<sup>2</sup>)<sup>2</sup>
+(1 - x<sup>2</sup>)<sup>2</sup>
+
+16x = 0 |:16
+
+               9 - 0<sup>2</sup>  
+x = 0; f<sub>(0)</sub> = -------- = 9
+               1 - 0<sup>2</sup>  
+
+           48 * 0<sup>2</sup> + 16
+f''<sub>(0)</sub> = --------------- > 0 --> <span style="color:red">Tiefpunkt (0|9)</span>
+            (1 - 0<sup>2</sup>)<sup>3</sup>  
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+  48x<sup>2</sup> + 16
+------------ = 0 |*(1 - x<sup>2</sup>)<sup>3</sup>
+  (1 - x<sup>2</sup>)<sup>3</sup> 
+
+48x<sup>2</sup> + 16 = 0 |-16
+
+48x<sup>2</sup> = -16 |:48
+
+        1  
+x<sup>2</sup> = - --- |ⱱ --> keine Lösung 
+        3
+
+--> <span style="color:red">keine Wendepunkte</span>
+
+Graph:
+               
+   <img src="Aufgabe123.jpg" >
+
+</b></p></pre></body></html>

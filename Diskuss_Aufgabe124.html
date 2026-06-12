@@ -1,0 +1,174 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 124
+
+           x 
+f<sub>(x)</sub> = ---------         
+       (x<sup>2</sup> - 1)
+
+Quotientenregel erste Ableitung:
+
+u = x, u' = 1
+
+v = x<sup>2</sup> - 1, v' = 2x
+
+         1 * (x<sup>2</sup> - 1) - 2x * x       
+f'<sub>(x)</sub> = -----------------------  
+                (x<sup>2</sup> - 1)<sup>2</sup>            
+                 
+         x<sup>2</sup> - 1 - 2x<sup>2</sup>    -x<sup>2</sup> - 1        
+f'<sub>(x)</sub> = ------------- = ----------                 
+          (x<sup>2</sup> - 1)<sup>2</sup>     (x<sup>2</sup> - 1)<sup>2</sup>
+
+Quotientenregel zweite Ableitung:
+
+u = -x<sup>2</sup> - 1, u' = -2x
+
+v = (x<sup>2</sup> - 1)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * 2x * (x<sup>2</sup> - 1) = 4x * (x<sup>2</sup> - 1) 
+
+          -2x*(x<sup>2</sup> - 1)<sup>2</sup> - 4x*(x<sup>2</sup> - 1)*(-x<sup>2</sup> - 1)
+f''<sub>(x)</sub> = -------------------------------------- 
+                        (1 - x<sup>2</sup>)<sup>4</sup>               
+
+         (x<sup>2</sup> - 1)*[- 2x * (x<sup>2</sup> - 1) - 4x(-x<sup>2</sup> - 1)        
+f''<sub>(x)</sub> = ---------------------------------------- 
+                         (x<sup>2</sup> - 1)<sup>4</sup>                                                              
+                         
+          -2x<sup>3</sup> + 2x + 4x<sup>3</sup> + 4x                
+f''<sub>(x)</sub> = ----------------------                         
+                (x<sup>2</sup> - 1)<sup>3</sup>
+
+          2x<sup>3</sup>+ 6x
+f''<sub>(x)</sub> = --------- 
+         (x<sup>2</sup> - 1)<sup>3</sup>      
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 2x<sup>3</sup> + 6x, u' = 6x<sup>2</sup> + 6
+
+           u'     6x<sup>2</sup> + 6              
+f'''<sub>(x)</sub> = --- = ----------- ≠ 0 für alle x ≠ 1,-1 
+           v     (x<sup>2</sup> - 1)<sup>3</sup>  
+
+Polstellen, Nenner = 0:
+
+x<sup>2</sup> - 1 = 0|+1
+
+x<sup>2</sup> = 1|ⱱ
+
+<span style="color:red">x = ± 1</span>  
+
+--> <span style="color:red">senkrechte Asymptote bei x = 1 und -1</span>
+
+Definitionsbereich: <span style="color:red">-∞ < x < ∞, x ≠ 1, -1</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                             x           
+f<sub>(x)</sub> = x : x<sup>2</sup> - 1 = 0 +  ----------
+                          (x<sup>2</sup> - 1) 
+
+        x
+0 + ---------- geht gegen 0 für x --> ± ∞ 
+     (x<sup>2</sup> - 1)
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+             (-x)        -x   
+f<sub>(-x)</sub> = ----------- = -------- ≠ f<sub>(x)</sub> 
+          (-x)<sup>2</sup> - 1    x<sup>2</sup> - 1 
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+             x   
+-f<sub>(-x)</sub> = -------- = f<sub>(x)</sub> 
+          x<sup>2</sup> - 1 
+
+--> <span style="color:red">Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0 
+
+    x
+-------- = 0 |*(x<sup>2</sup> - 1)
+ x<sup>2</sup> - 1   
+ 
+x = 0     <span style="color:red">N(0|0)</span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+           0
+f<sub>(0)</sub> = -------- = 0
+        0<sup>2</sup> - 1
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+  -x<sup>2</sup> - 1        
+----------- = 0 |*(x<sup>2</sup> - 1)<sup>2</sup>  
+ (x<sup>2</sup> - 1)<sup>2</sup>
+
+-x<sup>2</sup> - 1 = 0 | +x<sup>2</sup>
+
+x<sup>2</sup> = -1 |ⱱ 
+
+--> keine Lösung --> <span style="color:red">keine Extrempunkte</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+  2x<sup>3</sup> + 6x
+----------- = 0 |*(x<sup>2</sup> - 1)<sup>3</sup> 
+ (x<sup>2</sup> - 1)<sup>3</sup>      
+
+2x<sup>3</sup> + 6x = 0 
+
+2x * (x<sup>2</sup> + 3) = 0
+                                                      
+2x = 0; f<sub>(0)</sub> = 0 --> <span style="color:red">WP(0|0) </span>
+
+x<sup>2</sup> + 3 = 0 |-3
+
+x<sup>2</sup> = -3 |ⱱ 
+
+--> keine Lösung --> <span style="color:red">kein weiterer Wendepunkt</span>
+
+Graph:
+               
+   <img src="Aufgabe124.jpg" >
+
+</b></p></pre></body></html>

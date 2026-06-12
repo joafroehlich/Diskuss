@@ -1,0 +1,157 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 108
+
+             1
+f<sub>(x)</sub> = --------------         
+        4 * (x + 1)<sup>2</sup>
+
+Quotientenregel erste Ableitung:
+
+u = 1, u' = 0 
+
+v = 4 * (x + 1)<sup>2</sup> 
+
+Kettenregel:
+
+v' = 8 * (x + 1)
+
+          0 * 4 * (x + 1)<sup>2</sup> - 8 * (x + 1) * 1             
+f'<sub>(x)</sub> = --------------------------------------- 
+                      16 * (x + 1)<sup>4</sup>               
+                              
+          -8 * (x + 1)        -1                           
+f'<sub>(x)</sub> = --------------- = ------------                              
+         16 * (x + 1)<sup>4</sup>    2 * (x + 1)<sup>3</sup>
+
+Quotientenregel zweite Ableitung:
+
+u = -1, u' = 0
+
+v = 2 * (x + 1)<sup>3</sup> 
+
+Kettenregel:
+
+v' = 6 * (x + 1)<sup>2</sup>
+
+          0 * 2 * (x + 1)<sup>3</sup> - 6 * (x + 1)<sup>2</sup> * (-1) 
+f''<sub>(x)</sub> = ---------------------------------------- 
+                        4 * (x + 1)<sup>6</sup>  
+
+           6 * (x + 1)<sup>3</sup>      1,5
+f''<sub>(x)</sub> = --------------- = ---------                             
+          4 * (x + 1)<sup>6</sup>     (x + 1)<sup>4</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+
+(Begründung siehe Aufgabe 105)
+
+            u'        0    
+f'''<sub>(x)</sub> = --- = ------------- -->  
+            v    4 * (x + 1)<sup>2</sup>
+                       
+f'''<sub>(x)</sub> = 0 für alle x ≠ -1
+
+Polstellen, Nenner = 0:
+
+4 * (x + 1)<sup>2</sup> = 0 |:4
+
+(x + 1)<sup>2</sup> = 0 |ⱱ
+
+x + 1 = 0 |-1
+
+x = -1
+
+Nenner = 0 und Zähler ≠ 0 
+
+--> <span style="color:red">senkrechte Asymptote</span>
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞, x ≠ -1</span>
+
+Waagerechte Asymptote:
+
+           1
+<span style="color:red">f<sub>(x)</sub></span> = --------------- <span style="color:red">= 0</span> für x --> ± ∞  
+     4 * (x + 1)<sup>2</sup>
+
+f<sub>(x)</sub> ist > 0 für alle x     
+
+Wertebereich: <span style="color:red">0 < f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):  
+
+                1                 
+f<sub>(-x)</sub> = -------------- ≠ f<sub>(x)</sub> ≠ -f<sub><sub>(x)</sub></sub>
+         4 * (-x + 1)<sup>2</sup>             
+
+--> <span style="color:red">keine Punkt-, keine Achsensymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+       1
+--------------- = 0 |*4 * (x - 3)<sup>2</sup>
+  4 * (x + 1)<sup>2</sup> 
+    
+1 = 0  
+
+Widerspruch --> <span style="color:red">keine Nullstelle</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0
+
+              1         1
+f<sub>(0)</sub> = ------------ = ----- = 0,25
+       4 * (0 + 1)²     4
+
+<span style="color:red">Sy(0|0,25)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+       1
+--------------- = 0 |*2 * (x - 3)<sup>3</sup>
+  2 * (x + 1)<sup>3</sup> 
+
+ 1 = 0 
+ 
+ Widerspruch --> <span style="color:red">keine Extrempunkte</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+  
+   1,5
+--------- = 0 |*(x  + 1)<sup>4</sup>
+(x + 1)<sup>4</sup>
+
+1,5 = 0 Widerspruch --> <span style="color:red">keine Wendepunkte</span>
+
+Graph:
+
+   <img src="Aufgabe108.jpg" >
+
+</b></p></pre></body></html>

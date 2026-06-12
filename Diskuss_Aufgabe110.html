@@ -1,0 +1,154 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 110
+
+        x + 4
+f<sub>(x)</sub> = -------         
+        x - 2
+
+Quotientenregel erste Ableitung:
+
+u = x + 4, u' = 1
+
+v = x - 2, v' = 1 
+
+         1 * (x - 2) - 1 * (x + 4)      -6       
+f'<sub>(x)</sub> = -------------------------- = --------- 
+                 (x - 2)<sup>2</sup>             (x - 2)<sup>2</sup>   
+
+Quotientenregel zweite Ableitung:
+
+u = -6, u' = 0
+
+v = (x - 2)<sup>2</sup> 
+
+Kettenregel:
+
+v' = 2 * (x - 2)
+
+          0 * (x - 2)<sup>2</sup> - 2 * (x - 2) * (-6)          
+f''<sub>(x)</sub> = -----------------------------------    
+                       (x - 2)<sup>4</sup>                        
+                       
+             12           
+f''<sub>(x)</sub> = ----------                       
+          (x - 2)<sup>3</sup>           
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 12, u' = 0
+
+           u'       0      
+f'''<sub>(x)</sub> = --- = ---------- = 0 für alle x ≠ 2
+           v     (x - 2)<sup>3</sup> 
+           
+Polstellen, Nenner = 0:
+
+(x - 2)<sup>2</sup> = 0 |ⱱ
+
+x - 2 = 0 |+2
+
+<span style="color:red">x = 2</span>
+
+Nenner = 0 und Zähler = 2 + 4 = 6 ≠ 0 --> 
+
+<span style="color:red"></span>senkrechte Asymptote
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞, x ≠ 2</span>
+
+Waagerechte Asymptote:
+
+                                 6
+f<sub>(x)</sub> = (x + 4) : (x - 2) = 1 + ------  
+     - (x - 2)                  x - 2      
+      ----------
+            6 
+
+       6                 
+1 + ------- geht gegen <span style="color:red">1</span> für x --> ± ∞
+     x - 2 
+         
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞, f<sub>(x)</sub> ≠ 1</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+         -x + 4     -(x - 4)     x - 4             
+f<sub>(-x)</sub> = -------- = ---------- = ------- ≠ f<sub>(x)</sub>
+         -x - 2     -(x + 2)     x + 2
+
+--> <span style="color:red">keine Achsensymmetrie </span>        
+
+         -(x - 4)    -x + 4
+-f<sub>(-x)</sub> = -------- = -------- ≠ f<sub>(x)</sub>        
+           x + 2      x + 2
+
+--> <span style="color:red">keine Punktsymmetrie</span>          
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+ x + 4
+------- = 0 |*(x - 2)
+ x - 2
+    
+x + 4 = 0 |-4
+
+<span style="color:red">x = -4</span> 
+
+Schnittpunkt mit der y-Achse:
+
+x = 0
+
+        0 + 4
+f<sub>(0)</sub> = ------- = -2
+        0 - 2
+
+<span style="color:red">Sy(0|-2)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+  -6
+-------- = 0 |*(x - 2)<sup>2</sup>
+(x - 2)<sup>2</sup>
+
+-6 = 0 Widerspruch --> <span style="color:red">keine Extrempunkte</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+    12           
+---------- = 0  |*(x - 2)<sup>3</sup>                       
+ (x - 2)<sup>3</sup>
+
+12 = 0 Widerspruch --> <span style="color:red">keine Wendepunkte</span> 
+
+Graph:
+
+   <img src="Aufgabe110.jpg" >
+
+</b></p></pre></body></html>

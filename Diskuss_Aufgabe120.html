@@ -1,0 +1,272 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 120
+
+        0,5x<sup>3</sup> - 1,5x
+f<sub>(x)</sub> = --------------         
+           x<sup>2</sup> - 4
+
+Quotientenregel erste Ableitung:
+
+u = 0,5x<sup>3</sup> - 1,5x, u' = 1,5x<sup>2</sup> - 1,5
+
+v = x<sup>2</sup> - 4, v'= 2x
+
+         (1,5x<sup>2</sup>-1,5)*(x<sup>2</sup>-4) - 2x*(0,5x<sup>3</sup>-1,5x)
+f'<sub>(x)</sub> = -------------------------------------- 
+                       (x<sup>2</sup> - 4)<sup>2</sup>
+
+         1,5x<sup>4</sup> - 7,5x<sup>2</sup> + 6 - x<sup>4</sup> + 3x<sup>2</sup>
+f'<sub>(x)</sub> = ------------------------------ 
+                    (x<sup>2</sup> - 4)<sup>2</sup>
+                    
+         0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6           
+f'<sub>(x)</sub> = ------------------- 
+              (x<sup>2</sup> - 4)<sup>2</sup>  
+
+Quotientenregel zweite Ableitung:
+
+u = 0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6, u' = 2x<sup>3</sup> - 9x
+
+v = (x<sup>2</sup> - 4)<sup>2</sup>
+
+Kettenregel:
+
+v' = 2 * 2x * (x<sup>2</sup> - 4) = 4x * (x<sup>2</sup> - 4)
+
+          (2x<sup>3</sup> - 9x) * (x<sup>2</sup> - 4)<sup>2</sup>  
+f''<sub>(x)</sub> = ------------------------ - 
+                (x<sup>2</sup> - 4)<sup>4</sup>  
+                                              
+   4x * (x<sup>2</sup> - 4) * (0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6)
+- ------------------------------------- 
+                (x<sup>2</sup> - 4)<sup>4</sup> 
+
+          (x<sup>2</sup> - 4) * [(2x<sup>3</sup> - 9x)(x<sup>2</sup> - 4)  
+f''<sub>(x)</sub> = ------------------------------- -
+                    (x<sup>2</sup> - 4)<sup>4</sup>
+
+   4x * (0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6)]
+- ---------------------------
+            (x<sup>2</sup> - 4)<sup>4</sup>
+
+         2x5- 17x<sup>3</sup> + 36x - 2x5 + 18x<sup>3</sup> - 24x
+f''<sub>(x)</sub> = -----------------------------------  
+                      (x<sup>2</sup> - 4)<sup>3</sup>
+                             
+          x<sup>3</sup> + 12x
+f''<sub>(x)</sub> = ----------
+         (x<sup>2</sup> - 4)<sup>3</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = x<sup>3</sup> + 12x, u' = 3x<sup>2</sup> + 12
+
+           u'    3x<sup>2</sup> + 12
+f'''<sub>(x)</sub> = --- = ---------- ≠ 0 für alle x ≠ 2,-2 
+           v    (x<sup>2</sup> - 4)<sup>3</sup>  
+
+Polstellen, Nenner = 0:
+
+x<sup>2</sup> - 4 = 0 |+4
+
+x<sup>2</sup> = 4| ⱱ
+
+x<sub>1,2</sub> = ± 2
+
+Nenner = 0 und Zähler = 0,5 * ±2<sup>3</sup> - 1,5 * ±2 ≠ 0 
+
+--> <span style="color:red">senkrechte Asymptote bei x = 2 und x = -2</span>
+
+Definitionsbereich:  <span style="color:red">-∞ < x < ∞, x ≠ 2, -2</span>
+
+Zählergrad größer als Nennergrad 
+
+--> Näherungskurve
+
+                                         0,5x  
+f<sub>(x)</sub> = 0,5x<sup>3</sup> - 1,5 x : x<sup>2</sup> - 4 = 0,5x + --------
+     -(0,5x<sup>3</sup> - 2x)                      x<sup>2</sup> - 4     
+     ---------------
+             0,5x 
+
+         0,5x
+0,5x + -------- geht gegen <span style="color:red">0,5x</span> für x --> ± ∞         
+        x<sup>2</sup> - 4
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+         0,5 * (-x)<sup>3</sup> - 1,5 * (-x)<sup>3</sup>
+f<sub>(-x)</sub> = ---------------------------     
+                 ((-x)<sup>2</sup> - 4)
+                   
+          -0,5x<sup>3</sup> + 1,5x
+f<sub>(-x)</sub> = ----------------- ≠ f<sub>(x)</sub>
+             (x<sup>2</sup> - 4) 
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+          -(-0,5x<sup>3</sup> + 1,5x)     0,5x<sup>3</sup>-1,5x
+-f<sub>(-x)</sub> = ------------------ = ------------ = f<sub>(x)</sub>  
+              (x<sup>2</sup> - 4)          (x<sup>2</sup> - 4)
+
+--> <span style="color:red">Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+ 0,5x<sup>3</sup> - 1,5x
+------------- = 0 |*(x<sup>2</sup> - 4)
+   (x<sup>2</sup> - 4)   
+    
+0,5x<sup>3</sup> - 1,5x = 0
+
+0,5x * (x<sup>2</sup> - 3) = 0
+
+x<sub>1</sub> = 0
+
+x<sup>2</sup> - 3 = 0 |+3
+
+x<sup>2</sup> = 3 |ⱱ
+
+x<sub>2,3</sub> = ± 1,73
+ 
+<span style="color:red">N<sub>1</sub>(0|0), N<sub>2</sub>(1,73|0), N<sub>3</sub>(-1,73|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0 
+
+        0,5 * 0<sup>3</sup> - 1,5 * 0 
+f<sub>(0)</sub> = -------------------- = 0
+              0<sup>2</sup> - 4
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ 0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6
+------------------- = 0 |*(x<sup>2</sup> - 4)<sup>2</sup>
+      (x<sup>2</sup> - 4)<sup>2</sup>  
+
+0,5x<sup>4</sup> - 4,5x<sup>2</sup> + 6 = 0 |:0,5
+
+x<sup>4</sup> - 9x<sup>2</sup> + 12 = 0
+
+Substitution:
+
+x<sup>2</sup> = z
+
+z<sup>2</sup> - 9z + 12 = 0
+
+p, q - Formel
+
+p = -9, q = 12
+
+z<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mo>-</mo><mn>9</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>-</mo><mn>9</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+z<sub>1,2</sub> = 4,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>20</mn><mo>,</mo><mn>25</mn><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+z<sub>1,2</sub> = 4,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>8</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>
+
+z<sub>1,2</sub> = 4,5 ± 2,87
+
+z<sub>1</sub> = 7,37
+
+z<sub>2</sub> = 1,63
+
+Rücksubstituiert:
+
+x<sup>2</sup> = 7,37 |ⱱ
+
+x<sub>1,2</sub> = ± 2,71 
+
+           0,5 * 2,71<sup>3</sup> - 1,5 * 2,71 
+f<sub>(2,71)</sub> = -------------------------- = 1,76
+                    2,71<sup>2</sup> - 4     
+
+f<sub>(-2,71)</sub> = -1,76 wegen Punktsymmetrie
+
+x<sup>2</sup> = 1,63 |ⱱ
+
+x<sub>3,4</sub> = ± 1,28 
+
+           0,5 * 1,28<sup>3</sup> - 1,5 * 1,28    
+f<sub>(1,28)</sub> = --------------------------- = 0,37
+                   1,28<sup>2</sup> - 4  
+
+f<sub>(-1,28)</sub> = - 0,37 wegen Punktsymmetrie
+
+              2,71<sup>3</sup> + 12 * 2,71  
+f''<sub>(2,71)</sub> = ---------------------- > 0 
+                  (2,71<sup>2</sup> - 4)<sup>3</sup>
+
+--> <span style="color:red">Tiefpunkt (2,71|1,76)</span>
+
+              (-2,71)<sup>3</sup> + 12 * (-2,71)  
+f''<sub>(-2,71)</sub> = ---------------------------- < 0 
+                        (2,71<sup>2</sup> - 4)<sup>3</sup>
+
+--> <span style="color:red">Hochpunkt (-2,71|-1,76)</span>
+
+              1,28<sup>3</sup> + 12 * 1,28  
+f''<sub>(1,28)</sub> = ---------------------- < 0 
+                  (1,28<sup>2</sup> - 4)<sup>3</sup>
+
+--> <span style="color:red">Hochpunkt (1,28|0,37) </span>
+
+              (-1,28)<sup>3</sup> + 12 * (-1,28)  
+f''<sub>(-1,28)</sub> = ---------------------------- > 0 
+                   ((-1,28)<sup>2</sup> - 4)<sup>3</sup>
+
+--> <span style="color:red">Tiefpunkt (-1,28|-0,37) </span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+                     
+ x<sup>3</sup> + 12x                    
+----------- = 0 |*(x<sup>2</sup> - 4)<sup>3</sup>
+ (x<sup>2</sup> - 4)<sup>3</sup>
+
+x<sup>3</sup> + 12x = 0 
+
+x(x<sup>2</sup> + 12) = 0
+
+x<sub>1</sub> = 0; f<sub>(0)</sub> = 0, f'''<sub>(0)</sub> ≠ 0 --> <span style="color:red">WP(0|0)</span>
+
+x<sup>2</sup> + 12 = 0|-12
+
+x<sup>2</sup> = -12 |ⱱ  --> <span style="color:red">kein weiterer Wendepunkt</span>
+ 
+Graph:
+               
+   <img src="Aufgabe120.jpg" >
+
+</b></p></pre></body></html>
