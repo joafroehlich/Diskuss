@@ -1,0 +1,157 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 126
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math>         
+
+f<sub>(x)</sub> = (4x - x<sup>2</sup>)<sup>0,5</sup>
+
+Kettenregel:
+
+f'<sub>(x)</sub> = 0,5 * (4 - 2x) * (4x - x<sup>2</sup>)<sup>-0,5</sup>  
+
+f'<sub>(x)</sub> = (2 - x) * (4x - x<sup>2</sup>)<sup>-0,5</sup>   
+ 
+Produktregel zweite Ableitung:
+
+u = 2 - x, u' = -1
+
+v = (4x - x<sup>2</sup>)<sup>-0,5</sup>
+
+Kettenregel:
+
+v' = - 0,5 * (4 - 2x) * (4x - x<sup>2</sup>)<sup>-1,5</sup> 
+
+v' = - (2 - x) * (4x - x<sup>2</sup>)<sup>-1,5</sup>     
+
+f''<sub>(x)</sub> = -1*(4x-x<sup>2</sup>)<sup>-0,5</sup> - (2-x)*(4x-x<sup>2</sup>)<sup>-1,5</sup>*(2-x)
+
+                 1          (2 - x) * (2 - x)  
+f''<sub>(x)</sub> = - ------------- - ------------------- 
+            (4x - x<sup>2</sup>)<sup>0,5</sup>       (4x - x<sup>2</sup>)<sup>1,5</sup>
+
+                -1             (2 - x) * (2 - x) 
+f''<sub>(x)</sub> = -------------- * (1 + -----------------)
+          (4x - x<sup>2</sup>)<sup>0,5</sup>             (4x - x<sup>2</sup>) 
+
+              -1            4x-x<sup>2</sup> + (4-4x+x<sup>2</sup>)
+f''<sub>(x)</sub> = -------------- * (-------------------)
+         (4x - x<sup>2</sup>)<sup>0,5</sup>             4x - x<sup>2</sup> 
+
+              -1              4
+f''<sub>(x)</sub> = ------------- * (----------)  
+          (4 - x<sup>2</sup>)<sup>0,5</sup>     (4x - x<sup>2</sup>)
+          
+                 4
+f''<sub>(x)</sub> = - -------------          
+           (4x - x<sup>2</sup>)<sup>1,5</sup>    
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = -4, u' = 0
+
+           u'          0              
+f'''<sub>(x)</sub> = --- = -------------- = 0  
+           v     (4x - x<sup>2</sup>)<sup>1,5</sup>  
+
+4x - x<sup>2</sup> muss ≥ 0 sein, wegen Quadratwurzel.
+
+x * (4 - x) ≥ 0 
+
+x ≥ 0
+
+4 - x ≥ 0 |+x
+
+x ≤ 4 --> Definitionsbereich:  <span style="color:red">0 ≤ x ≤ 4</span>
+
+Wertebereich: f<sub>(x)</sub> wird bei x = 2 am größten, 
+(Extrempunkt)
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> ≥ 0 
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mo>&#xd7;</mo><mn>2</mn><mo>&#x2212;</mo><msup><mn>2</mn><mn>2</mn></msup></mrow></msqrt></math> 
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mn>4</mn></msqrt></math>= 2 --> <span style="color:red">0 ≤ f<sub>(x)</sub> ≤ 2</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></mfenced><mo>&#x2212;</mo><msup><mfenced><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></mfenced><mn>2</mn></msup></mrow></msqrt></math>
+
+f<sub>(-x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mo>&#x2212;</mo><mn>4</mn><mi mathvariant="normal">x</mi><mo>-</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> ≠ f<sub>(x)</sub> --> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -<math mathsize="0.9em"><msqrt><mrow><mo>&#x2212;</mo><mn>4</mn><mi mathvariant="normal">x</mi><mo>-</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> ≠ f<sub>(x)</sub> --> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+<math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = 0 |<sup>2</sup>
+
+4x -x<sup>2</sup> = 0
+
+x * (4 - x) = 0 
+
+x<sub>1</sub> = 0
+
+4 - x = 0 |+x
+
+x<sub>2</sub> = 4      <span style="color:red">N<sub>1</sub>(0|0), N<sub>2</sub>(4|0)</span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+f<sub>(0)</sub> = <math mathsize="0.9em"><msqrt></msqrt><msqrt><mrow><mn>4</mn><mo>&#xd7;</mo><mn>0</mn><mo>&#x2212;</mo><msup><mn>0</mn><mn>2</mn></msup></mrow></msqrt></math> = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+    2 - x
+------------- = 0 | *(4x -x<sup>2</sup>)<sup>0,5</sup>
+ (4x - x<sup>2</sup>)<sup>0,5</sup> 
+
+2 - x = 0 |+x
+
+x = 2, f<sub>(2)</sub> = 2
+
+                  4 
+f''<sub>(2)</sub> = - ------------- < 0 --> <span style="color:red">Hochpunkt(2|2)</span>
+            (4x - x<sup>2</sup>)<sup>1,5</sup>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+     -4 
+------------- = 0 |*(16 - x<sup>2</sup>)<sup>1,5</sup>
+ (4x - x<sup>2</sup>)<sup>1,5</sup> 
+
+-4 = 0 Widerspruch --> <span style="color:red">keine Wendepunkte</span>
+
+Graph:
+
+   <img src="Aufgabe126.jpg" >
+
+</b></p></pre></body></html>

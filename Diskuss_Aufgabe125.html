@@ -1,0 +1,155 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 125
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math>     
+
+f<sub>(x)</sub> = (16 - x²)<sup>0,5</sup>
+
+Kettenregel:
+
+f'<sub>(x)</sub> = 0,5 * (-2x) * (16 - x²)<sup>-0,5</sup> 
+
+f'<sub>(x)</sub> = -x * (16 - x²)<sup>-0,5</sup>
+
+Produktregel zweite Ableitung:
+
+u = -x, u' = -1
+
+v = (16 - x²)<sup>-0,5</sup>
+
+Kettenregel:
+
+v' = -0,5 * (- 2x) * (16 - x²)<sup>-1,5</sup>
+
+v' = x * (16 - x²)<sup>-1,5</sup>     
+
+f''<sub>(x)</sub> = -1*(16 - x²)<sup>-0,5</sup> + x*(16 - x²)<sup>-1,5</sup>*(-x)
+
+f''<sub>(x)</sub> = -(16 - x²)<sup>-0,5</sup> - x² * (16 - x²)<sup>-1,5</sup> 
+
+               -1               x² 
+f''<sub>(x)</sub> = -------------- - --------------
+          (16 - x²)<sup>0,5</sup>     (16 - x²)<sup>1,5</sup> 
+
+               -1                  x² 
+f''<sub>(x)</sub> = -------------- * (1 + ---------)
+          (16 - x²)<sup>0,5</sup>          16 - x² 
+
+               -1          16 - x² + x²
+f''<sub>(x)</sub> = --------------* (--------------)  
+          (16 - x²)<sup>0,5</sup>       (16 - x²)
+          
+              -16
+f''<sub>(x)</sub> = -------------          
+          (16 - x²)<sup>1,5</sup>    
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = -16, u' = 0
+
+           u'          0
+f'''<sub>(x)</sub> = --- = -------------- ≠ 0 
+           v     (16 - x²)<sup>1,5</sup> 
+           
+für alle x ≠ 4, -4            
+
+16 - x² muss ≥ 0 sein, wegen Quadratwurzel.
+
+16 - x² ≥ 0 |+x²
+
+16 ≥ x²  |ⱱ
+
+|x| ≤ 4 --> x ≥ -4 und x ≤ 4
+
+Definitionsbereich:  <span style="color:red">-4 ≤ x ≤ 4</span>
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 0 (Extrempunkt)
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> ≥ 0
+
+f<sub>(0)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><mn>0</mn></mrow></msqrt></math> = 4   --> <span style="color:red">0 ≤ f<sub>(x)</sub> ≤ 4</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = <math mathsize="0.9em""><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mfenced><mrow><mo>-</mo><mi mathvariant="normal">x</mi></mrow></mfenced><mn>2</mn></msup></mrow></msqrt></math> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = f<sub>(x)</sub> 
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -<math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+<math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = 0 |²
+
+16 - x² = 0 |+x²
+
+x² = 16
+
+x<sub>1,2</sub> = ± 4
+
+x<sub>1</sub> = 4, x<sub>2</sub> = -4     <span style="color:red">N<sub>1</sub>(4|0), N<sub>2</sub>(-4|0)</span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+f<sub>(0)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = 4
+
+<span style="color:red">Sy(0|4)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+     -x
+------------- = 0 |*(16 -x²)<sup>0,5</sup>
+(16 - x²)<sup>0,5</sup> 
+
+-x = 0 | *(-1)
+
+x = 0, f<sub>(x)</sub> = 4
+
+                16 
+f''<sub>(0)</sub> = - ------------- < 0 --> <span style="color:red">Hochpunkt(0|4)</span>
+           (16 - x²)<sup>1,5</sup>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+     -16 
+-------------- = 0 |*(16 - x²)<sup>1,5</sup>
+ (16 - x²)<sup>1,5</sup> 
+
+-16 = 0 Widerspruch --> <span style="color:red">keine Wendepunkte</span>
+
+Graph:
+
+   <img src="Aufgabe125.jpg" >
+
+</b></p></pre></body></html>

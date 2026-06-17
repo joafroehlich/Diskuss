@@ -1,0 +1,217 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 128
+
+f<sub>(x)</sub> = (x  2) * (2x)<sup>-0,5</sup>
+
+        x + 2
+f<sub>(x)</sub> = -------     x ≠ 0
+       (2x)<sup>0,5</sup>
+
+Produktregel erste Ableitung:
+
+u = x + 2, u' = 1
+
+v = (2x)<sup>-0,5</sup>
+
+Kettenregel:
+
+v' = -0,5 * 2 * (2x)-1,,5 = -(2x)<sup>-1,5</sup>
+                          
+f'<sub>(x)</sub> = 1* (2x)<sup>-0,5</sup> - (2x)<sup>-1,5</sup> * (x + 2)   
+
+            1          x + 2            
+f'<sub>(x)</sub> = --------- - ---------- 
+         (2x)<sup>0,5</sup>      (2x)<sup>1,5</sup>    
+         
+            1             x + 2            
+f'<sub>(x)</sub> = -------- * (1 - --------)
+         (2x)<sup>0,5</sup>           2x
+         
+            1         2x - x - 2  
+f'<sub>(x)</sub> = --------- * (------------)
+         (2x)<sup>0,5</sup>          2x 
+
+f'<sub>(x)</sub> = (x - 2) * (2x)<sup>-1,5</sup>
+
+Produktregel zweite Ableitung:
+
+u = x - 2, u' = 1
+
+v = (2x)<sup>-1,5</sup>
+
+Kettenregel:
+
+v' = (-1,5) * 2 * (2x)<sup>-2,5</sup> = -3 * (2x)<sup>-2,5</sup>
+
+f''<sub>(x)</sub> = 1*(2x)<sup>-1,5</sup> + (-3) * (2<sup>2</sup>)<sup>-2,5</sup> * (x - 2)
+
+             1         3x - 6
+f''<sub>(x)</sub> = --------- - ---------- 
+          (2x)<sup>1,5</sup>     (2x)<sup>2,5</sup>
+          
+             1             3x - 6
+f''<sub>(x)</sub> = -------- * (1 - ---------)
+          (2x)1.5            2x
+
+             1          2x - 3x + 6
+f''<sub>(x)</sub> = --------- * (---------------) 
+          (2x)<sup>1,5</sup>            2x
+          
+           6 - x 
+f''<sub>(x)</sub> = ---------          
+          (2x)<sup>2,5</sup>    
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 6 - x, u' = -1
+
+           u'       -1              
+f'''<sub>(x)</sub> = --- = ---------- ≠ 0 für alle x > 0 
+           v     (2x)2.5  
+
+2x muss ≥ 0 sein, wegen Quadratwurzel.
+
+2x ≥ 0 |:2
+
+x ≥ 0
+
+Polstellen, Nenner = 0:
+
+(2x)<sup>0,5</sup> = 0 |<sup>2</sup>
+
+2x = 0 |:2
+
+<span style="color:red">x = 0</span>
+
+Nenner = 0 und Zähler = 0 + 2 = 2 ≠ 0 
+
+--> <span style="color:red">senkrechte Asymptote </span>  
+
+Definitionsbereich:   <span style="color:red">0 < x < ∞</span>
+
+Verhalten im Unendlichen:
+
+         x + 2       x + 2           
+f<sub>(x)</sub> = --------- = --------- 
+        (2x)<sup>0,5</sup>      √2*√x 
+
+           x          2     
+f<sub>(x)</sub> = --------- + -------         
+        √2*√x       √2*√x
+
+          √x       √2
+ f<sub>(x)</sub> = ------ + ----- <span style="color:red">geht gegen ∞</span> für x --> ∞
+          √2       √x
+
+Wertebereich: f<sub>(x)</sub> wird dann am kleinsten, 
+wenn x = 2 (Extrempunkt)
+
+           2 + 2       4
+f<sub>(2)</sub> = ------------ = --- = 2 --> <span style="color:red">2 ≤ f<sub>(x)</sub> < ∞</span>
+        (2 * 2)<sup>0,5</sup>     2 
+     
+Symmetrie: 
+
+f<sub>(-x)</sub> = (-x + 2) * (2(-x))<sup>-0,5</sup>
+
+f<sub>(-x)</sub> = (-x + 2) * (-2x)<sup>-0,5</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie </span>         
+
+-f<sub>(-x)</sub> = -(-x + 2) * (2(-x))<sup>-0,5</sup> ≠ f<sub>(x)</sub>
+
+-f<sub>(-x)</sub> = (x - 2) * (-2x)<sup>-0,5</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie </span>
+  
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+(x + 2) * (2x)<sup>-0,5</sup> = 0 
+
+x + 2 = 0 | -2
+
+x<sub>1</sub> = -2 --> außerhalb des Definitionsbereiches 
+
+--> <span style="color:red">keine Nullstelle</span>
+
+(2x)<sup>-0,5</sup> = 0 
+
+x<sub>2</sub> = 0 --> außerhalb des Definitionsbereiches 
+
+--> <span style="color:red">keine Nullstelle</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0
+
+f<sub>(x)</sub> = (0 + 2) * (2*0)<sup>-0,5</sup>
+
+              2
+f<sub>(x)</sub> = 0 * ------ nicht definiert   
+            00,5
+
+--> <span style="color:red">kein Schnittpunkt mit der y-Achse </span>           
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+          x - 2        
+f'<sub>(x)</sub> = --------- = 0 |*(2x)<sup>-1,5</sup>
+         (2x)<sup>1,5</sup>    
+
+x - 2 = 0 |+2
+
+x = 2 
+
+f<sub>(2)</sub> = (x + 2) * (2 * 2)<sup>-0,5</sup> = 2
+
+             6 - 2
+f''<sub>(2)</sub> = ------------- > 0 --> <span style="color:red">Tiefpunkt(2|2)</span>
+          (2 * 2)<sup>2,5</sup>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0 
+
+            6 - x   
+f''<sub>(x)</sub> = --------- = 0  |*(2x)<sup>2,5</sup> 
+          (2x)<sup>2,5</sup>    
+
+6 - x = 0 |+x
+
+x = 6
+
+f<sub>(6)</sub> = (6 + 2) * (2 * 6)<sup>-0,5</sup> = 2,31, f'''(6) ≠ 0 
+
+--> <span style="color:red">Wendepunkt (6|2,31)</span>
+
+Graph:
+
+   <img src="Aufgabe128.jpg" >
+
+</b></p></pre></body></html>

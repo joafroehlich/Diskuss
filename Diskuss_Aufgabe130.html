@@ -1,0 +1,183 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 130
+
+f<sub>(x)</sub> = -0,5x * <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = - 0,5x * (x<sup>2</sup> + 4)<sup>0,5</sup>
+
+Produktregel erste Ableitung:
+
+u = -0,5x, u' = -0,5
+
+v = (x2 + 4)<sup>0,5</sup> 
+
+Kettenregel:
+
+v' = 0,5 * 2x * (x<sup>2</sup> + 4)<sup>-0,5</sup> = x * (x<sup>2</sup> + 4)<sup>-0,5</sup>
+ 
+f'<sub>(x)</sub> = -0,5*(x<sup>2</sup> + 4)<sup>0,5</sup> + x*(x<sup>2</sup> + 4)<sup>-0,5</sup>*(-0,5x)   
+
+                                0,5 * x<sup>2</sup>
+f'<sub>(x)</sub> = -0,5 * (x<sup>2</sup> + 4)<sup>0,5</sup> - -------------  
+                              (x<sup>2</sup> + 4)<sup>0,5</sup>
+                              
+                                 0,5 * x<sup>2</sup>
+f'<sub>(x)</sub> = (x<sup>2</sup> + 4)<sup>0,5</sup> * (- 0,5 - -----------)
+                                  x<sup>2</sup> + 4
+
+                        -0,5 * (x<sup>2</sup> + 4) - 0,5x<sup>2</sup>
+f'<sub>(x)</sub> = (x<sup>2</sup> + 4)<sup>0,5</sup> * (-------------------------)  
+                                 x<sup>2</sup> + 4
+                                 
+           -x<sup>2</sup> - 2
+f'<sub>(x)</sub> = ------------
+        (x<sup>2</sup> + 4)<sup>0,5</sup>     
+
+Quotientenregel zweite Ableitung:
+
+u = -x<sup>2</sup> - 2, u' = -2x
+
+v = (x<sup>2</sup> + 4)<sup>0,5</sup>
+
+Kettenregel:
+
+v' = 0,5 * 2x * (x<sup>2</sup> + 4)<sup>-0,5</sup> = x * (x<sup>2</sup> + 4)<sup>-0,5</sup>
+
+          -2x*(x<sup>2</sup>+4)<sup>0,5</sup> - x*(x<sup>2</sup>+4)<sup>-0,5</sup>*(-x<sup>2</sup>-2)      
+f''<sub>(x)</sub> = --------------------------------------
+                     ((x<sup>2</sup> + 4)<sup>0,5</sup>)<sup>2</sup>
+
+                                 x * (-x<sup>2</sup> - 2) 
+                                -------------- 
+          -2x * (x<sup>2</sup> + 4)<sup>0,5</sup> -    (x<sup>2</sup> + 4)<sup>0,5</sup>
+f''<sub>(x)</sub> = -------------------------------------- 
+                             
+          -2x * (x<sup>2</sup> + 4) - x * (-x<sup>2</sup> - 2)
+f''<sub>(x)</sub> = --------------------------------
+                    (x<sup>2</sup> + 4)<sup>1,5</sup>    
+
+          -2x<sup>3</sup> - 8x + x<sup>3</sup> + 2x      
+f''<sub>(x)</sub> = ---------------------- 
+               (x<sup>2</sup> + 4)<sup>1,5</sup>
+               
+            -x<sup>3</sup> - 6x   
+f''<sub>(x)</sub> = -------------               
+          (x<sup>2</sup> + 4)<sup>1,5</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = -x<sup>3</sup> - 6x, u' = -3x<sup>2</sup> - 6
+
+           u'     -3x<sup>2</sup> - 6              
+f'''<sub>(x)</sub> = --- = ------------- ≠ 0 für alle x  
+           v     (x<sup>2</sup> + 4)<sup>1,5</sup>  
+
+x<sup>2</sup> + 4 ist > 0 für alle x
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+Verhalten im Unendlichen:
+
+-0,5x * <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = 
+
+= -0,5x * (x<sup>2</sup> + 4)<sup>0,5</sup> <span style="color:red">geht gegen ± ∞</span> für x --> ± ∞
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞</span>
+
+Symmetrie:
+
+f<sub>(-x)</sub> = -0,5 * <sub>(-x)</sub> * <math mathsize="0.9em"><msqrt><mrow><msup><mfenced><mrow><mo>-</mo><mi mathvariant="normal">x</mi></mrow></mfenced><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = 0,5x * <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = 
+
+= -0,5x * (x<sup>2</sup> + 4)<sup>0,5</sup> ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -0,5x * <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = - 0,5x * (x<sup>2</sup> + 4)<sup>0,5</sup> = f<sub>(x)</sub> 
+
+--> <span style="color:red">Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = -0,5x * <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = - 0,5x * (x<sup>2</sup> + 4)<sup>0,5</sup>  = 0
+
+-0,5x = 0 |:(-0,5)
+
+x = 0, f<sub>(0)</sub> = -0,5 * 0 * <math mathsize="0.9em"><msqrt><mrow><msup><mfenced><mn>0</mn></mfenced><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = 0
+
+<math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math>  = 0 |<sup>2</sup>
+
+x<sup>2</sup> + 4 = 0 |-4
+
+x<sup>2</sup> = -4 |ⱱ --> keine weitere Lösung --> <span style="color:red">N(0|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0 
+
+f<sub>(0)</sub> = -0,5 * 0 * <math mathsize="0.9em"><msqrt><mrow><msup><mfenced><mn>0</mn></mfenced><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math> = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+           -x<sup>2</sup> - 2   
+f'<sub>(x)</sub> = ------------- |*(x<sup>2</sup> + 4)<sup>0,5</sup>
+         (x<sup>2</sup> + 4)<sup>0,5</sup>     
+
+-x<sup>2</sup> - 2 = 0 |+x<sup>2</sup>
+
+x<sup>2</sup> = -2 |ⱱ 
+
+--> keine Lösung --> <span style="color:red">keine Extrempunkte</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+            -x<sup>3</sup> - 6x
+f''<sub>(x)</sub> = -------------  |* (x<sup>2</sup> + 4)<sup>1,5</sup>
+          (x<sup>2</sup> + 4)<sup>1,5</sup>
+
+-x<sup>3</sup> - 6x = 0
+
+-x * (x<sup>2</sup> + 6) = 0
+
+-x = 0 |*(-1)
+
+x = 0; f'''<sub>(0)</sub> ≠ 0 --> <span style="color:red">WP(0|0)</span>
+
+x<sup>2</sup> + 6 = 0| -6
+
+x<sup>2</sup> = -6 |ⱱ 
+
+--> keine weitere Lösung 
+
+--> <span style="color:red">keine weiteren Wendepunkte</span>
+
+Graph:
+
+   <img src="Aufgabe130.jpg" >
+
+</b></p></pre></body></html>

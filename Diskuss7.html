@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+   <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<span style="color:blue"><p class="Text2"><b>Kurvendiskussion<br>Wurzelfunktionen</p></b></span> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+    <!--//Aufgabe 125-->                      
+
+<pre><b><p class="Aufgabe">Aufgabe 125
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math>
+       
+<button  onclick="window.open('Diskuss_Aufgabe125.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 126-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 126
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math>
+
+ Hochpunkt (<input type="text" id="Eintrag126" maxlength="1" size="1" style= background-color:yellow >|2) <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe126() { 
+                                                
+                          if (Eintrag126.value=="2") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
+                          }  
+                           
+                          else if (Eintrag126.value!=="2" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="2"; window.open('Diskuss_Aufgabe126.html');           
+                          document.getElementById("Pruef126").disabled= true;}
+                               
+                          else if (Eintrag126.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+<!--//Aufgabe 127-->                      
+
+<pre><p class="Aufgabe">Aufgabe 127
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mn>0</mn><mo>,</mo><mn>5</mn><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><msqrt><mrow><mn>4</mn><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">x</mi></mrow></msqrt></math>
+
+<button  onclick="window.open('Diskuss_Aufgabe127.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 128-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 128
+
+f<sub>(x)</sub> = (x + 2) * (2x)-0,5
+
+Tiefpunkt (<input type="text" id="Eintrag128" maxlength="1" size="1" style= background-color:yellow >|2) <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe128() { 
+                                                
+                          if (Eintrag128.value=="-2") {alert("Richtig"); document.getElementById("Pruef128").disabled= true;
+                          }  
+                           
+                          else if (Eintrag128.value!=="2" && Eintrag128.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag128").value="2"; window.open('Diskuss_Aufgabe128.html');           
+                          document.getElementById("Pruef128").disabled= true;}
+                               
+                          else if (Eintrag128.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 129-->                      
+
+<pre><p class="Aufgabe">Aufgabe 129
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mfenced><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced><mo>&#xd7;</mo><msqrt><mi mathvariant="normal">x</mi></msqrt></math>
+
+<button  onclick="window.open('Diskuss_Aufgabe129.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 130-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 130
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mn>0</mn><mo>,</mo><mn>5</mn><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+Wendepunkt (<input type="text" id="Eintrag130" maxlength="1" size="1" style= background-color:yellow >|0) <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe130() { 
+                                                
+                          if (Eintrag130.value=="0") {alert("Richtig"); document.getElementById("Pruef130").disabled= true;
+                          }  
+                           
+                          else if (Eintrag130.value!=="0" && Eintrag130.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag130").value="0"; window.open('Diskuss_Aufgabe130.html');           
+                          document.getElementById("Pruef130").disabled= true;}
+                               
+                          else if (Eintrag130.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+
+<!--//Aufgabe 131-->                      
+
+<pre><p class="Aufgabe">Aufgabe 131
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mn>1</mn><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">x</mi><mo>+</mo><mn>4</mn><mo>&#xd7;</mo><msqrt><mi mathvariant="normal">x</mi></msqrt></math>
+
+<button  onclick="window.open('Diskuss_Aufgabe131.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 132-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 132
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><mo>&#x2212;</mo><mn>1</mn></mrow></msqrt></math>
+
+Wendepunkt (1,59|<input type="text" id="Eintrag132" maxlength="4" size="1" style= background-color:yellow >) <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe132() { 
+                                                
+                          if (Eintrag132.value=="1,74") {alert("Richtig"); document.getElementById("Pruef132").disabled= true;
+                          }  
+                           
+                          else if (Eintrag132.value!=="1,74" && Eintrag132.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag132").value="1,74"; window.open('Diskuss_Aufgabe132.html');           
+                          document.getElementById("Pruef132").disabled= true;}
+                               
+                          else if (Eintrag132.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+                      
+<!--//Aufgabe 133-->                      
+
+<pre><p class="Aufgabe">Aufgabe 133
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mn>0</mn><mo>,</mo><mn>5</mn><mo>&#xd7;</mo><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+<button  onclick="window.open('Diskuss_Aufgabe133.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 134-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 134
+
+f<sub>(x)</sub> = <math mathsize="0.9em"><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">x</mi></msqrt></math>
+
+Tiefpunkt ()<input type="text" id="Eintrag134" maxlength="4" size="1" style= background-color:yellow >|-0,25) <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe134() { 
+                                                
+                          if (Eintrag134.value=="0,25") {alert("Richtig"); document.getElementById("Pruef134").disabled= true;
+                          }  
+                           
+                          else if (Eintrag134.value!=="0,25" && Eintrag134.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag134").value="0,25"; window.open('Diskuss_Aufgabe134.html');           
+                          document.getElementById("Pruef134").disabled= true;}
+                               
+                          else if (Eintrag134.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 135-->                      
+
+<pre><p class="Aufgabe">Aufgabe 135
+
+f<sub>(x)</sub> = <math mathsize="1.2em"><mfrac><msqrt><mi mathvariant="normal">x</mi></msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></math>
+
+<button  onclick="window.open('Diskuss_Aufgabe135.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 136-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 136
+
+f<sub>(x)</sub> = <math mathsize="1.2em"><mfrac><mrow><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><mn>4</mn></mrow><msqrt><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></math>
+
+Wendepunkt (<input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow >|-3,04) <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe136() { 
+                                                
+                          if (Eintrag136.value=="0,54") {alert("Richtig"); document.getElementById("Pruef136").disabled= true;
+                          }  
+                           
+                          else if (Eintrag136.value!=="0,54" && Eintrag136.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag136").value="0,54"; window.open('Diskuss_Aufgabe136.html');           
+                          document.getElementById("Pruef136").disabled= true;}
+                               
+                          else if (Eintrag136.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 137-->                      
+
+<pre><p class="Aufgabe">Aufgabe 137
+
+f<sub>(x)</sub> = f(x) = (2x²)1/3 
+
+<button  onclick="window.open('Diskuss_Aufgabe137.html');" >Lösung</button></p></b></pre>
+
+                     
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+         
+
+        </body></html>
+
