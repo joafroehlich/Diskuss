@@ -1,0 +1,162 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 152
+
+f<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup>  
+
+Kettenregel erste Ableitung:
+
+f'<sub>(x)</sub> = -2x * e<sup>-x<sup>2</sup></sup>
+
+Produktregel zweite Ableitung:
+
+u = -2x, u' = -2
+
+v = e<sup>-x<sup>2</sup></sup>
+
+Kettenregel:
+
+v' = -2x * e<sup>-x<sup>2</sup></sup>
+
+f''<sub>(x)</sub> = -2 * e<sup>-x<sup>2</sup></sup>+ (-2x) * e<sup>-x<sup>2</sup></sup>* (-2x)
+
+                           4x<sup>2</sup> - 2 
+f''<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup>* (4x<sup>2</sup> - 2) = ---------
+                             e<sup>x<sup>2</sup></sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 4x<sup>2</sup> - 2, u' = 8x
+
+           u'     8x              
+f'''<sub>(x)</sub>  = --- = ----- ≠ 0 für x ≠ 0
+           v      e<sup>x<sup>2</sup></sup> 
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                1
+f<sub>(x)</sub>  = e<sup>-x<sup>2</sup></sup>0 ------ geht gegen <span style="color:red">0</span> für x --> ± ∞
+               e<sup>x<sup>2</sup></sup>  
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 0 (Extrempunkt)
+
+f<sub>(0)</sub>  = 1 -->   <span style="color:red">0 < f<sub>(x)</sub> ≤ 1</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = e<sup>-(-x)<sup>2</sup></sup> = e<sup>-x<sup>2</sup></sup> = f<sub>(x)</sub> 
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -e<sup>-x<sup>2</sup></sup>≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+e<sup>-x<sup>2</sup></sup> = 0 |ln
+
+ln e<sup>-x<sup>2</sup></sup> = ln 0
+
+-x<sup>2</sup> * ln e = 1
+
+-x<sup>2</sup> = 1 |*(-1)
+
+x<sup>2</sup> = -1 |ⱱ 
+
+--> keine Lösung --> <span style="color:red">keine Nullstellen</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>(0)</sub> = e<sup>-0<sup>2</sup></sup> = 1
+ 
+<span style="color:red">Sy(0|1)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+-2x * e<sup>-x<sup>2</sup></sup> = 0 |:e<sup>-x<sup>2</sup></sup>
+
+-2x = 0 |*(-1)
+
+2x = 0 |:2
+
+x = 0, f<sub>(0)</sub>  = 1
+
+e<sup>-x<sup>2</sup></sup> = 0 |ln
+
+ln e<sup>-x<sup>2</sup></sup> = ln 0
+
+-x<sup>2</sup> * ln e = 1
+
+-x<sup>2</sup> = 1 |*(-1)
+
+x<sup>2</sup> = -1 |ⱱ --> keine weitere Lösung
+
+f''<sub>(0)</sub> = e<sup>-0<sup>2</sup></sup> * (4 * 0<sup>2</sup> - 2) < 0  
+
+--> <span style="color:red">Hochpunkt (0|1)</span>
+
+Wendepunkte:
+
+f''<sub>(0)</sub>  = 0
+
+e<sup>-x<sup>2</sup></sup> * (4 * x<sup>2</sup> - 2) = 0
+
+e<sup>-x<sup>2</sup></sup> = 0 |ln
+
+ln e<sup>-x<sup>2</sup></sup> = ln 0
+
+-x<sup>2</sup> * ln e = 1
+
+-x<sup>2</sup> = 1 |*(-1)
+
+x<sup>2</sup> = -1 |ⱱ --> keine Lösung
+
+4x<sup>2</sup> - 2 = 0 |+2
+
+4x<sup>2</sup> = 2 |:4
+
+x<sup>2</sup> = 0,5 | ⱱ
+
+x<sub>1,2</sub> = ± 0,71
+
+x = 0,71 
+
+f<sub>(0,71)</sub> = e<sup>-0,71<sup>2</sup></sup> = 0,6     <span style="color:red">WP<sub>1</sub>(0,71|0,6)</span>
+
+Wegen Achsensymmetrie <span style="color:red">WP<sub>2</sub>(-0,71|0,6)</span>
+
+Graph:
+
+    <img src="Aufgabe152.jpg" >
+
+</b></p></pre></body></html>

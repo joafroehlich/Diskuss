@@ -1,0 +1,155 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 140
+
+                        x + 1
+f<sub>(x)</sub> = (x + 1) * e<sup>-x</sup> = -------
+                         e<sup>x</sup>
+
+Produktregel erste Ableitung:
+
+u = x + 1, u' = 1
+
+v = e<sup>-x</sup>
+
+Kettenregel:
+
+v' = -e<sup>-x</sup>
+
+f'<sub>(x)</sub> = 1 * e<sup>-x</sup> + (-e<sup>-x</sup>) * (x + 1) 
+
+f'<sub>(x)</sub> = e<sup>-x</sup> * (1 - x - 1) = -x * e<sup>-x</sup>
+
+Produktregel zweite Ableitung:
+
+u = -x, u' = -1
+
+v = e<sup>-x</sup>
+
+Kettenregel:
+
+v' = -e<sup>-x</sup>
+
+f''<sub>(x)</sub> = -1 * e<sup>-x</sup> + (-e<sup>-x</sup>) * -x = e<sup>-x</sup> * (-1 + x) 
+
+                          x - 1
+f''<sub>(x)</sub> = e<sup>-x</sup> * (x - 1) = -------
+                           e<sup>x</sup>
+
+Produktregel dritte Ableitung:
+
+u = e<sup>-x</sup>
+
+Kettenregel:
+
+u' = -e<sup>-x</sup> 
+
+v = x - 1, v' = 1
+
+f'''<sub>(x)</sub> = (-e<sup>-x</sup>) * (x - 1) + 1 * e<sup>-x</sup>  
+
+f'''<sub>(x)</sub> = e<sup>-x</sup> * (-x + 1 + 1) = e<sup>-x</sup> * (2 - x)
+
+oder
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = x - 1, u' = 1, v = e<sup>x</sup>
+
+           u'     1              
+f'''<sub>(x)</sub> = --- = ------ ≠ 0 für alle x  
+           v      e<sup>x</sup> 
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+ (x + 1)   
+-------- geht gegen <span style="color:red">0</span> für x gegen ∞
+    e<sup>x</sup>
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 0 (Extrempunkt)
+
+f<sub>(0)</sub> = 1 -->   <span style="color:red">-∞ < f<sub>(x)</sub> ≤ 1</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (-x + 1) * e-<sub>(-x)</sub> = -(x – 1) * e<sup>x</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = (x – 1) * e<sup>x</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+(x + 1) * e<sup>-x</sup> = 0 |:e<sup>-x</sup>
+
+x + 1 = 0 |-1
+
+x = -1      <span style="color:red">N(-1|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0 
+
+f<sub>(0)</sub> = (0 + 1) * e<sup>-0</sup> = 1
+ 
+<span style="color:red">Sy(0|1)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+-x * e<sup>-x</sup> = 0 |:e<sup>-x</sup>
+
+-x = 0 |+x
+
+x = 0, f<sub>(0)</sub> = 1
+
+f''<sub>(0)</sub> = e<sup>-0</sup> * (0 - 1) = -1 < 0 
+
+--> <span style="color:red">Hochpunkt (0|1)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+e<sup>-x</sup> * (x - 1) = 0 |:e<sup>-x</sup>
+
+x - 1 = 0 | +1
+
+x = 1, f<sub>(1)</sub> = e<sup>-1</sup> * (1 + 1) = 0,74
+
+f'''<sub>(1)</sub> = (2 - 1) * e<sup>-1</sup> ≠ 0 --> <span style="color:red">WP(1|0,74)</span>
+
+Graph:
+
+    <img src="Aufgabe140.jpg" >
+
+</b></p></pre></body></html>

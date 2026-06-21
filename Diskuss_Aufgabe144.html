@@ -1,0 +1,213 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 144
+
+f<sub>(x)</sub> = (x<sup>2</sup> - 1) * e<sup>-x<sup>2</sup></sup>
+
+Produktregel erste Ableitung:
+
+u = x<sup>2</sup> - 1, u' = 2x
+
+v = e<sup>-x<sup>2</sup></sup>
+
+Kettenregel:
+
+v' = - 2x * e<sup>-x<sup>2</sup></sup>
+
+f'<sub>(x)</sub> = 2x * e<sup>-x<sup>2</sup></sup> + (-2x) * e<sup>-x<sup>2</sup></sup> * (x<sup>2</sup> - 1) 
+
+f'<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (-2x<sup>3</sup> + 4x) 
+
+Produktregel zweite Ableitung:
+
+u = e<sup>-x<sup>2</sup></sup>
+
+Kettenregel:
+
+u' = -2x * e<sup>-x<sup>2</sup></sup> 
+ 
+v = -2x<sup>3</sup> + 4x, v' = -6x<sup>2</sup> + 4
+
+f''<sub>(x)</sub> = -2x*e<sup>-x<sup>2</sup></sup> * (-2x<sup>3</sup> + 4x) + (-6x<sup>2</sup> + 4)*e<sup>-x<sup>2</sup></sup>  
+
+f''<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (4x4 - 8x<sup>2</sup> - 6x<sup>2</sup> + 4) 
+
+f''<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (4x4 - 14x<sup>2</sup> + 4) 
+
+          4x4 - 14x<sup>2</sup> + 4 
+f''<sub>(x)</sub> = ----------------
+               ex<sup>2</sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 4x4 - 14x<sup>2</sup> + 4, u' = 16x<sup>3</sup> - 28x
+
+           u'    16x<sup>3</sup> - 28x
+f'''<sub>(x)</sub> = --- = ------------- ≠ 0 
+           v        ex<sup>2</sup>
+
+für alle x ≠ 0, ± 1,32, weil           
+
+16x<sup>3</sup> - 28x = 0 
+
+16x * (x<sup>2</sup> - 1,75) = 0 
+
+16x = 0 |.16
+
+x1 = 0
+
+x<sup>2</sup> - 1,75 = 0 |+1,75
+
+x<sup>2</sup> = 1,75 |√
+
+x2,3 = ± 1,32
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                          x<sup>2</sup> - 1  
+f<sub>(x)</sub> = (x<sup>2</sup> - 1) * e<sup>-x<sup>2</sup></sup> = -------- 
+                            ex<sup>2</sup>    
+
+geht gegen <span style="color:red">0</span> für x --> ± ∞
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x ± 1,41 (Extrempunkt)
+
+f<sub>(1,41)</sub> = 0,14, und am kleinsten, wenn x = 0, 
+
+f<sub>(0)</sub> = -1 --> <span style="color:red">-1 ≤ f<sub>(x)</sub> ≤ 0,14</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (<sub>(-x)</sub><sup>2</sup> - 1) * e-<sub>(-x)</sub><sup>2</sup>  
+
+f<sub>(-x)</sub> = (x<sup>2</sup> - 1) * e<sup>-x<sup>2</sup></sup> = f<sub>(x)</sub> 
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -(x<sup>2</sup> - 1) * e<sup>-x<sup>2</sup></sup> ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+(x<sup>2</sup> - 1) * e<sup>-x<sup>2</sup></sup> = 0 |:e<sup>-x<sup>2</sup></sup>
+
+x<sup>2</sup> - 1 = 0 |+1
+
+x<sup>2</sup> = 1 |ⱱ
+
+x<sub>1,2</sub> = ± 1      <span style="color:red">N<sub>1</sub>(1|0), N<sub>2</sub>(-1|0)</span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>(0)</sub> = (0<sup>2</sup> - 1) * e<sup>-0<sup>2</sup></sup> = -1
+ 
+<span style="color:red">Sy(0|-1)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+e<sup>-x<sup>2</sup></sup> * (-2x<sup>3</sup> + 4x) = 0 |:e<sup>-x<sup>2</sup></sup>
+
+2x * (-x<sup>2</sup> + 2) = 0 
+
+2x = 0|:2
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = -1 
+
+-x<sup>2</sup> + 2 = 0 |+x<sup>2</sup>
+
+x<sup>2</sup> = 2 |ⱱ
+
+x<sub>2,3</sub> = ± 1,41
+
+x<sub>2</sub> = 1,41, 
+
+f<sub>(1,41)</sub> = (1,412 - 1)*e<sup>-1,41<sup>2</sup></sup> = 0,14 = f<sub>(-1,41)</sub>
+
+f''<sub>(0)</sub> = e<sup>-0<sup>2</sup></sup> * (4 * 04 - 14 * 0<sup>2</sup> + 4) > 0 
+
+--> <span style="color:red">Tiefpunkt (0|-1)</span>
+
+f''<sub>(1,41)</sub> = e<sup>-1,41<sup>2</sup></sup> * (4*1,414 - 14*1,41 + 4) < 0 
+
+--> <span style="color:red">Hochpunkt (1,41|0,14)</span>
+
+Wegen Symmetrie: <span style="color:red">Hochpunkt (-1,41|0,14)</span>
+
+Wendepunkte:
+
+f''<sub>(0)</sub> = 0
+
+e<sup>-x<sup>2</sup></sup> * (4x<sup>4</sup> - 14x<sup>2</sup> + 4) = 0 |:e<sup>-x<sup>2</sup></sup>
+
+4x<sup>4</sup> - 14x<sup>2</sup> + 4 = 0
+
+Substitution x<sup>2</sup> = z
+
+4z<sup>2</sup> - 14z + 4 = 0
+
+A, B, C - Formel:
+
+A = 4, B = -14, C = 4
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>14</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>14</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>4</mn><mo>&#xd7;</mo><mn>4</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>4</mn></mrow></mfrac></math>
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>13</mn><mo>&#xb1;</mo><msqrt><mrow><mn>196</mn><mo>&#x2212;</mo><mn>64</mn></mrow></msqrt></mrow><mn>8</mn></mfrac></math>
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>13</mn><mo>&#xb1;</mo><msqrt><mn>132</mn></msqrt></mrow><mn>8</mn></mfrac></math>
+
+         14 ± 11,49     
+z<sub>1,2</sub> = -------------
+              8  
+
+z<sub>1</sub> = 3,19 --> x<sub>1,2</sub><sup>2</sup> = 3,19 |ⱱ --> x<sub>1,2</sub> = ± 1,79 
+
+z<sub>2</sub> = 0,31 --> x<sub>3,4</sub><sup>2</sup> = 0,31 |ⱱ --> x<sub>3,4</sub> = ± 0,56 
+
+x<sub>1</sub> = 1,79, f<sub>(1,79)</sub> = (1,79<sup>2</sup> - 1) * e<sup>-1,79<sup>2</sup></sup> = 0,04  
+
+--> <span style="color:red">WP<sub>1</sub>(1,79|0,09)</span>
+
+Wegen Symmetrie --> <span style="color:red">WP<sub>2</sub>(-1,79|0,09)</span>
+
+x<sub>2</sub> = 0,56, f<sub>(0,56)</sub> = (0,56<sup>2</sup> - 1) * e<sup>-0,56<sup>2</sup></sup> = 0,19  
+
+--> <span style="color:red">WP<sub>3</sub>(0,56|-0,5)</span>
+
+Wegen Symmetrie --> <span style="color:red">WP<sub>4</sub>(-0,56|-0,5)</span>
+
+Graph:
+
+    <img src="Aufgabe144.jpg" >
+
+</b></p></pre></body></html>

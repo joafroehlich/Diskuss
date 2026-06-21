@@ -1,0 +1,231 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 146
+
+f<sub><sub>(x)</sub></sub> = 4 * e<sup>-x<sup>2</sup></sup> * (1 - 2x<sup>2</sup>) 
+
+Produktregel erste Ableitung:
+
+u = 1 - 2x<sup>2</sup>, u' = -4x
+
+v = 4 * e<sup>-x<sup>2</sup></sup>
+
+Kettenregel:
+
+v' = -2x * 4 * e<sup>-x<sup>2</sup></sup> = -8x * e<sup>-x<sup>2</sup></sup>
+
+f'<sub>(x)</sub> = -4x * 4 * e<sup>-x<sup>2</sup></sup> + (-8x) * e<sup>-x<sup>2</sup></sup> * (1 - 2x<sup>2</sup>) 
+
+f'<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (-16x - 8x + 16x<sup>3</sup>) 
+
+f'<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (16x<sup>3</sup> - 24x) 
+
+Produktregel zweite Ableitung:
+
+u = e<sup>-x<sup>2</sup></sup>
+
+Kettenregel:
+
+u' = -2x * e<sup>-x<sup>2</sup></sup> 
+ 
+v = 16x<sup>3</sup> - 24x, v' = 48x<sup>2</sup> - 24
+
+f''<sub>(x)</sub> = - 2x * e<sup>-x<sup>2</sup></sup> * (16x<sup>3</sup> - 24x) + 
+
++ (48x<sup>2</sup> - 24) * e<sup>-x<sup>2</sup></sup>  
+
+f''<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (-32x<sup>4</sup> + 48x<sup>2</sup> + 48x<sup>2</sup> - 24) 
+
+f''<sub>(x)</sub> = e<sup>-x<sup>2</sup></sup> * (-32x<sup>4</sup> + 96x<sup>2</sup> - 24) 
+
+          -32x<sup>4</sup> + 96x<sup>2</sup> - 24 
+f''<sub>(x)</sub> = -------------------
+                  ex<sup>2</sup>
+ 
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = -32x<sup>4</sup> + 96x<sup>2</sup> - 24, u' = -128x<sup>3</sup> + 96x
+
+           u'    -128x<sup>3</sup> + 96x
+f'''<sub>(x)</sub> = --- = -------------- ≠ 0  
+           v           ex<sup>2</sup>
+
+für alle x ≠ 0, ± √0,75 weil
+
+-128x<sup>3</sup> + 96x = 0 
+
+-128x * (x<sup>2</sup> - 0,75) = 0 |
+
+-128x = 0 |:-128
+
+x1 = 0 
+
+x<sup>2</sup> - 0,75 = 0 |+0,75
+
+x<sup>2</sup> = 0,75 |√
+
+x1,2 = ± 0,866
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                              4 * (1 - 2x<sup>2</sup>) 
+f<sub>(x)</sub> = 4 * e<sup>-x<sup>2</sup></sup> (1 - 2x<sup>2</sup>) = ---------------- 
+                                    ex<sup>2</sup>    
+
+geht gegen <span style="color:red">0</span> für x --> ± ∞
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 0 (Extrempunkt)
+
+f<sub>(0)</sub> = 4, und am kleinsten, wenn x = ± 1,22, 
+
+f<sub>(±1,22)</sub> = -1,78 
+
+--> <span style="color:red">-1,78 ≤ f<sub>(x)</sub> ≤ 4</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = 4 * e-<sub>(-x)</sub><sup>2</sup> * (1 - 2*<sub>(-x)</sub><sup>2</sup>) 
+
+f<sub>(-x)</sub> = 4 * e<sup>-x<sup>2</sup></sup> * (1 - 2x<sup>2</sup>) = f<sub>(x)</sub> 
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -(4 * e<sup>-x<sup>2</sup></sup> * (1 - 2x<sup>2</sup>)) ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+4 * e<sup>-x<sup>2</sup></sup> * (1 - 2x<sup>2</sup>) = 0 |:4 * e<sup>-x<sup>2</sup></sup>
+
+1 - 2x<sup>2</sup> = 0|+2x<sup>2</sup>
+
+2x<sup>2</sup> = 1 | :2
+
+x<sup>2</sup> = 0,5 |√
+
+x<sub>1,2</sub> = ± 0,71       <span style="color:red">N<sub>1</sub>(0,71|0), N<sub>2</sub>(-1,71|0) </span>
+ 
+Schnittpunkt mit der y-Achse:
+
+x = 0 
+
+f<sub>(0)</sub> = 4 * e-0<sup>2</sup> * (1 - 2 * 0<sup>2</sup>) = 4
+ 
+<span style="color:red">Sy(0|4)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+e<sup>-x<sup>2</sup></sup> * (16x<sup>3</sup> - 24x) = 0 |:e<sup>-x<sup>2</sup></sup>
+
+16x<sup>2</sup> - 24x = 0
+
+8x * (2x<sup>2</sup> - 3) = 0
+
+8x = 0 | :8
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = 4
+
+2x<sup>2</sup> - 3 = 0| +3
+
+2x<sup>2</sup> = 3 |:2
+
+x<sup>2</sup> = 1,5 |ⱱ
+
+x<sub>2,3</sub> = ± 1,22
+
+x<sub>2</sub> = 1,22 
+
+f<sub>(1,22)</sub> = 4 * e-1,22<sup>2</sup> * (1 - 2 * 1,22<sup>2</sup>) = -1,78
+
+Wegen Achsensymmetrie f(-1,22) = -1,78
+ 
+f''<sub>(0)</sub> = e-0<sup>2</sup> * (-32*04 + 96*0<sup>2</sup> - 24) < 0 
+
+--> <span style="color:red">Hochpunkt (0|4)</span>
+
+f''<sub>(1,22)</sub> = e-1,72<sup>2</sup> * (-32 * 1,224 + 96 * 1,22<sup>2</sup> - 24) > 0 
+
+--> <span style="color:red">Tiefpunkt (1,22|-1,78)</span>
+
+Wegen Achsensymmetrie --> <span style="color:red">Tiefpunkt (-1,22|-1,78)</span>
+
+Wendepunkte:
+
+f''<sub>(0)</sub> = 0
+
+e<sup>-x<sup>2</sup></sup> * (-32x<sup>4</sup> + 96x<sup>2</sup> - 24) = 0 |:e<sup>-x<sup>2</sup></sup>
+
+-32x<sup>4</sup> + 96x<sup>2</sup> - 24 = 0
+
+Substitution x<sup>2</sup> = z
+
+-32z<sup>2</sup> + 96z - 24 = 0
+
+A, B, C - Formel:
+
+A = -32, B = 96, C = -24
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>96</mn><mo>&#xb1;</mo><msqrt><mrow><msup><mn>96</mn><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>32</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>24</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>32</mn></mrow></mfenced></mrow></mfrac></math>
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>96</mn><mo>&#xb1;</mo><msqrt><mrow><mn>9216</mn><mo>&#x2212;</mo><mn>3072</mn></mrow></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>64</mn></mrow></mfrac></math>
+
+z<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>96</mn><mo>&#xb1;</mo><msqrt><mn>6144</mn></msqrt></mrow><mrow><mo>&#x2212;</mo><mn>64</mn></mrow></mfrac></math>
+
+         -96 ± 78,38     
+z<sub>1,2</sub> = ---------------
+            -64  
+
+z<sub>1</sub> = 0,275 --> x<sub>1,2</sub><sup>2</sup> = 0,275 |ⱱ --> x<sub>1,2</sub> = ± 0,52 
+
+z<sub>2</sub> = 2,72 --> x<sub>3,4</sub><sup>2</sup> = 2,72 |ⱱ --> x<sub>3,4</sub> = ± 1,65 
+
+x<sub>1</sub> = 0,52 
+
+f<sub>(0,52)</sub> = 4 * e<sup>-0,52<sup>2</sup></sup> * (1 - 2 * 0,52<sup>2</sup>) = 1,4  
+
+--> <span style="color:red">WP<sub>1</sub>(0,52|1,4)</span>
+
+Wegen Achsensymmetrie --> <span style="color:red">WP<sub>2</sub>(-0,52|1,4)</span>
+
+x<sub>2</sub> = 1,65 
+
+f<sub>(1,65)</sub> = 4 * e<sup>-1,65<sup>2</sup></sup> * (1 - 2 * 1,65<sup>2</sup>) = -1,17 
+
+--> <span style="color:red">WP<sub>3</sub>(1,65|-1,17)</span>
+
+Wegen Achsensymmetrie --> <span style="color:red">WP<sub>4</sub>(1,65|-1,17)</span>
+
+Graph:
+
+    <img src="Aufgabe146.jpg" >
+
+</b></p></pre></body></html>

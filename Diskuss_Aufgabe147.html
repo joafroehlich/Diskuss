@@ -1,0 +1,228 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 147
+
+f<sub><sub>(x)</sub></sub> = (2x<sup>2</sup> - 6x - 8) * e<sup>-2x</sup>
+
+Produktregel erste Ableitung:
+
+u = 2x<sup>2</sup> - 6x - 8, u' = 4x - 6
+
+v = e<sup>-2x</sup>
+
+Kettenregel:
+
+v' = -2 * e<sup>-2x</sup> 
+
+f'<sub>(x)</sub> = (4x - 6)*e<sup>-2x</sup> + (- 2)*e<sup>-2x</sup>*(2x<sup>2</sup> - 6x - 8) 
+
+f'<sub>(x)</sub> = e<sup>-2x</sup> * (4x - 6 - 4x<sup>2</sup> + 12x + 16) 
+
+f'<sub>(x)</sub> = e<sup>-2x</sup> * (- 4x<sup>2</sup> + 16x + 10) 
+
+Produktregel zweite Ableitung:
+
+u = e<sup>-2x</sup>
+
+Kettenregel:
+
+u' = -2 * e<sup>-2x</sup> 
+ 
+v = -4x<sup>2</sup> + 16x + 10, v' = -8x + 16
+
+f''<sub>(x)</sub> = -2 * e<sup>-2x</sup> * (-4x<sup>2</sup> + 16x + 10) + 
+
++ (-8x +16) * e<sup>-2x</sup>  
+
+f''<sub>(x)</sub> = e<sup>-2x</sup> * (8x<sup>2</sup> - 32x - 20 - 8x + 16) 
+
+f''<sub>(x)</sub> = e<sup>-2x</sup> * (8x<sup>2</sup> - 40x - 4) 
+
+          8x<sup>2</sup> - 40x - 4 
+f''<sub>(x)</sub> = ---------------
+               e<sup>2x</sup>
+ 
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 8x<sup>2</sup> - 40x - 4, u' = 16x - 40
+
+           u'    16x - 40              
+f'''<sub>(x)</sub> = --- = ----------- ≠ 0 für alle x ≠ 2,5
+           v        e<sup>2x</sup>
+weil
+
+16x – 40 = 0 |+40
+
+16x = 40 |:16
+
+x = 2,5
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                               2x<sup>2</sup> - 6x - 8 
+f<sub>(x)</sub> = (2x<sup>2</sup> - 6x - 8) * e<sup>-2x</sup> = -------------- 
+                                    e<sup>2x</sup>
+                                     
+geht gegen <span style="color:red">0</span> für x --> ∞
+
+Wertebereich: f<sub>(x)</sub> wird dann am kleinsten, 
+wenn x = -0,55 (Extrempunkt)
+
+f(-0,55) = -12,3 -->  <span style="color:red">-12,3 ≤ f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (2(-x)<sup>2</sup> - 6(-x) - 8) * e<sup>2x</sup> 
+
+f<sub>(-x)</sub> = (2x<sup>2</sup> + 6x - 8) * e<sup>-2(-x)</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -(2x<sup>2</sup> + 6x - 8) * e<sup>-2(-x)</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+(2x<sup>2</sup> - 6x - 8) * e<sup>-2x</sup> = 0 |:e<sup>-2x</sup>
+
+2x<sup>2</sup> - 6x - 8 = 0 |:2
+
+x<sup>2</sup> - 3x - 4 = 0
+
+p, q – Formel
+
+p = -3, q = -4
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mfenced></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>3</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>2</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1,5 ± 2,5
+
+x<sub>1</sub> = 4
+
+x<sub>2</sub> = - 1        <span style="color:red">N<sub>1</sub>(4|0), N<sub>2</sub>(-1|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>(0)</sub> = (2 * 0<sup>2</sup> - 6 * 0 - 8) * e<sup>-2</sup> * 0 = -8
+ 
+<span style="color:red">Sy(0|-8)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+e<sup>-2x</sup> * (-4x<sup>2</sup> + 16x + 10) = 0 |:e<sup>-2x</sup>
+
+-4x<sup>2</sup> + 16x + 10 = 0 |:(-4)
+
+x<sup>2</sup> - 4x - 2,5 = 0
+
+p, q – Formel
+
+p = -4, q = -2,5
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mfenced></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2 ± <math mathsize="0.9em"><msqrt><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>5</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2 ± 2,55
+	
+x<sub>1</sub> = 4,55
+
+x<sub>2</sub> = -0,55      
+
+x<sub>1</sub> = 4,55 
+
+f<sub>(4,55)</sub> = (2*4,55<sup>2</sup> - 6*4,55 - 8)*e<sup>-2</sup>*4,55 = 0,0007
+
+<sub>2</sub> = -0,55 
+
+f<sub>(-0,55)</sub> = (2 * (-0,55)<sup>2</sup> - 6 * (-0,55) - 8) * 
+
+* e<sup>-2</sup> * (-0,55) = -12,3
+
+f''<sub>(4,55)</sub> = e<sup>-2</sup>*4,55*(8*4,55<sup>2</sup> - 40*4,55 - 4) < 0 
+
+--> <span style="color:red">Hochpunkt (4,55|0,0007)</span>
+
+f''<sub>(-0,55)</sub> = e<sup>-2</sup>*(-0,55) * (8 * (-0,55)<sup>2</sup> - 
+
+- 40 * (-0,55) - 4) > 0 
+
+--> <span style="color:red">Tiefpunkt (- 0,55|- 12,3)</span>
+
+Wendepunkte:
+
+f''<sub>(0)</sub> = 0
+
+e<sup>-2x</sup> * (8x<sup>2</sup> - 40x - 4) = 0 |:e<sup>-2x</sup>
+
+8x<sup>2</sup> - 40x - 4 = 0 | :8
+
+x<sup>2</sup> - 5x - 0,5 = 0
+
+p, q – Formel
+
+p = -5, q = -0,5
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>5</mn></mrow></mfenced></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>5</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>0</mn><mo>,</mo><mn>5</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>6</mn><mo>,</mo><mn>75</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 2,5 ± 2,6
+
+x<sub>1</sub> = 5,1
+
+x<sub>2</sub> = -0,1
+
+f<sub>(5,1)</sub> = (2*5,1<sup>2</sup> - 6*5,1 - 8) * e<sup>-2</sup>*5,1 = 0,0005
+
+  --> <span style="color:red">WP<sub>1</sub>(5,1|0,0005)</span>
+
+f<sub>(-0,1)</sub> = (2 * (-0,1<sup>2</sup>) - 
+
+- 6 * (-0,1) - 8) * e<sup>-2</sup> *(-0,1) = -9
+
+--> <span style="color:red">WP<sub>2</sub>(-0,1|-9)</span>
+
+Graph:
+
+    <img src="Aufgabe147.jpg" >
+
+</b></p></pre></body></html>

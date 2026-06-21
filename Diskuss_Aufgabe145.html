@@ -1,0 +1,189 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 145
+
+f<sub>(x)</sub> = 4 * x * e<sup>-(x<sup>2</sup>/6)</sup> 
+
+Produktregel erste Ableitung:
+
+u = 4x, u' = 4
+
+v = e<sup>-(x<sup>2</sup>/6)</sup>
+
+Kettenregel:
+
+v' = (-2/6)x * e<sup>-(x<sup>2</sup>/6)</sup> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup>
+
+f'<sub>(x)</sub> = 4 * e<sup>-(x<sup>2</sup>/6)</sup> + (-x/3) * e<sup>-(x<sup>2</sup>/6)</sup> * 4x = e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) 
+
+Produktregel zweite Ableitung:
+
+u = e<sup>-(x<sup>2</sup>/6)</sup>
+
+Kettenregel:
+
+u' = (-2/6)x * e<sup>-(x<sup>2</sup>/6)</sup> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup> 
+ 
+v = 4 - 4x<sup>2</sup>/3, v' = - 8x/3
+
+f''<sub>(x)</sub> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) + 
+
++ (-8x/3) * e<sup>-(x<sup>2</sup>/6)</sup>  
+
+f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (- 4x/3 + 4x<sup>3</sup>/9 - 8x/3)  
+
+f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (- 12x/3 + 4x<sup>3</sup>/9) 
+
+           4x<sup>3</sup>/9 - 4x 
+f''<sub>(x)</sub> = --------------
+               e<sup>x<sup>2</sup>/6</sup>
+ 
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 4x3/9 - 4x, u' = 4x<sup>2</sup>/3 - 4
+
+           u'    4x<sup>2</sup>/3 - 4
+f'''<sub>(x)</sub> = --- = ----------- ≠ 0 für alle x ± ⱱ3
+           v       e<sup>x<sup>2</sup>/6</sup>
+
+weil
+
+4x<sup>2</sup>/3 – 4 = 0 |+4
+
+4x<sup>2</sup>/3 = 4 |*3
+
+4x<sup>2</sup> = 12 |:4
+
+x<sup>2</sup> = 3 |√
+
+x<sub>1,2</sub> = ± ⱱ3
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                          4x  
+f<sub>(x)</sub> = 4x * e<sup>-(x<sup>2</sup>/6)</sup> = ------- 
+                        e<sup>x<sup>2</sup>/6</sup> 
+                        
+geht gegen <span style="color:red">0</span> für x --> ± ∞
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 1,73 (Extrempunkt)
+f<sub>(1,73)</sub> = 4,2, und am kleinsten, 
+wenn x = -1,73, f(-1,73) = -4,2 
+
+-->  <span style="color:red">-4,2 ≤ f<sub>(x)</sub> ≤ 4,2</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = 4 * <sub>(-x)</sub> * e<sup>-<sub>(-x)</sub><sup>2</sup>/6</sup>
+
+f<sub>(-x)</sub> = -4x * e<sup>-(x<sup>2</sup>/6)</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -(-4x * e<sup>-<sub>(-x)</sub><sup>2</sup>/6</sup>)
+
+-f<sub>(-x)</sub> = 4x * e<sup>-(x<sup>2</sup>/6)</sup> = f<sub>(x)</sub> 
+
+--> <span style="color:red">Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+4x * e<sup>-(x<sup>2</sup>/6)</sup> = 0 |:e<sup>-(x<sup>2</sup>/6)</sup>
+
+4x = 0 |:4
+
+x = 0      <span style="color:red">N(0|0)</span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>(0)</sub> = 4 * 0 * e<sup>-0<sup>2</sup>/6</sup> = 0
+ 
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) = 0 |:e<sup>-(x<sup>2</sup>/6)</sup>
+
+4 - 4x<sup>2</sup>/3 = 0 |+4x<sup>2</sup>/3
+
+4x<sup>2</sup>/3 = 4 | *3
+
+4x<sup>2</sup> = 12 | :4
+
+x<sup>2</sup> = 3 |ⱱ
+
+x<sub>1,2</sub> = ± 1,73
+
+x<sub>1</sub> = 1,73 
+
+f<sub>(1,73)</sub> = 4 * 1,73 * e<sup>(-1,73<sup>2</sup>/6)</sup>-(1,73<sup>2</sup>/6) = 4,2
+
+Wegen Punktsymmetrie f(-1,73) = -4,2
+
+f''<sub>(1,73)</sub> = e<sup>-0<sup>2</sup>/6</sup> * (4 * 1,73<sup>3</sup>/9 - 4 * 1,73) < 0 
+
+--> <span style="color:red">Hochpunkt (1,73|4,2)</span>
+
+Wegen Punktsymmetrie --> <span style="color:red">Tiefpunkt (-1,73|-4,2)</span>
+
+Wendepunkte:
+
+f''<sub>(0)</sub> = 0
+
+e<sup>-(x<sup>2</sup>/6)</sup> * (4x<sup>3</sup> - 4x) = 0 |:e<sup>-(x<sup>2</sup>/6)</sup>
+
+4x<sup>3</sup>/9 - 4x = 0
+
+4x * (x<sup>2</sup>/9 - 1) = 0
+
+4x = 0 | :
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = 0, <span style="color:red">WP<sub>1</sub>(0|0)</span>
+
+x<sup>2</sup>/9 - 1 = 0 |+1
+
+x<sup>2</sup>/9 = 1 |*9
+
+x<sup>2</sup> = 9 |ⱱ
+
+x<sub>2,3</sub> = ± 3 , f<sub>(3)</sub> = 4 * 3 * e<sup>-3<sup>2</sup>/6</sup> = 2,7 
+
+--> <span style="color:red">WP<sub>2</sub>(3|2,7)</span>
+
+Wegen Punktsymmetrie --> <span style="color:red">WP<sub>3</sub>(-3|-2,7)</span>
+
+Graph:
+
+    <img src="Aufgabe145.jpg" >
+
+</b></p></pre></body></html>

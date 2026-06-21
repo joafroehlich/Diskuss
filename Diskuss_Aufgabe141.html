@@ -1,0 +1,165 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 141
+
+                         8 * x
+f<sub>(x)</sub> = 8 * x * e<sup>-0,5x</sup> = -------
+                         e<sup>0,5x</sup>
+
+Produktregel erste Ableitung:
+
+u = 8x, u' = 8
+
+v = e<sup>-0,5x</sup>
+
+Kettenregel:
+
+v' = -0,5 * e<sup>-0,5x</sup>
+
+f'<sub>(x)</sub> = 8 * e<sup>-0,5x</sup> + (-0,5 * e<sup>-0,5x</sup>) * 8x 
+
+f'<sub>(x)</sub> = e<sup>-0,5x</sup> * (8 - 4x) 
+
+Produktregel zweite Ableitung:
+
+u = e<sup>-0,5x</sup>
+
+Kettenregel:
+
+u' = - 0,5 * e<sup>-0,5x</sup>
+
+v = 8 - 4x, v' = - 4
+
+f''<sub>(x)</sub> = -0,5 * e<sup>-0,5x</sup> * (8 - 4x) + (-4) * e<sup>-0,5x</sup> 
+
+f''<sub>(x)</sub> = e<sup>-0,5x</sup> * (-4 + 2x - 4)
+ 
+                             2x - 8
+f''<sub>(x)</sub> = e<sup>-0,5x</sup> * (2x - 8) = --------
+                              e<sup>0,5x</sup>
+
+Produktregel dritte Ableitung:
+
+u = e<sup>-0,5x</sup>
+
+Kettenregel:
+
+u' = - 0,5x *  e<sup>-0,5x</sup> 
+
+v = 2x - 8, v' = 2
+
+f'''<sub>(x)</sub> = (-0,5 * e<sup>-0,5x</sup>) * (2x - 8) + 2 * e<sup>-0,5x</sup> 
+
+f'''<sub>(x)</sub> = e<sup>-0,5x</sup> * (-x + 4 + 2) 
+
+f'''<sub>(x)</sub> = e<sup>-0,5x</sup> * (6 - x)
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0 : 
+(Begründung siehe Aufgabe 105)
+
+u = 2x - 8, u' = 2, v = e<sup>0,5x</sup>
+
+           u'      2              
+f'''<sub>(x)</sub> = --- = ------- ≠ 0 für alle x 
+           v     e<sup>0,5x</sup> 
+
+Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+   8x   
+------- geht gegen <span style="color:red">0</span> für x gegen ∞
+ e<sup>0,5x</sup>
+
+Wertebereich: f<sub>(x)</sub> wird dann am größten, 
+wenn x = 2 (Extrempunkt)
+
+f<sub>2</sub> = 5,89 -->   <span style="color:red">-∞ < f<sub>(x)</sub> ≤ 5,89</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = 8 * <sub>(-x)</sub> * e<sup>-0,5x</sup> = -8x * e<sup>0,5x</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = 8x * e<sup>0,5x</sup> ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+8x * e<sup>-0,5x</sup> = 0 |:e<sup>-0,5x</sup>
+
+8x = 0 |:8
+
+x = 0      <span style="color:red">N(0|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>0</sub> = 8 * 0 * <sup>-0,5</sup> * 0 = 0
+ 
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+e<sup>-0,5x</sup> * (8 - 4x) = 0 |:e<sup>-0,5x</sup>
+
+8 - 4x = 0 | +4x
+
+4x = 8 |:4
+
+x = 2
+
+f<sub>(2)</sub> = 8 * 2 * <sup>-0,5</sup> * 2 = 5,89
+
+f''<sub>(2)</sub> = <sup>-0,5</sup> * 2 * (2 * 2 - 8) < 0 
+
+--> <span style="color:red">Hochpunkt (2|5,89)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+e<sup>-0,5x</sup> * (2x - 8) = 0 |:e<sup>-0,5x</sup>
+
+2x - 8 = 0 | +8
+
+2x = 8  | :2
+
+x = 4 
+
+f<sub>(4)</sub> = 8 * 4 * <sup>-0,5</sup> * 4 = 4,33
+
+f'''<sub>(4)</sub> = <sup>-0,5</sup>*4 * (6 - 4) ≠ 0 --> <span style="color:red">WP(4|4,33)</span>
+
+Graph:
+
+    <img src="Aufgabe141.jpg" >
+
+</b></p></pre></body></html>
