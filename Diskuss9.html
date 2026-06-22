@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+   <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<span style="color:blue"><p class="Text2"><b>Kurvendiskussion<br>Logarithmus-Funktionen</p></b></span> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 153-->
+
+<pre><b><p class="Aufgabe">Aufgabe 153
+
+f<sub>(x)</sub> = x * ln x<sup>2</sup>
+
+Hochpunkt(<input type="text" id="Eintrag153" maxlength="5" size="1" style= background-color:yellow >|0,74) <button id="Pruef153" onclick="Aufgabe153()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe153() { 
+                                                
+                          if (Eintrag153.value=="-0,37") {alert("Richtig"); document.getElementById("Pruef153").disabled= true;
+                          }  
+                           
+                          else if (Eintrag153.value!=="-0,37" && Eintrag153.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag153").value="-0,37"; window.open('Diskuss_Aufgabe153.html');           
+                          document.getElementById("Pruef153").disabled= true;}
+                               
+                          else if (Eintrag153.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+<!--//Aufgabe 154-->                      
+
+<pre><p class="Aufgabe">Aufgabe 154
+
+f<sub>(x)</sub> = x<sup>2</sup> * ln x
+
+<button  onclick="window.open('Diskuss_Aufgabe154.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 155-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 155
+
+f<sub>(x)</sub> = (ln x)<sup>2</sup>
+
+Wendepunkt (<input type="text" id="Eintrag155" maxlength="4" size="1" style= background-color:yellow >1) <button id="Pruef155" onclick="Aufgabe155()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe155() { 
+                                                
+                          if (Eintrag155.value=="2,72") {alert("Richtig"); document.getElementById("Pruef155").disabled= true;
+                          }  
+                           
+                          else if (Eintrag155.value!=="2,72" && Eintrag155.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag155").value="2,72"; window.open('Diskuss_Aufgabe155.html');           
+                          document.getElementById("Pruef155").disabled= true;}
+                               
+                          else if (Eintrag155.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 156 -->                      
+
+<pre><p class="Aufgabe">Aufgabe 156
+
+f<sub>(x)</sub> = (ln x)² - 1
+
+<button  onclick="window.open('Diskuss_Aufgabe156.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 157-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 157
+
+f<sub>(x)</sub> = x * (ln x - 1)²
+
+Hochpunkt (<input type="text" id="Eintrag157" maxlength="4" size="1" style= background-color:yellow >|1,48) <button id="Pruef157" onclick="Aufgabe157()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe157() { 
+                                                
+                          if (Eintrag157.value=="0,37") {alert("Richtig"); document.getElementById("Pruef157").disabled= true;
+                          }  
+                           
+                          else if (Eintrag157.value!=="0,37" && Eintrag157.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag157").value="0,37"; window.open('Diskuss_Aufgabe157.html');           
+                          document.getElementById("Pruef157").disabled= true;}
+                               
+                          else if (Eintrag157.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+
+<!--//Aufgabe 158-->                      
+
+<pre><p class="Aufgabe">Aufgabe 158
+
+       ln x²
+f<sub>(x)</sub> = ------
+         x
+
+<button  onclick="window.open('Diskuss_Aufgabe158.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 159-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 159
+
+        4          1 
+f<sub>(x)</sub> = ---- * ln (---)
+        x²         x
+
+Tiefpunkt (<input type="text" id="Eintrag159" maxlength="4" size="1" style= background-color:yellow >|-0,74) <button id="Pruef159" onclick="Aufgabe159()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe159() { 
+                                                
+                          if (Eintrag159.value=="1,65") {alert("Richtig"); document.getElementById("Pruef159").disabled= true;
+                          }  
+                           
+                          else if (Eintrag159.value!=="1,65" && Eintrag159.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag159").value="1,65"; window.open('Diskuss_Aufgabe159.html');           
+                          document.getElementById("Pruef159").disabled= true;}
+                               
+                          else if (Eintrag159.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+                      
+<!--//Aufgabe 160-->                      
+
+<pre><p class="Aufgabe">Aufgabe 160
+
+        (ln x)² - 1
+f<sub>(x)</sub> = -------------
+             x
+
+<button  onclick="window.open('Diskuss_Aufgabe160.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 161-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 161
+
+f<sub>(x)</sub> = = 2 * ln x * (2 - ln x)
+
+Hochpunkt (<input type="text" id="Eintrag161" maxlength="4" size="1" style= background-color:yellow >|2) <button id="Pruef161" onclick="Aufgabe161()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe161() { 
+                                                
+                          if (Eintrag161.value=="2,72") {alert("Richtig"); document.getElementById("Pruef161").disabled= true;
+                          }  
+                           
+                          else if (Eintrag161.value!=="2,72" && Eintrag161.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag161").value="2,72"; window.open('Diskuss_Aufgabe161.html');           
+                          document.getElementById("Pruef161").disabled= true;}
+                               
+                          else if (Eintrag161.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 162-->                      
+
+<pre><p class="Aufgabe">Aufgabe 162
+
+f<sub>(x)</sub> = x * (ln x - 1)
+
+<button  onclick="window.open('Diskuss_Aufgabe162.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 163-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 163
+
+f<sub>(x)</sub> = x² * (ln x + 1)
+
+Tiefpunkt (<input type="text" id="Eintrag163" maxlength="4" size="1" style= background-color:yellow >|-0,02) <button id="Pruef163" onclick="Aufgabe163()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe163() { 
+                                                
+                          if (Eintrag163.value=="0,22") {alert("Richtig"); document.getElementById("Pruef163").disabled= true;
+                          }  
+                           
+                          else if (Eintrag163.value!=="0,22" && Eintrag163.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag163").value="0,22"; window.open('Diskuss_Aufgabe163.html');           
+                          document.getElementById("Pruef163").disabled= true;}
+                               
+                          else if (Eintrag163.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 164-->                      
+
+<pre><p class="Aufgabe">Aufgabe 164
+
+f<sub>(x)</sub> = x * ln x
+
+<button  onclick="window.open('Diskuss_Aufgabe164.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 165-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 165
+
+         ln x + 1
+f<sub>(x)</sub> = ------------
+         ln x - 1
+
+Nullstelle (<input type="text" id="Eintrag165" maxlength="4" size="1" style= background-color:yellow >|0) <button id="Pruef165" onclick="Aufgabe165()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe165() { 
+                                                
+                          if (Eintrag165.value=="0,37") {alert("Richtig"); document.getElementById("Pruef165").disabled= true;
+                          }  
+                           
+                          else if (Eintrag165.value!=="0,37" && Eintrag165.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag165").value="0,37"; window.open('Diskuss_Aufgabe165.html');           
+                          document.getElementById("Pruef165").disabled= true;}
+                               
+                          else if (Eintrag165.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 166-->                      
+
+<pre><p class="Aufgabe">Aufgabe 166
+
+             1
+f<sub>(x)</sub> = ln  (---)
+             x 
+
+<button  onclick="window.open('Diskuss_Aufgabe166.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 167-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 167
+
+            3 * x
+f<sub>(x)</sub> = ln (--------)
+            x² - 4
+
+Wendepunkt (<input type="text" id="Eintrag167" maxlength="5" size="1" style= background-color:yellow >|-0,05) <button id="Pruef167" onclick="Aufgabe167()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe167() { 
+                                                
+                          if (Eintrag167.value=="-0,97") {alert("Richtig"); document.getElementById("Pruef167").disabled= true;
+                          }  
+                           
+                          else if (Eintrag167.value!=="-0,97" && Eintrag167.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag167").value="-0,97"; window.open('Diskuss_Aufgabe167.html');           
+                          document.getElementById("Pruef167").disabled= true;}
+                               
+                          else if (Eintrag167.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+<!--//Aufgabe 168-->                      
+
+<pre><p class="Aufgabe">Aufgabe 168
+
+             1
+f<sub>(x)</sub> = ln  (---)
+             x 
+
+<button  onclick="window.open('Diskuss_Aufgabe168.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 169-->                      
+
+<pre><p class="Aufgabe">Aufgabe 169
+
+             x + 1
+f<sub>(x)</sub> = ln (--------)
+             x - 1
+
+<button  onclick="window.open('Diskuss_Aufgabe169.html');" >Lösung</button></p></b></pre>
+
+<!--//Aufgabe 170-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 170
+
+        1 - ln x
+f<sub>(x)</sub> = ----------
+            x
+
+Tiefpunkt (<input type="text" id="Eintrag170" maxlength="4" size="1" style= background-color:yellow >|-0,14) <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></b></pre>
+
+ 
+                      <script>
+                        function Aufgabe170() { 
+                                                
+                          if (Eintrag170.value=="7,39") {alert("Richtig"); document.getElementById("Pruef170").disabled= true;
+                          }  
+                           
+                          else if (Eintrag170.value!=="7,39" && Eintrag170.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag170").value="7,39"; window.open('Diskuss_Aufgabe170.html');           
+                          document.getElementById("Pruef170").disabled= true;}
+                               
+                          else if (Eintrag170.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+         
+
+        </body></html>
+
