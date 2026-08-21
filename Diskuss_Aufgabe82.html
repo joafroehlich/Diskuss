@@ -24,7 +24,7 @@
 
 Ein Betrieb hat Fixkosten Kf von 21 600 GE und 
 variable Kosten Kv<sub>(x)</sub> von 0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x 
-und E<sub>(x)</sub> = 73x.
+und einen Erlös E<sub>(x)</sub> = 73x.
 a) Wie hoch ist der Kostenanstieg bei einer 
 Steigerung der Produktion von 100 auf 101 ME? 
 Wie groß ist die Änderungsrate für 100 ME?
@@ -43,6 +43,7 @@ K<sub>(100)</sub> = 39 800 GE
 K<sub>(101)</sub> = 39 907,3 GE
 
 <span style="color:red">Der Anstieg beträgt</span> 
+
 39 907,3 GE - 39 800 GE = <span style="color:red">107,3 GE/ME</span>
 
 <span style="color:red">K'<sub>(100)</sub> = 108 GE/ME</span>
@@ -59,9 +60,9 @@ G<sub>(x)</sub> = E<sub>(x)</sub> - K<sub>(x)</sub>
 
 G<sub>(x)</sub> = 73x - (0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x + 21 600)
 
-G<sub>(x)</sub> = - 0,0008x<sup>3</sup> + 0,9x<sup>2</sup> - 191x - 21 600
+G<sub>(x)</sub> = -0,0008x<sup>3</sup> + 0,9x<sup>2</sup> - 191x - 21 600
 
-G'<sub>(x)</sub> = - 0,0024x<sup>2</sup> + 1,8x - 191
+G'<sub>(x)</sub> = -0,0024x<sup>2</sup> + 1,8x - 191
 
 Newtonsches Näherungsverfahren.
 
@@ -84,7 +85,7 @@ x<sub>1</sub> = 440 - ----------------------------------
 
      - 191 * 440 - 21 600
 --------------------------------
--0,0024 * 440<sup>2</sup> + 1,8 * 440 - 191                          
+-0,0024 * 440<sup>2</sup> + 1,8 * 440 - 191
 
 x<sub>1</sub> = 436,7
 
@@ -94,7 +95,7 @@ x<sub>21</sub> = 759 - -------------------------------------
 
        - 191 * 759 - 21 600
 ---------------------------------
--0,0024 * 759<sup>2</sup> + 1,8 * 759 - 191               
+-0,0024 * 759<sup>2</sup> + 1,8 * 759 - 191
 
 x<sub>21</sub> = 769,2 
 
@@ -104,9 +105,9 @@ x<sub>2</sub> = 769,2 - ------------------------------------
 
         - 191 * 769,2 - 21 600
 --------------------------------------
- -0,0024 * 769,2<sup>2</sup> + 1,8 * 769,2 - 191             
+ -0,0024 * 769,2<sup>2</sup> + 1,8 * 769,2 - 191
         
-x2<sub>2</sub> = 768,7 
+x<sub>22</sub> = 768,7 
        
 <span style="color:red">Die Gewinnzone liegt zwischen 
 436,7 ME und 768,7 ME.</span>
@@ -114,6 +115,10 @@ x2<sub>2</sub> = 768,7
 <img src="Aufgabe82.jpg" >
 
 c)
+
+                            K<sub>(x)</sub>
+Stückkostenfunktion k<sub>(x)</sub> = ------
+                             x
 
          0,0008x<sup>3</sup> - 0,9x<sup>2</sup> + 264x + 21 600 
 k<sub>(x)</sub> = -----------------------------------
@@ -142,14 +147,14 @@ immer > 0, weil x > 0
 Wertetabelle:
 
 x          300        400       500    
-k'<sub>(x)</sub>  -59 400   -63 2005   -46 600      
+k'<sub>(x)</sub>   -59 400   -63 2005   -46 600      
 
 x      600        700
 k'<sub>(x)</sub>    0     86 200
 
 Hornerschema:
 
-Nullstelle bei x1 = 600
+Nullstelle bei x<sub>1</sub> = 600
 
 Hornerschema:
 
@@ -157,7 +162,7 @@ Hornerschema:
 x<sub>1</sub> = 600                0,96      36      21 600 
            --------------------------------------
             0,0016      0,06      36           0
-                                                                                    
+
 k''<sub>(x)</sub> > 0 --> 
                                             
 k<sub>(600)</sub> = 0,0008 * 600<sup>2</sup> - 0,9 * 600 + 264 + 
@@ -181,7 +186,7 @@ Polynomdivision:
                     ----------------
                                  0
 
-Ergebnis = 0,0016x<sup>2</sup> + 0,006x + 36                                  
+Ergebnis = 0,0016x<sup>2</sup> + 0,006x + 36
 
 0,0016x<sup>2</sup> + 0,06x + 36 = 0 |:0,0016
 
