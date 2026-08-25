@@ -24,45 +24,45 @@
 
 f<sub>(x)</sub> = <math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math>     
 
-f<sub>(x)</sub> = (16 - x²)<sup>0,5</sup>
+f<sub>(x)</sub> = (16 - x<sup>2</sup>)<sup>0,5</sup>
 
 Kettenregel:
 
-f'<sub>(x)</sub> = 0,5 * (-2x) * (16 - x²)<sup>-0,5</sup> 
+f'<sub>(x)</sub> = 0,5 * (-2x) * (16 - x<sup>2</sup>)<sup>-0,5</sup> 
 
-f'<sub>(x)</sub> = -x * (16 - x²)<sup>-0,5</sup>
+f'<sub>(x)</sub> = -x * (16 - x<sup>2</sup>)<sup>-0,5</sup>
 
 Produktregel zweite Ableitung:
 
 u = -x, u' = -1
 
-v = (16 - x²)<sup>-0,5</sup>
+v = (16 - x<sup>2</sup>)<sup>-0,5</sup>
 
 Kettenregel:
 
-v' = -0,5 * (- 2x) * (16 - x²)<sup>-1,5</sup>
+v' = -0,5 * (- 2x) * (16 - x<sup>2</sup>)<sup>-1,5</sup>
 
-v' = x * (16 - x²)<sup>-1,5</sup>     
+v' = x * (16 - x<sup>2</sup>)<sup>-1,5</sup>     
 
-f''<sub>(x)</sub> = -1*(16 - x²)<sup>-0,5</sup> + x*(16 - x²)<sup>-1,5</sup>*(-x)
+f''<sub>(x)</sub> = -1*(16 - x<sup>2</sup>)<sup>-0,5</sup> + x*(16 - x<sup>2</sup>)<sup>-1,5</sup>*(-x)
 
-f''<sub>(x)</sub> = -(16 - x²)<sup>-0,5</sup> - x² * (16 - x²)<sup>-1,5</sup> 
+f''<sub>(x)</sub> = -(16 - x<sup>2</sup>)<sup>-0,5</sup> - x<sup>2</sup> * (16 - x<sup>2</sup>)<sup>-1,5</sup> 
 
-               -1               x² 
+               -1               x<sup>2</sup> 
 f''<sub>(x)</sub> = -------------- - --------------
-          (16 - x²)<sup>0,5</sup>     (16 - x²)<sup>1,5</sup> 
+          (16 - x<sup>2</sup>)<sup>0,5</sup>     (16 - x<sup>2</sup>)<sup>1,5</sup> 
 
-               -1                  x² 
+               -1                  x<sup>2</sup> 
 f''<sub>(x)</sub> = -------------- * (1 + ---------)
-          (16 - x²)<sup>0,5</sup>          16 - x² 
+          (16 - x<sup>2</sup>)<sup>0,5</sup>          16 - x<sup>2</sup> 
 
-               -1          16 - x² + x²
+               -1          16 - x<sup>2</sup> + x<sup>2</sup>
 f''<sub>(x)</sub> = --------------* (--------------)  
-          (16 - x²)<sup>0,5</sup>       (16 - x²)
+          (16 - x<sup>2</sup>)<sup>0,5</sup>       (16 - x<sup>2</sup>)
           
               -16
 f''<sub>(x)</sub> = -------------          
-          (16 - x²)<sup>1,5</sup>    
+          (16 - x<sup>2</sup>)<sup>1,5</sup>    
 
 Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
 (Begründung siehe Aufgabe 105)
@@ -71,15 +71,15 @@ u = -16, u' = 0
 
            u'          0
 f'''<sub>(x)</sub> = --- = -------------- ≠ 0 
-           v     (16 - x²)<sup>1,5</sup> 
+           v     (16 - x<sup>2</sup>)<sup>1,5</sup> 
            
 für alle x ≠ 4, -4            
 
-16 - x² muss ≥ 0 sein, wegen Quadratwurzel.
+16 - x<sup>2</sup> muss ≥ 0 sein, wegen Quadratwurzel.
 
-16 - x² ≥ 0 |+x²
+16 - x<sup>2</sup> ≥ 0 |+x<sup>2</sup>
 
-16 ≥ x²  |ⱱ
+16 ≥ x<sup>2</sup>  |ⱱ
 
 |x| ≤ 4 --> x ≥ -4 und x ≤ 4
 
@@ -106,11 +106,11 @@ Nullstellen:
 
 f<sub>(x)</sub> = 0
 
-<math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = 0 |²
+<math mathsize="0.9em"><msqrt><mrow><mn>16</mn><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msqrt></math> = 0 |<sup>2</sup>
 
-16 - x² = 0 |+x²
+16 - x<sup>2</sup> = 0 |+x<sup>2</sup>
 
-x² = 16
+x<sup>2</sup> = 16
 
 x<sub>1,2</sub> = ± 4
 
@@ -127,8 +127,8 @@ Extrempunkte:
 f'<sub>(x)</sub> = 0
 
      -x
-------------- = 0 |*(16 -x²)<sup>0,5</sup>
-(16 - x²)<sup>0,5</sup> 
+------------- = 0 |*(16 -x<sup>2</sup>)<sup>0,5</sup>
+(16 - x<sup>2</sup>)<sup>0,5</sup> 
 
 -x = 0 | *(-1)
 
@@ -136,15 +136,15 @@ x = 0, f<sub>(x)</sub> = 4
 
                 16 
 f''<sub>(0)</sub> = - ------------- < 0 --> <span style="color:red">Hochpunkt(0|4)</span>
-           (16 - x²)<sup>1,5</sup>
+           (16 - x<sup>2</sup>)<sup>1,5</sup>
 
 Wendepunkte:
 
 f''<sub>(x)</sub> = 0
 
      -16 
--------------- = 0 |*(16 - x²)<sup>1,5</sup>
- (16 - x²)<sup>1,5</sup> 
+-------------- = 0 |*(16 - x<sup>2</sup>)<sup>1,5</sup>
+ (16 - x<sup>2</sup>)<sup>1,5</sup> 
 
 -16 = 0 Widerspruch --> <span style="color:red">keine Wendepunkte</span>
 
