@@ -6,7 +6,7 @@
   <title>Kurvendiskussion</title>
 
   <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
   
@@ -34,7 +34,9 @@ Kettenregel:
 
 v' = (-2/6)x * e<sup>-(x<sup>2</sup>/6)</sup> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup>
 
-f'<sub>(x)</sub> = 4 * e<sup>-(x<sup>2</sup>/6)</sup> + (-x/3) * e<sup>-(x<sup>2</sup>/6)</sup> * 4x = e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) 
+f'<sub>(x)</sub> = 4 * e<sup>-(x<sup>2</sup>/6)</sup> + (-x/3) * e<sup>-(x<sup>2</sup>/6)</sup> * 4x 
+
+f'<sub>(x)</sub>= e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) 
 
 Produktregel zweite Ableitung:
 
@@ -44,15 +46,15 @@ Kettenregel:
 
 u' = (-2/6)x * e<sup>-(x<sup>2</sup>/6)</sup> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup> 
  
-v = 4 - 4x<sup>2</sup>/3, v' = - 8x/3
+v = 4 - 4x<sup>2</sup>/3, v' = -8x/3
 
 f''<sub>(x)</sub> = -x/3 * e<sup>-(x<sup>2</sup>/6)</sup> * (4 - 4x<sup>2</sup>/3) + 
 
 + (-8x/3) * e<sup>-(x<sup>2</sup>/6)</sup>  
 
-f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (- 4x/3 + 4x<sup>3</sup>/9 - 8x/3)  
+f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (-4x/3 + 4x<sup>3</sup>/9 - 8x/3)  
 
-f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (- 12x/3 + 4x<sup>3</sup>/9) 
+f''<sub>(x)</sub> = e<sup>-(x<sup>2</sup>/6)</sup> * (-12x/3 + 4x<sup>3</sup>/9) 
 
            4x<sup>3</sup>/9 - 4x 
 f''<sub>(x)</sub> = --------------
@@ -61,7 +63,7 @@ f''<sub>(x)</sub> = --------------
 Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
 (Begründung siehe Aufgabe 105)
 
-u = 4x3/9 - 4x, u' = 4x<sup>2</sup>/3 - 4
+u = 4x<sup>3</sup>/9 - 4x, u' = 4x<sup>2</sup>/3 - 4
 
            u'    4x<sup>2</sup>/3 - 4
 f'''<sub>(x)</sub> = --- = ----------- ≠ 0 für alle x ± ⱱ3
@@ -81,11 +83,11 @@ x<sub>1,2</sub> = ± ⱱ3
 
 Definitionsbereich:   <span style="color:red">-∞ < x < ∞</span>
 
-<span style="color:red">Waagerechte Asymptote:</span>
+Waagerechte Asymptote:
 
-                          4x  
+                        4x  
 f<sub>(x)</sub> = 4x * e<sup>-(x<sup>2</sup>/6)</sup> = ------- 
-                        e<sup>x<sup>2</sup>/6</sup> 
+                       e<sup>x<sup>2</sup>/6</sup> 
                         
 geht gegen <span style="color:red">0</span> für x --> ± ∞
 
@@ -98,13 +100,13 @@ wenn x = -1,73, f(-1,73) = -4,2
 
 Symmetrie zur y-Achse bzw. zum Punkt (0|0):
 
-f<sub>(-x)</sub> = 4 * <sub>(-x)</sub> * e<sup>-<sub>(-x)</sub><sup>2</sup>/6</sup>
+f<sub>(-x)</sub> = 4 * (-x) * e<sup>-(x<sup>2</sup>/6)</sup>
 
 f<sub>(-x)</sub> = -4x * e<sup>-(x<sup>2</sup>/6)</sup> ≠ f<sub>(x)</sub>
 
 --> <span style="color:red">keine Achsensymmetrie</span>
 
--f<sub>(-x)</sub> = -(-4x * e<sup>-<sub>(-x)</sub><sup>2</sup>/6</sup>)
+-f<sub>(-x)</sub> = -(-4x * e<sup>-(x<sup>2</sup>/6)</sup>)
 
 -f<sub>(-x)</sub> = 4x * e<sup>-(x<sup>2</sup>/6)</sup> = f<sub>(x)</sub> 
 
@@ -146,7 +148,7 @@ x<sub>1,2</sub> = ± 1,73
 
 x<sub>1</sub> = 1,73 
 
-f<sub>(1,73)</sub> = 4 * 1,73 * e<sup>(-1,73<sup>2</sup>/6)</sup>-(1,73<sup>2</sup>/6) = 4,2
+f<sub>(1,73)</sub> = 4 * 1,73 * e<sup>(-1,73<sup>2</sup>/6)</sup> = 4,2
 
 Wegen Punktsymmetrie f(-1,73) = -4,2
 
@@ -158,7 +160,7 @@ Wegen Punktsymmetrie --> <span style="color:red">Tiefpunkt (-1,73|-4,2)</span>
 
 Wendepunkte:
 
-f''<sub>(0)</sub> = 0
+f''<sub>(x)</sub> = 0
 
 e<sup>-(x<sup>2</sup>/6)</sup> * (4x<sup>3</sup> - 4x) = 0 |:e<sup>-(x<sup>2</sup>/6)</sup>
 
