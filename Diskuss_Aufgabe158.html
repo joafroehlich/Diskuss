@@ -1,0 +1,192 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 158
+        
+        ln x<sup>2</sup>     2 * ln |x|
+f<sub>(x)</sub> = ------- = ------------   x ≠ 0
+            x         x 
+
+Quotientenregel erste Ableitung:
+
+                            2   
+u = ln x<sup>2</sup> = 2 * ln x, u' = ---
+                            x
+
+v = x, v' = 1
+
+            2 
+          ---- * x - 1 * ln x<sup>2</sup>
+            x
+f'<sub>(x)</sub> = ------------------------ 
+                         x<sup>2</sup>         
+                         
+         2 - ln x<sup>2</sup>
+f'<sub>(x)</sub> = -----------
+             x<sup>2</sup>
+  
+Quotientenregel zweite Ableitung:
+
+                                      2
+u = 2 - ln x<sup>2</sup> = 2 - 2 * ln x, u' = - ---
+                                      x
+ 
+v = x<sup>2</sup>, v' = 2x
+
+              2                    
+          - ---- * x<sup>2</sup> - 2x * (2 - ln x<sup>2</sup>)
+              x 
+f''<sub>(x)</sub> = --------------------------------- 
+                         x<sup>4</sup>
+                         
+           -2 * x - 4 * x + 2x * 2 * ln x
+f''<sub>(x)</sub> = ----------------------------------
+                         x<sup>4</sup>
+
+           x * (- 2- 4 + 4 * ln x)      
+f''<sub>(x)</sub> = -------------------------  
+                     x<sup>4</sup>
+                     
+          4 * ln x - 6           
+f''<sub>(x)</sub> = --------------
+                x<sup>3</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+                        4
+u = 4 * ln x - 6, u' = ---
+                        x
+
+                  4  
+                 ---   
+           u'     x       4        
+f'''<sub>(x)</sub> = --- = ----- = ---- ≠ 0 für x ≠ 0
+           v      x<sup>3</sup>     x<sup>4</sup> 
+
+Definitionsbereich: <span style="color:red">-∞ < x < ∞, x ≠ 0</span>
+
+<span style="color:red">Polstelle:</span>
+
+Für x --> 0 geht f<sub>(x)</sub> --> ± ∞
+
+<span style="color:red">x = 0</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+ 2 * ln x
+--------- geht gegen <span style="color:red">0</span> für x --> ± ∞
+    x 
+
+Wertebereich: <span style="color:red">-∞ < f<sub>(x)</sub> < ∞, f<sub>(x)</sub> ≠ 0</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+          ln (-x)<sup>2</sup>       ln x<sup>2</sup>  
+f<sub>(-x)</sub> = ----------- = - ------- ≠ f<sub>(x)</sub>
+             -x            x
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+           ln x<sup>2</sup>  
+-f<sub>(-x)</sub> = -------- = f<sub>(x)</sub>
+             x                  
+
+--> <span style="color:red">Punktsymmetrie</span>
+
+Nullstellen: 
+
+ f<sub>(x)</sub> = 0  
+
+ ln x<sup>2</sup>
+------- = 0 |*x
+    x
+
+ln x<sup>2</sup> = 0 
+
+x<sup>2</sup> = e<sup>0</sup> = 1 |ⱱ
+
+x<sub>1,2</sub> = ± 1    <span style="color:red">N<sub>1</sub>(1|0), N<sub>2</sub>(-1|0)</span> 
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0 liegt nicht im Definitionsbereich 
+
+--> <span style="color:red">kein Schnittpunkt</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ 2 - ln x<sup>2</sup>
+---------- = 0 |*x<sup>2</sup>
+     x<sup>2</sup>
+
+2 - ln x<sup>2</sup> = 0 |+2
+
+ln x<sup>2</sup> = 2
+
+x<sup>2</sup> = e<sup>2</sup> |ⱱ
+
+x<sub>1,2</sub> = ± e = ± 2,72
+
+                             
+x<sub>1</sub> = 2,72 
+
+           ln e<sup>2</sup>       2
+f<sub>(2,72)</sub> = ------- = ------ = 0,74 
+           2,72      2,72
+
+             4 * ln e - 6 
+f''<sub>(2,72)</sub> = -------------- < 0 
+                  2,72  
+
+--> <span style="color:red">Tiefpunkt (2,72|0,74)</span>
+
+Wegen Punktsymmetrie: <span style="color:red">Hochpunkt (-2,72|-0,74)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+ 4 * ln x - 6 
+------------- = 0 |*x<sup>3</sup>
+       x<sup>3</sup>
+
+4 * ln x - 6 = 0|+6
+
+4 * ln x = 6 |:4
+
+ln x = 1,5
+                                    
+x = e<sup>1,5</sup> = 4,48, 
+
+            ln (e<sup>1,5</sup>)<sup>2</sup>
+f<sub>(4,48)</sub> =  ----------- = 0,67 --> <span style="color:red">WP<sub>1</sub>(4,48|0,67)</span>
+              4,48   
+
+Wegen Punktsymmetrie: <span style="color:red">WP<sub>2</sub>(-4,48|-0,67)</span>
+
+Graph:
+
+    <img src="Aufgabe158.jpg" >
+
+</b></p></pre></body></html>

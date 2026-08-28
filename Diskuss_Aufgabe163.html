@@ -1,0 +1,151 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 163
+
+f<sub>(x)</sub> = x<sup>2</sup> * (ln (x) + 1)
+
+Produktregel erste Ableitung:
+
+u = x<sup>2</sup>, u' = 2x
+
+                      1   
+v = ln (x) + 1, v' = ---
+                      x   
+                          
+                             1          
+f'<sub>(x)</sub> = 2x * (ln (x) + 1) + --- * x<sup>2</sup>  
+                             x 
+
+f'<sub>(x)</sub> = 2x * (ln (x) + 1) + x
+
+f'<sub>(x)</sub> = x * (2 * ln (x) + 2 + 1) 
+
+f'<sub>(x)</sub>= x * (2 * ln (x) + 3)
+
+Produktregel zweite Ableitung:
+
+u = x, u' = 1
+
+                          2  
+v = 2 * ln (x) + 3, v' = ---
+                          x
+
+                                 2  
+f''<sub>(x)</sub> = 1 * (2 * ln (x) + 3) + --- * x 
+                                 x  
+                                 
+f''<sub>(x)</sub> = 2 * ln (x) + 2 + 3 = 2 * ln (x) + 5
+
+Dritte Ableitung:
+
+           2 
+f'''<sub>(x)</sub> = ---
+           x
+
+Wegen ln x, muss x > 0 sein
+
+Definitionsbereich:  <span style="color:red">0 < x < ∞ </span>
+
+Wertebereich: f<sub>(x)</sub> ist dann am kleinsten, 
+wenn x = 0,22 (Extrempunkt)
+
+und f(0,22) = -0,02 --> <span style="color:red">-0,02 ≤ f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+         
+f<sub>(-x)</sub> = (-x)<sup>2</sup> * (ln (-x) + 1) 
+
+f<sub>(-x)</sub> = x<sup>2</sup> * (ln (-x) + 1) ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -x<sup>2</sup> * (ln (-x) + 1) ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen: 
+
+f<sub>(x)</sub> = 0     
+
+x<sup>2</sup> * (ln (x) + 1) = 0 
+
+x<sup>2</sup> = 0 |√
+
+x<sub>1,2</sub> = ± 0
+
+0 liegt nicht im Definitionsbereich 
+
+--> keine Nullstelle  
+
+ln (x) + 1 = 0 |-1 
+
+ln x = -1
+
+x = e<sup>-1</sup> = 0,37     <span style="color:red">N(0,37|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0 liegt nicht im Definitionsbereich 
+
+--> <span style="color:red">kein Schnittpunkt</span> 
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+x * (2 * ln (x) + 3) = 0 |:x
+
+2 * ln (x) + 3 = 0 |-3
+
+2 * ln x = -3 |:2
+
+ln x = -1,5
+
+x = e<sup>-1,5</sup> = 0,22 
+
+f<sub>(0,22)</sub> = 0,22<sup>2</sup> * (ln 0,22 + 1) = -0,02
+
+f''<sub>(0,22)</sub> = 2 * ln 0,22 + 5 > 0 
+
+--> <span style="color:red">Tiefpunkt (0,22|-0,02)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+2 * ln (x) + 5 = 0 |-5
+
+2 * ln x = -5 |:2
+
+ln x = -2,5
+
+x = e<sup>-2,5</sup> = 0,08 
+
+f<sub>(0,08)</sub> = 0,08<sup>2</sup> * (ln (0,08) + 1) = -0,01 
+
+--> <span style="color:red">WP(0,08|-0,01)</span>
+
+Graph:
+
+    <img src="Aufgabe163.jpg" >
+
+</b></p></pre></body></html>

@@ -1,0 +1,150 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 156
+
+f<sub>(x)</sub> = (ln x)<sup>2</sup> - 1
+
+Kettenregel erste Ableitung:
+
+         2 * ln x                        
+f'<sub>(x)</sub> = ----------
+             x      
+
+Quotientenregel zweite Ableitung:
+
+                    2   
+u = 2 * ln x, u' = ---
+                    x
+ 
+v = x, v' = 1
+
+           2       
+          --- * x - 1 * 2 * ln x 
+           x
+f''<sub>(x)</sub> = ------------------------ 
+                        x<sup>2</sup>
+                        
+           2 - 2 * ln x             
+f''<sub>(x)</sub>  = ---------------
+                 x<sup>2</sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+                          2
+u = 2 - 2 * ln x, u' = - ---
+                          x
+
+                 -2  
+                ----   
+           u'     x      -2        
+f'''<sub>(x)</sub> = --- = ----- = ---- ≠ 0 für x ≠ 0
+           v      x<sup>2</sup>     x<sup>2</sup> 
+
+Wegen ln x, muss x > 0 sein
+
+Definitionsbereich: <span style="color:red">0 < x < ∞ </span>
+
+<span style="color:red">Senkrechte Asymptote:</span>
+ 
+Für x gegen <span style="color:red">0</span> geht f<sub>(x)</sub> gegen ∞ 
+
+Wertebereich: f<sub>(x)</sub> wird am kleinsten, 
+wenn x = 1 (Extremum)
+
+und f<sub>(1)</sub> = -1 --> <span style="color:red">-1 ≤ f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (ln (-x))<sup>2</sup> - 1 ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -[(ln (-x))<sup>2</sup>- 1] ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0  
+
+(ln x)<sup>2</sup> - 1 = 0 |+1
+
+(ln x)<sup>2</sup> = 1 |ⱱ
+
+ln x = ± 1
+
+x<sub>1</sub> = e<sup>1</sup> = 2,72    <span style="color:red">N<sub>1</sub>(2,72|0) </span>
+
+x<sub>2</sub> = e<sup>-1</sup> = 0,37   <span style="color:red">N<sub>2</sub>(0,37|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0 liegt nicht im Definitionsbereich 
+
+--> <span style="color:red">kein Schnittpunkt</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ 2 * ln x 
+---------- = 0 |* x
+     x
+
+2 * ln x = 0|:2
+
+ln x = 0
+
+x = e<sup>0</sup> = 1 
+
+f<sub>(1)</sub> = (ln 1)<sup>2</sup> - 1 = -1
+
+          2 - 2 * ln 1 
+f''<sub>(1)</sub> = ------------- > 0 --> <span style="color:red">Tiefpunkt (1|-1)</span>
+               1<sup>2</sup>  
+   
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+ 2 - 2 * ln x 
+-------------- = 0 |*x<sup>2</sup>
+       x<sup>2</sup>
+
+2 - 2 * ln x = 0|+2 * lnx
+
+2 * ln x = 2 |:2
+
+ln x = 1
+
+x = e = 2,72 
+
+f<sub>(e)</sub> = (ln e)<sup>2</sup> - 1 = 0 
+
+--> <span style="color:red">WP(2,72|0)</span> 
+
+Graph:
+
+    <img src="Aufgabe156.jpg" >
+
+</b></p></pre></body></html>

@@ -1,0 +1,259 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 160
+
+        (ln x)<sup>2</sup> - 1
+f<sub>(x)</sub> = ------------- = [(ln x)<sup>2</sup> - 1]*x<sup>-1</sup>  x ≠ 0
+              x   
+
+Produktregel erste Ableitung:
+
+u = (ln x)<sup>2</sup> - 1
+
+Kettenregel:
+
+      2 * ln x
+u' = ----------
+          x
+                         
+v = x<sup>-1</sup>, v' = -x<sup>-2</sup>
+                          
+         2 * ln x
+f'<sub>(x)</sub> = ---------- * x<sup>-1</sup> + (-x<sup>-2</sup>) * ((ln x)<sup>2</sup> - 1)
+             x
+
+f'<sub>(x)</sub> = 2 * ln x * x<sup>-2</sup> - x<sup>-2</sup> * ((ln x)<sup>2</sup> - 1) 
+
+f'<sub>(x)</sub> = x<sup>-2</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1)
+
+         2 * ln x - (ln x)<sup>2</sup> + 1
+f'<sub>(x)</sub> = ------------------------
+                  x<sup>2</sup>
+
+Produktregel zweite Ableitung:
+
+u = x<sup>-2</sup>, u' = -2 * x<sup>-3</sup>
+
+v = 2 * ln x - (ln x)<sup>2</sup> + 1
+
+Summen- und Kettenregel:
+
+      2     2 * ln x     2 - 2 * ln x 
+v' = --- - ---------- = --------------
+      x         x             x  
+
+f''<sub>(x)</sub> = -2 * x<sup>-3</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1) + 
+
+   2 - 2 * ln x
++ ------------- * x<sup>-2</sup>
+        x          
+
+f''<sub>(x)</sub> = -2 * x<sup>-3</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1) + 
+
++ (2 - 2 * ln x) * x<sup>-3</sup>
+
+
+f''<sub>(x)</sub> = x<sup>-3</sup> * (-4 * ln x + 2 * (ln x)<sup>2</sup> - 
+
+- 2 + 2 - 2 * ln x)
+
+f''<sub>(x)</sub> = x<sup>-3</sup> * (2 * (ln x)<sup>2</sup> - 6 * ln x) 
+
+          2 * (ln x)<sup>2</sup> - 6 * ln x
+f''<sub>(x)</sub> = ------------------------
+                   x<sup>3</sup> 
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
+(Begründung siehe Aufgabe 105)
+
+u = 2 * (ln x)<sup>2</sup> - 6 * ln x  
+
+Summen- und Kettenregel:
+
+       2 * 2 * ln x     6     4 * ln x - 6       
+u' = --------------- - --- = --------------
+            x           x          x
+ 
+                  4 * ln x - 6  
+                 --------------   
+           u'          x
+f'''<sub>(x)</sub> = --- = --------------- 
+           v            x<sup>3</sup>
+           
+           4 * ln x - 6 
+f'''<sub>(x)</sub> = -------------- ≠ 0 für x > 0
+                x4 
+
+Definitionsbereich:  <span style="color:red">0 < x < ∞</span>
+
+<span style="color:red">Waagerechte Asymptote:</span>
+
+                        (ln x)<sup>2</sup> - 1 
+Für x --> ∞ geht f<sub>(x)</sub> = ------------ gegen 0 
+                              x
+
+<span style="color:red">Polstelle:</span>
+
+                        (ln x)<sup>2</sup> - 1 
+Für x --> 0 geht f<sub>(x)</sub> = ------------ gegen ∞
+                              x
+
+Wertebereich: f<sub>(x)</sub> ist dann am kleinsten, 
+wenn x = 0,66 (Extrempunkt)
+
+und f<sub>(x)</sub> = -1,25 --> <span style="color:red">-1,25 ≤ f<sub>(x)</sub> < ∞</span>
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+         (ln -x)<sup>2</sup> - 1 
+f<sub>(-x)</sub> = ------------- ≠ f<sub>(x)</sub> 
+             -x         
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+          (ln -x)<sup>2</sup> - 1 
+-f<sub>(-x)</sub> = -------------- ≠ f<sub>(x)</sub> 
+                x         
+
+--> <span style="color:red">keine Punktsymmetrie</span>
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0     
+
+ (ln x)<sup>2</sup> - 1
+------------- = 0 | *x
+       x       
+
+(ln x)<sup>2</sup> - 1 = 0 |+1
+
+(ln x)<sup>2</sup> = 1 |ⱱ
+
+ln x = ± 1
+
+x = e<sup>±1</sup>
+
+x<sub>1</sub> = e<sup>1</sup> = 2,72 
+
+x<sub>2</sub> = e<sup>-1</sup> = 0,37    
+
+<span style="color:red">N<sub>1</sub>(2,72|0), N<sub>2</sub>(0,37|0)</span>
+
+Schnittpunkt mit der y-Achse:
+
+x = 0 
+
+x = 0 liegt nicht im Definitionsbereich 
+
+--> <span style="color:red">kein Schnittpunkt</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ 2 * ln x - (ln x)<sup>2</sup> + 1
+------------------------ = 0 |*x<sup>2</sup>
+             x<sup>2</sup>
+
+2 * ln x - (ln x)<sup>2</sup> + 1 = 0 |*(-1)
+
+(lnx)<sup>2</sup> - 2 * lnx - 1 = 0
+
+p, q – Formel
+
+p = -2, q = -1
+
+x<sub>1,2</sub> = <math mathsize="1em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>-</mo><mn>2</mn></mrow></mfenced></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>-</mo><mn>2</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>-</mo><mn>1</mn></mrow></mfenced></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+x<sub>1,2</sub> = 1 ± <math mathsize="0.9em"><msqrt><mn>2</mn></msqrt></math>
+
+ln x<sub>1,2</sub> = 1 ± 1,414
+
+ln x<sub>1</sub> = 2,414
+ 
+x<sub>1</sub> = e<sup>2,414</sup> = 11,18 
+
+            (ln 11,18)<sup>2</sup> - 1
+f<sub>(11,18)</sub> = ----------------- = 0,43
+                  11,18  
+
+ln x<sub>2</sub> = -0,414
+
+x<sub>2</sub> = e<sup>-0,414</sup> = 0,66 
+
+           (ln 0,66)<sup>2</sup> - 1 
+f<sub>(0,66)</sub> = ---------------- = -1,25
+                0,66  
+
+               2 * (ln 11,18)<sup>2</sup> - 6 * ln 11,18
+f''<sub>(11,18)</sub> = ---------------------------------- < 0 
+                                  11,18<sup>3</sup> 
+
+--> Hochpunkt (11,18|0,43)
+
+             2 * (ln 0,66)<sup>2</sup> - 6 * ln 0,66
+f''<sub>(0,66)</sub> = ------------------------------- > 0 
+                          0,66<sup>3</sup> 
+
+--> <span style="color:red">Tiefpunkt (0,66|- 1,25)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+ 2 * (ln x)<sup>2</sup> - 6 * ln x
+----------------------- = 0 |* x<sup>3</sup>
+             x<sup>3</sup> 
+
+2 * (ln x)<sup>2</sup> - 6 * ln x = 0
+
+2 * ln x * (ln x - 3) = 0
+
+2 * ln x = 0 |:2
+
+ln x = 0
+
+x<sub>1</sub> = e<sup>0</sup> = 1 
+
+        (ln 1)2 - 1
+f<sub>(-x)</sub> = ------------- = -1      <span style="color:red">WP<sub>1</sub>(1|-1)</span>
+              1
+
+ln x - 3 = 0 |+3
+
+ln x = 3
+
+x<sub>2</sub> = e<sup>3</sup> = 20,1 
+
+           (ln 20,1)<sup>2</sup> - 1
+f<sub>(20,1)</sub> = ---------------- = 0,4      
+                 20,1
+
+<span style="color:red">WP<sub>2</sub>(20,1|0,4)</span>
+
+Graph:
+
+    <img src="Aufgabe160.jpg" >
+
+</b></p></pre></body></html>
