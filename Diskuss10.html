@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+   <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<span style="color:blue"><p class="Text2"><b>Kurvendiskussion<br>Trigonometrische Funktionen<br>zwischen 0° und 360° bzw. 0 und 2π</p></b></span> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 171-->                      
+
+<pre><b><p class="Aufgabe">Aufgabe 171
+
+f<sub>(x)</sub> = 2 * sin x + 1
+         
+<button  onclick="window.open('Diskuss_Aufgabe171.html');" >Lösung</button></p></pre>
+        
+<!--//Aufgabe 172-->
+
+<pre><p class="Aufgabe">Aufgabe 172
+
+f<sub>(x)</sub> = 1 - 2 * cos x
+
+Hochpunkt (<input type="text" id="Eintrag172" maxlength="4" size="1" style= background-color:yellow >|3) <button id="Pruef172" onclick="Aufgabe172()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe172() { 
+                                                
+                          if (Eintrag172.value=="3,14") {alert("Richtig"); document.getElementById("Pruef172").disabled= true;
+                          }  
+                           
+                          else if (Eintrag172.value!=="3,14" && Eintrag172.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag172").value="3,14"; window.open('Diskuss_Aufgabe172.html');           
+                          document.getElementById("Pruef172").disabled= true;}
+                               
+                          else if (Eintrag172.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+<!--//Aufgabe 173-->                      
+
+<pre><p class="Aufgabe">Aufgabe 173
+
+f<sub>(x)</sub> = x * cos x
+
+<button  onclick="window.open('Diskuss_Aufgabe173.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 174-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 174
+
+f<sub>(x)</sub> = 2 * sin x - 2
+
+Tiefpunkt (<input type="text" id="Eintrag174" maxlength="4" size="1" style= background-color:yellow >|-4) <button id="Pruef174" onclick="Aufgabe174()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe174() { 
+                                                
+                          if (Eintrag174.value=="4,71") {alert("Richtig"); document.getElementById("Pruef174").disabled= true;
+                          }  
+                           
+                          else if (Eintrag174.value!=="4,71" && Eintrag174.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag174").value="4,71"; window.open('Diskuss_Aufgabe174.html');           
+                          document.getElementById("Pruef174").disabled= true;}
+                               
+                          else if (Eintrag174.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 175 -->                      
+
+<pre><p class="Aufgabe">Aufgabe 175
+
+f<sub>(x)</sub> = 2 * cos x + 2
+
+<button  onclick="window.open('Diskuss_Aufgabe175.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 176-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 176
+
+f<sub>(x)</sub> = x * sin x          
+
+Tiefpunkt (<input type="text" id="Eintrag176" maxlength="4" size="1" style= background-color:yellow >|-4,81) <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe176() { 
+                                                
+                          if (Eintrag176.value=="4,91") {alert("Richtig"); document.getElementById("Pruef176").disabled= true;
+                          }  
+                           
+                          else if (Eintrag176.value!=="4,91" && Eintrag176.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag176").value="4,91"; window.open('Diskuss_Aufgabe176.html');           
+                          document.getElementById("Pruef176").disabled= true;}
+                               
+                          else if (Eintrag176.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+
+
+<!--//Aufgabe 177-->                      
+
+<pre><p class="Aufgabe">Aufgabe 177
+
+f<sub>(x)</sub> = x² * sin x
+
+<button  onclick="window.open('Diskuss_Aufgabe177.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 178-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 178
+
+f<sub>(x)</sub> = 2 * sin x * (1 - 2 * cos x)
+
+Wendepunkt (<input type="text" id="Eintrag178" maxlength="4" size="1" style= background-color:yellow >|-1,48) <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe178() { 
+                                                
+                          if (Eintrag178.value=="4,84") {alert("Richtig"); document.getElementById("Pruef178").disabled= true;
+                          }  
+                           
+                          else if (Eintrag178.value!=="4,84" && Eintrag178.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag178").value="4,84"; window.open('Diskuss_Aufgabe178.html');           
+                          document.getElementById("Pruef178").disabled= true;}
+                               
+                          else if (Eintrag178.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script>
+                      
+                      
+<!--//Aufgabe 179-->                      
+
+<pre><p class="Aufgabe">Aufgabe 179
+
+f<sub>(x)</sub> = 2 * x² * cos x
+
+<button  onclick="window.open('Diskuss_Aufgabe179.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 180-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 180
+
+        3 * sin x
+f<sub>(x)</sub> = ------------
+        2 - cos x 
+
+Tiefpunkt (<input type="text" id="Eintrag180" maxlength="4" size="1" style= background-color:yellow >|-1,73) <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p></pre>
+
+ 
+                      <script>
+                        function Aufgabe180() { 
+                                                
+                          if (Eintrag180.value=="5,24") {alert("Richtig"); document.getElementById("Pruef180").disabled= true;
+                          }  
+                           
+                          else if (Eintrag180.value!=="5,24" && Eintrag180.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag180").value="5,24"; window.open('Diskuss_Aufgabe180.html');           
+                          document.getElementById("Pruef180").disabled= true;}
+                               
+                          else if (Eintrag180.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+<!--//Aufgabe 181-->                      
+
+<pre><p class="Aufgabe">Aufgabe 181
+
+          3 * cos x  
+f<sub>(x)</sub>  = --------------
+          2 + sin x
+
+<button  onclick="window.open('Diskuss_Aufgabe181.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 182-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 182
+
+        3 - 2 * sin x  
+f<sub>(x)</sub> = -----------------
+        1 + 2 * sin x
+
+Tiefpunkt (<input type="text" id="Eintrag182" maxlength="4" size="1" style= background-color:yellow >|0,33) <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p></b></pre>
+
+ 
+                      <script>
+                        function Aufgabe182() { 
+                                                
+                          if (Eintrag182.value=="1,57") {alert("Richtig"); document.getElementById("Pruef182").disabled= true;
+                          }  
+                           
+                          else if (Eintrag182.value!=="1,57" && Eintrag182.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag182").value="1,57"; window.open('Diskuss_Aufgabe182.html');           
+                          document.getElementById("Pruef182").disabled= true;}
+                               
+                          else if (Eintrag182.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+
+                      </script> 
+
+
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+         
+
+        </body></html>
+
