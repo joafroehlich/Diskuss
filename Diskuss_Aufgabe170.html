@@ -6,7 +6,7 @@
   <title>Kurvendiskussion</title>
 
   <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
   
@@ -22,8 +22,8 @@
     <pre><p class ="Aufgabe"><b>Aufgabe 170
 
         1 - ln x         
-f<sub>(x)</sub> = ---------- = (1 - ln x) * x-1   x ≠ 0        
-            x
+f<sub>(x)</sub> = ---------- = (1 - ln x) * x-1   x ≠ 0
+           x
 
 Produktregel erste Ableitung:
 
@@ -31,17 +31,17 @@ Produktregel erste Ableitung:
 u = 1 - ln x, u' = - ---     
                       x
  
-v = x-1, v' = - x-2
+v = x-1, v' = -x<sup>-2</sup>
 
-            1         
-f'<sub>(x)</sub> = - --- * x-1 + (- x-2) * (1 - ln x)  
-            x
+           1         
+f'<sub>(x)</sub> = - --- * x<sup>-1</sup> + (- x<sup>-2</sup>) * (1 - ln x)  
+           x
 
-f'<sub>(x)</sub> = - x-2 - x-2 * (1 - ln x)
+f'<sub>(x)</sub> = -x<sup>-2</sup> - x<sup>-2</sup> * (1 - ln x)
 
-                                        ln x - 2
-f'<sub>(x)</sub> = x-2 * ( -1 - 1 * (1 - ln x)) = ----------
-                                            x<sup>2</sup>
+                                       ln x - 2
+f'<sub>(x)</sub> = x<sup>-2</sup> * (-1 - 1 * (1 - ln x)) = ----------
+                                           x<sup>2</sup>
 
 Quotientenregel zweite Ableitung:
 
@@ -52,22 +52,22 @@ u = ln x - 2, u' = ---
 v = x<sup>2</sup>, v' = 2x
 
           1
-         --- * x<sup>2</sup> - 2x * (ln x - 2)
+         --- * x<sup>2</sup> - 2x * (ln (x) - 2)
           x
-f''<sub>(x)</sub> = --------------------------- 
-                      x<sup>4</sup> 
+f''<sub>(x)</sub> = ----------------------------- 
+                       x<sup>4</sup> 
                       
-          x - 2x * ln x + 4x
-f''<sub>(x)</sub> = ---------------------
-                  x<sup>4</sup>
+          x - 2x * ln (x) + 4x
+f''<sub>(x)</sub> = -----------------------
+                   x<sup>4</sup>
                   
           x * (5 - 2 * ln x)        
 f''<sub>(x)</sub> = --------------------
                   x<sup>4</sup>
 
-           5 - 2 * ln x  
+          5 - 2 * ln x  
 f''<sub>(x)</sub> = --------------
-                 x<sup>3</sup>
+                x<sup>3</sup>
     
 Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
 (Begründung siehe Aufgabe 105) 
@@ -88,11 +88,9 @@ Wegen ln x muss x > 0 sein.
 
 Definitionsbereich:    <span style="color:red">0 < x < ∞</span>
 
-Polstelle:
+<span style="color:red">Polstelle</span>:
 
-                     1 - ln x
-Für <span style="color:red">x gegen 0</span> geht ----------- --> ∞
-                         x
+Für x gegen <span style="color:red">0</span> geht f<sub>(x)</sub> --> ∞
 
 Waagerechte Asymptote:
 
@@ -107,13 +105,13 @@ f<sub>(x)</sub> = -0,14 --> <span style="color:red">-0,14 ≤ f<sub>(x)</sub> < 
 
 Symmetrie zur y-Achse bzw. zum Punkt (0|0): 
 
-          ln (-x)   
+         ln (-x)   
 f<sub>(-x)</sub> = ---------- ≠ f<sub>(x)</sub> 
             -x 
 
 --> <span style="color:red">keine Achsensymmetrie</span>
 
-          ln (-x)   
+         ln (-x)   
 -f<sub>(-x)</sub> = --------- ≠ f<sub>(x)</sub> 
              x 
 
@@ -124,7 +122,7 @@ Nullstellen:
 f<sub>(x)</sub> = 0
  
  1 - ln x
---------- = 0 |*x
+---------- = 0 |*x
      x
 
 1 - ln x = 0 |+ln x
@@ -144,23 +142,22 @@ Extrempunkte:
 f'<sub>(x)</sub> = 0
 
  ln x - 2
---------- = 0 |*x<sup>2</sup>
-    x<sup>2</sup>
+-------- = 0 |*x<sup>2</sup>
+     x<sup>2</sup>
 
 ln x - 2 = 0 |+2
 
 ln x = 2
-
                                      
 x = e<sup>2</sup> = 7,39 
 
-           1 - ln e<sup>2</sup>     -1 
+          1 - ln e<sup>2</sup>     -1 
 f<sub>(7,39)</sub> = ---------- = ------ = -0,14
-             7,39       7,39  
+            7,39       7,39  
 
-           5 - 2 * ln e<sup>2</sup>
+          5 - 2 * ln e<sup>2</sup>
 f''<sub>(e<sup>2</sup>)</sub> = -------------- > 0 
-                 (e<sup>2</sup>)<sup>3</sup> 
+               (e<sup>2</sup>)<sup>3</sup> 
                  
 --> <span style="color:red">Tiefpunkt (7,39|-0,14)</span>
 
@@ -180,9 +177,9 @@ ln x = 2,5
 
 x = e<sup>2,5</sup> = 12,18 
 
-           1 - ln e<sup>2,5</sup> 
+          1 - ln e<sup>2,5</sup> 
 f<sub>(e<sup>2,5</sup>)</sub> = -------------- = -0,12   
-               12,18 
+              12,18 
                
 <span style="color:red">WP(12,18|-0,12) </span>
 

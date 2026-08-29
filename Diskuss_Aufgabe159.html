@@ -6,7 +6,7 @@
   <title>Kurvendiskussion</title>
 
   <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
   
@@ -35,13 +35,13 @@ u = 4 * x-2, u' = -8 * x<sup>-3</sup>
 v = ln x<sup>-1</sup> = -ln x, v' = - ---
                             x  
 
-                                 1 
+                                1 
 f'<sub>(x)</sub> = -8 * x<sup>-3</sup> * (-ln x) + (- ---) * 4 * x<sup>-2</sup>
-                                 x   
+                                x   
 
 f'<sub>(x)</sub> = 8 * ln x * x<sup>-3</sup> - 4 * x<sup>-3</sup>  
 
-f'<sub>(x)</sub> = x<sup>-3</sup> * (8 * ln x - 4)
+f'<sub>(x)</sub> = x<sup>-3</sup> * (8 * ln (x) - 4)
 
 Produktregel zweite Ableitung:
 
@@ -51,11 +51,11 @@ u = x<sup>-3</sup>, u' = -3 * x<sup>-4</sup>
 v = 8 * ln x - 4, v' = ---
                         x    
 
-                                      8 
-f''<sub>(x)</sub> = -3 * x<sup>-4</sup> * (8 * ln x - 4) + --- * x<sup>-3</sup>
-                                      x          
+                                        8 
+f''<sub>(x)</sub> = -3 * x<sup>-4</sup> * (8 * ln (x) - 4) + --- * x<sup>-3</sup>
+                                        x          
 
-f''<sub>(x)</sub> = -24 * x<sup>-4</sup> * ln x + 12 * x<sup>-4</sup> + 8 * x<sup>-4</sup> 
+f''<sub>(x)</sub> = -24 * x<sup>-4</sup> * ln (x) + 12 * x<sup>-4</sup> + 8 * x<sup>-4</sup> 
 
 f''<sub>(x)</sub> = x<sup>-4</sup> * (20 - 24 * ln x)
 
@@ -76,19 +76,13 @@ u = 20 - 24 * ln x, u' = - ----
 f'''<sub>(x)</sub> = --- = ------- = - ---- ≠ 0 für x ≠ 0
            v      x<sup>4</sup>         x<sup>5</sup> 
 
-               1
+          1
 Wegen ln --- muss x > 0 sein.
-               x
+          x
 
-Polstelle:
+<span style="color:red">Polstelle:</span>
 
-Für x --> 0 geht 
-
-         4          1  
-f<sub>(x)</sub> = ----- * ln (---) --> ∞
-         x<sup>2</sup>         x
-
-x = 0      
+Für x --> <span style="color:red">0</span> geht f<sub>(x)</sub> --> ∞
 
 Definitionsbereich:  <span style="color:red">0 < x < ∞ </span>
 
@@ -105,13 +99,13 @@ und f<sub>(1,65)</sub> = -0,74 --> <span style="color:red">-0,74 ≤ f<sub>(x)</
 
 Symmetrie zur y-Achse bzw. zum Punkt (0|0):
 
-           4            1         
+           4           1         
 f<sub>(-x)</sub> = -------- * ln ---- 
          (-x)<sup>2</sup>         -x        
          
-         4            1
+        4            1
 f<sub>(-x)</sub> = ------ * ln ---- ≠ f<sub>(x)</sub>         
-         x<sup>2</sup>          -x  
+        x<sup>2</sup>          -x  
 
 --> <span style="color:red">keine Achsensymmetrie</span>
 
@@ -129,7 +123,7 @@ Nullstellen:
 ---- * ln (---) |*x<sup>2</sup>
  x<sup>2</sup>         x  
 
-4 * ln x-1 = 0
+4 * ln x<sup>-1</sup> = 0
 
 -4 * ln x = 0 |:(-4)
 
@@ -149,7 +143,7 @@ Extrempunkte:
 
 f'<sub>(x)</sub> = 0
 
-8 * ln x - 4 = 0 |+4
+8 * ln (x) - 4 = 0 |+4
 
 8 * ln x = 4 |:8
 
@@ -159,11 +153,11 @@ x = e<sup>0.5</sup> = 1,65
 
              4            1
 f<sub>(1,65)</sub> = ------- * ln (-----) = -0,74
-           1,65<sup>2</sup>        1,65
+          1,65<sup>2</sup>         1,65
 
              20 - 24 * ln 1,65  
 f''<sub>(1,65)</sub> = -------------------- > 0 
-                     1,654 
+                   1,654 
                      
 --> <span style="color:red">Tiefpunkt (1,65|-0,74)</span>
 
@@ -183,11 +177,11 @@ f''<sub>(x)</sub> = 0
 ln x = ---
         6
 
-x = e<sup>5/6</sup> = 2,3, 
+x = e<sup>5/6</sup> = 2,3 
 
-            4           1
+           4           1
 f<sub>(2,3)</sub> = ------ * ln (-----) = -0,63     
-          2,3<sup>2</sup>         2,3  
+         2,3<sup>2</sup>         2,3  
 
 <span style="color:red">WP(2,3|-0,63) </span>         
           

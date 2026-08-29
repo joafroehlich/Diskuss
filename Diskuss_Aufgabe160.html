@@ -6,7 +6,7 @@
   <title>Kurvendiskussion</title>
 
   <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
   
@@ -43,17 +43,17 @@ f'<sub>(x)</sub> = ---------- * x<sup>-1</sup> + (-x<sup>-2</sup>) * ((ln x)<sup
 
 f'<sub>(x)</sub> = 2 * ln x * x<sup>-2</sup> - x<sup>-2</sup> * ((ln x)<sup>2</sup> - 1) 
 
-f'<sub>(x)</sub> = x<sup>-2</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1)
+f'<sub>(x)</sub> = x<sup>-2</sup> * (2 * ln (x) - (ln x)<sup>2</sup> + 1)
 
-         2 * ln x - (ln x)<sup>2</sup> + 1
-f'<sub>(x)</sub> = ------------------------
-                  x<sup>2</sup>
+         2 * ln (x) - (ln x)<sup>2</sup> + 1
+f'<sub>(x)</sub> = --------------------------
+                   x<sup>2</sup>
 
 Produktregel zweite Ableitung:
 
 u = x<sup>-2</sup>, u' = -2 * x<sup>-3</sup>
 
-v = 2 * ln x - (ln x)<sup>2</sup> + 1
+v = 2 * ln (x) - (ln x)<sup>2</sup> + 1
 
 Summen- und Kettenregel:
 
@@ -67,12 +67,12 @@ f''<sub>(x)</sub> = -2 * x<sup>-3</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1) +
 + ------------- * x<sup>-2</sup>
         x          
 
-f''<sub>(x)</sub> = -2 * x<sup>-3</sup> * (2 * ln x - (ln x)<sup>2</sup> + 1) + 
+f''<sub>(x)</sub> = -2 * x<sup>-3</sup> * (2 * ln (x) - (ln x)<sup>2</sup> + 1) + 
 
 + (2 - 2 * ln x) * x<sup>-3</sup>
 
 
-f''<sub>(x)</sub> = x<sup>-3</sup> * (-4 * ln x + 2 * (ln x)<sup>2</sup> - 
+f''<sub>(x)</sub> = x<sup>-3</sup> * (-4 * ln (x) + 2 * (ln x)<sup>2</sup> - 
 
 - 2 + 2 - 2 * ln x)
 
@@ -89,38 +89,34 @@ u = 2 * (ln x)<sup>2</sup> - 6 * ln x
 
 Summen- und Kettenregel:
 
-       2 * 2 * ln x     6     4 * ln x - 6       
-u' = --------------- - --- = --------------
-            x           x          x
+       2 * 2 * ln x     6     4 * ln (x) - 6       
+u' = --------------- - --- = ----------------
+            x           x           x
  
-                  4 * ln x - 6  
-                 --------------   
-           u'          x
-f'''<sub>(x)</sub> = --- = --------------- 
+                 4 * ln (x) - 6  
+                ----------------   
+           u'           x
+f'''<sub>(x)</sub> = --- = ---------------- 
            v            x<sup>3</sup>
            
-           4 * ln x - 6 
-f'''<sub>(x)</sub> = -------------- ≠ 0 für x > 0
-                x4 
+           4 * ln (x) - 6 
+f'''<sub>(x)</sub> = ---------------- ≠ 0 für x > 0
+                 x<sup>4</sup> 
 
 Definitionsbereich:  <span style="color:red">0 < x < ∞</span>
 
-<span style="color:red">Waagerechte Asymptote:</span>
+Waagerechte Asymptote:
 
-                        (ln x)<sup>2</sup> - 1 
-Für x --> ∞ geht f<sub>(x)</sub> = ------------ gegen 0 
-                              x
-
+Für x --> ∞ geht f<sub>(x)</sub> gegen <span style="color:red">0</span> 
+                              
 <span style="color:red">Polstelle:</span>
 
-                        (ln x)<sup>2</sup> - 1 
-Für x --> 0 geht f<sub>(x)</sub> = ------------ gegen ∞
-                              x
+Für x --> <span style="color:red">0</span> geht f<sub>(x)</sub> gegen ∞
 
 Wertebereich: f<sub>(x)</sub> ist dann am kleinsten, 
 wenn x = 0,66 (Extrempunkt)
 
-und f<sub>(x)</sub> = -1,25 --> <span style="color:red">-1,25 ≤ f<sub>(x)</sub> < ∞</span>
+und f<sub>(0,66)</sub> = -1,25 --> <span style="color:red">-1,25 ≤ f<sub>(x)</sub> < ∞</span>
 
 Symmetrie zur y-Achse bzw. zum Punkt (0|0):
 
@@ -170,11 +166,11 @@ Extrempunkte:
 
 f'<sub>(x)</sub> = 0
 
- 2 * ln x - (ln x)<sup>2</sup> + 1
------------------------- = 0 |*x<sup>2</sup>
-             x<sup>2</sup>
+ 2 * ln (x) - (ln x)<sup>2</sup> + 1
+-------------------------- = 0 |*x<sup>2</sup>
+              x<sup>2</sup>
 
-2 * ln x - (ln x)<sup>2</sup> + 1 = 0 |*(-1)
+2 * ln (x) - (ln x)<sup>2</sup> + 1 = 0 |*(-1)
 
 (lnx)<sup>2</sup> - 2 * lnx - 1 = 0
 
@@ -194,29 +190,29 @@ ln x<sub>1</sub> = 2,414
  
 x<sub>1</sub> = e<sup>2,414</sup> = 11,18 
 
-            (ln 11,18)<sup>2</sup> - 1
+           (ln 11,18)<sup>2</sup> - 1
 f<sub>(11,18)</sub> = ----------------- = 0,43
-                  11,18  
+                 11,18  
 
 ln x<sub>2</sub> = -0,414
 
 x<sub>2</sub> = e<sup>-0,414</sup> = 0,66 
 
-           (ln 0,66)<sup>2</sup> - 1 
+          (ln 0,66)<sup>2</sup> - 1 
 f<sub>(0,66)</sub> = ---------------- = -1,25
                 0,66  
 
-               2 * (ln 11,18)<sup>2</sup> - 6 * ln 11,18
-f''<sub>(11,18)</sub> = ---------------------------------- < 0 
-                                  11,18<sup>3</sup> 
+             2 * (ln 11,18)<sup>2</sup> - 6 * ln 11,18
+f''<sub>(11,18)</sub> = -------------------------------- < 0 
+                                11,18<sup>3</sup> 
 
---> Hochpunkt (11,18|0,43)
+--> <span style="color:red">Hochpunkt (11,18|0,43)</span>
 
              2 * (ln 0,66)<sup>2</sup> - 6 * ln 0,66
 f''<sub>(0,66)</sub> = ------------------------------- > 0 
                           0,66<sup>3</sup> 
 
---> <span style="color:red">Tiefpunkt (0,66|- 1,25)</span>
+--> <span style="color:red">Tiefpunkt (0,66|-1,25)</span>
 
 Wendepunkte:
 

@@ -6,7 +6,7 @@
   <title>Kurvendiskussion</title>
 
   <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/te<sup>x</sup>-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
   
@@ -21,7 +21,7 @@
 
     <pre><p class ="Aufgabe"><b>Aufgabe 161
 
-f<sub>(x)</sub> = 2 * ln x * (2 - ln x)
+f<sub>(x)</sub> = 2 * ln (x) * (2 - ln x)
 
 Produktregel erste Ableitung:
 
@@ -37,9 +37,9 @@ v = 2 - ln x, v' = - ---
 f'<sub>(x)</sub> = --- * (2 - ln x) + (- ---) * 2 * ln x
          x                     x
 
-         4 - 2 * ln x - 2 * ln x        
-f'<sub>(x)</sub> = ------------------------- 
-                   x
+         4 - 2 * ln (x) - 2 * ln x        
+f'<sub>(x)</sub> = --------------------------- 
+                    x
                         
          4 - 4 * ln x               
 f'<sub>(x)</sub> = -------------- = (4 - 4 * ln x) * x<sup>-1</sup>
@@ -53,30 +53,30 @@ u = x<sup>-1</sup>, u' = -x<sup>-2</sup>
 v = 4 - 4 * ln x, v' = - ---
                           x
 
-                                     4
+                                    4
 f''<sub>(x)</sub> = -x<sup>-2</sup> * (4 - 4 * ln x) + (- ---) * x<sup>-1</sup>
-                                     x
+                                    x
 
-f''<sub>(x)</sub> = - x<sup>-2</sup> * (4 - 4 * ln x)- 4 * x<sup>-2</sup> 
+f''<sub>(x)</sub> = - x<sup>-2</sup> * (4 - 4 * ln x) - 4 * x<sup>-2</sup> 
 
-f''<sub>(x)</sub> = x<sup>-2</sup> * (- 4 + 4 * ln x - 4)
+f''<sub>(x)</sub> = x<sup>-2</sup> * (-4 + 4 * ln (x) - 4)
                                         
-f''<sub>(x)</sub> = x<sup>-2</sup> * (4 * ln x - 8)
+f''<sub>(x)</sub> = x<sup>-2</sup> * (4 * ln (x) - 8)
 
-          4 * ln x - 8  
-f''<sub>(x)</sub> = --------------
-               x<sup>2</sup>
+          4 * ln (x) - 8  
+f''<sub>(x)</sub> = ----------------
+                x<sup>2</sup>
 
 Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0: 
 (Begründung siehe Aufgabe 105)
 
-                        4
-u = 4 * ln x - 8, u' = --- 
-                        x
+                          4
+u = 4 * ln (x) - 8, u' = --- 
+                          x
 
-                   4
-                  ---
-           u'      x       4
+                  4
+                 ---
+           u'     x       4
 f'''<sub>(x)</sub> = --- = ------ = ---- ≠ 0 fur x ≠ 0
            v      x<sup>2</sup>      x<sup>3</sup>
 
@@ -86,7 +86,7 @@ Definitionsbereich: <span style="color:red">0 < x < ∞</span>
 
 <span style="color:red">Senkrechte Asymptote:</span>
 
-Für x --> 0 geht f<sub>(x)</sub> --> -∞
+Für x --> <span style="color:red">0</span> geht f<sub>(x)</sub> --> -∞
 
 Wertebereich: f<sub>(x)</sub> ist dann am größten, 
 wenn x = 2,72 (Extrempunkt)
@@ -95,11 +95,11 @@ und f<sub>(2,72)</sub> = 2 --> <span style="color:red">-∞ < f<sub>(x)</sub> �
 
 Symmetrie zur y-Achse bzw. zum Punkt (0|0):
          
-f<sub>(-x)</sub> = 2 * ln -x * (2 - ln -x) ≠ f<sub>(x)</sub> 
+f<sub>(-x)</sub> = 2 * ln (-x) * (2 - ln -x) ≠ f<sub>(x)</sub> 
 
 --> <span style="color:red">keine Achsensymmetrie</span>
 
--f<sub>(-x)</sub> = -(2 * ln -x * (2 - ln -x)) ≠ f<sub>(x)</sub> 
+-f<sub>(-x)</sub> = -(2 * ln (-x) * (2 - ln -x)) ≠ f<sub>(x)</sub> 
 
 --> <span style="color:red">keine Punktsymmetrie</span>
 
@@ -109,7 +109,7 @@ f<sub>(x)</sub> = 0
 
 2 * ln x * (2 - ln x) = 0
 
-2 * ln x = 0 | :2
+2 * ln x = 0 |:2
 
 ln x = 0
 
@@ -145,11 +145,11 @@ ln x = 1
 
 x = e = 2,72 
 
-f<sub>(e)</sub> = 2 * ln e * (2 - ln e) = 2 
+f<sub>(e)</sub> = 2 * ln (e) * (2 - ln e) = 2 
 
-          4 * ln 2 - 8
-f''<sub>(2)</sub> = --------------- < 0 
-                 2<sup>2</sup>
+          4 * ln (2) - 8
+f''<sub>(2)</sub> = ----------------- < 0 
+                  2<sup>2</sup>
 
 --> <span style="color:red">Hochpunkt (2,72|2)</span>
 
@@ -157,11 +157,11 @@ Wendepunkte:
 
 f''<sub>(x)</sub> = 0
 
- 4 * ln x - 8
--------------- = 0 |*x2
+ 4 * ln (x) - 8
+---------------- = 0 |*x<sup>2</sup>
         x<sup>2</sup>
 
-4 * ln x - 8 = 0 |+8
+4 * ln (x) - 8 = 0 |+8
 
 4 * ln x = 8 |:4
 
