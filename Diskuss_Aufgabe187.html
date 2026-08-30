@@ -1,0 +1,173 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 187
+
+f<sub>(x)</sub> = 2 * cot x + 2           x im Bogenmaß 
+
+            cos x 
+f<sub>(x)</sub> = 2 * ------- + 2 
+            sin x 
+
+1. Ableitung: 
+
+Produkt-, Summen- und Quotientenregel 
+
+u = 2 * cos x, u' = -2 * sin x 
+
+v = sin x, v' = cos x 
+
+           -2*sin x * sin x - 2*cos x * cos x 
+f'<sub>(x)</sub> = - ------------------------------------ 
+                      sin² x 
+
+         -2 (sin² x + cos² x)    
+f'<sub>(x)</sub> = ---------------------- 
+                 sin² x          
+
+           -2 
+f'<sub>(x)</sub> = -------- 
+         sin² x 
+
+2. Ableitung Quotienten- und Kettenregel
+ 
+u = -2, u' = 0 
+
+v = sin² x², v' = 2 * sin x * cos x 
+
+          -(-2 * 2 sin x * cos x)
+f''<sub>(x)</sub> = --------------------------  
+                       sin4 x
+                       
+          4 * cos x             
+f''<sub>(x)</sub> = ------------ 
+            sin³ x 
+
+Zur Beurteilung, ob f'''(x) ≠ 0: 
+
+u = 4 * cos x, u' = -4 * sin x 
+
+           u'   -4 * sin x       -4 
+f'''<sub>(x)</sub> = --- = ------------ = --------- 
+           v       sin³ x       sin² x 
+
+--> ist ≠ 0 für alle x ≠ 0, π, 2π 
+
+<span style="color:red">Polstelle</span>: 
+
+sin x = 0 
+
+<span style="color:red">x = 0, π, 2π</span> 
+
+Definitionsbereich: <span style="color:red">0 < x < 2π  x ≠ 0, π, 2π</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+ 
+f<sub>(-x)</sub> = 2 * cot (-x) + 2 = 2 * (-cot (x)) + 2 
+
+f<sub>(-x)</sub> = -2 * cot x + 2 ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Achsensymmetrie </span>
+
+-f<sub>(-x)</sub> = -(-2*cot(x) + 2) = 2*cot(x) - 2 ≠ f<sub>(x)</sub> 
+
+--> <span style="color:red">keine Punktsymmetrie</span> 
+
+Wertebereich:<span style="color:red"></span> -∞ < f<sub>(x)</sub> < ∞ 
+
+Nullstellen: 
+
+f<sub>(x)</sub> = 0 
+
+2 * cot (x) + 2 = 0 |-2 
+
+2 *cot (x) = -2|:2 
+
+cot x = -1
+
+   1 
+------- = -1  |*tan x 
+ tan x 
+
+1 = -tan x |*(-1) 
+
+                               π 
+tan x = -1 --> x = -0,785 = - ---   im Bogenmaß 
+                               4  
+
+Der Tangens ist am Einheitskreis 
+im 2. Und 4. Quadranten negativ: 
+
+          π     3
+x<sub>1</sub> = π - --- = --- π
+          4     4
+
+           π     7 
+x<sub>2</sub> = 2π - --- = ---π  
+           4     4
+
+    <span style="color:red">3           7
+N<sub>1</sub>(---π|0), N<sub>2</sub>(---π|0)
+    4           4</span> 
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0 
+
+Polstelle --> <span style="color:red">kein Schnittpunkt </span>
+
+Extrempunkte: 
+
+f'<sub>(x)</sub> = 0 
+
+    -2 
+--------- = 0 |*sin² x 
+  sin² x 
+
+-2 = 0 
+
+Widerspruch --> <span style="color:red">keine Extrempunkte </span>
+
+Wendepunkte: 
+
+f''<sub>(x)</sub> = 0 
+
+ 4 * cos x 
+------------ = 0 |*sin³ x 
+    sin³ x 
+
+4 * cos x = 0 |:4 
+
+                    π         3 
+cos x = 0 --> x<sub>1</sub> = ---, x<sub>2</sub> = ---π 
+                    2         2 
+
+          cos (π/2) 
+f<sub>(π/2)</sub> = ----------- + 2 = 2 = f<sub>(3π/2)</sub> 
+          sin (π/2) 
+
+<span style="color:red">WP<sub>1</sub>(π/2|2). WP<sub>2</sub>(3π/2|2)</span> 
+
+Graph:
+
+<img src="Aufgabe187.jpg" >
+
+</b></p></pre></body></html>

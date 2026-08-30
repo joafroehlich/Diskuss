@@ -1,0 +1,263 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 178
+
+f<sub>(x)</sub> = 2 * sin x * (1 - 2 * cos x)   
+
+x im Bogenmaß
+
+Produktregel erste Ableitung:
+
+u = 2 * sin x, u' = 2 * cos x
+
+v = 1 - 2*cos x, v' = -2*(-sin x) = 2*sin x
+
+f'<sub>(x)</sub> = 2 * cos x * (1 - 2 * cos x) + 
+
++ 2 * sin x * 2 * sin x 
+
+f'<sub>(x)</sub> = 2 * cos x - 4 * cos<sup>2</sup> x + 4 * sin<sup>2</sup> x
+
+Summen- und 2mal-Kettenregel zweite Ableitung:
+
+f''<sub>(x)</sub> = -2*sin x - 4*(2 * cos x*(-sin x)) + 
+
++ 4 * 2 sin x * cos x
+
+f''<sub>(x)</sub> = 16 * sin x * cos x - 2 * sin x
+ 
+Summen- und Produktregel dritte Ableitung:
+
+u = 16 * sin x, u' = 16 * cos x
+
+v = cos x, v' = -sin x
+
+f'''<sub>(x)</sub> = 16 * cos x * cos x + 
+
++ (- sin x) * 16 sin x - 2 * cos x
+
+f'''<sub>(x)</sub> = 16 cos<sup>2</sup> x - 16 * sin<sup>2</sup> x - 2 * cos x 
+
+Definitionsbereich:    <span style="color:red">0 ≤ x ≤ 2π</span> 
+
+Wertebereich:  <span style="color:red">-3,52 ≤ f<sub>(x)</sub> ≤ 3,52 </span>
+(siehe Extrempunkte)
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<SUB>(-x)</sub> = 2 * sin (-x) * (1 – 2 * cos (-x)) 
+
+f<SUB>(-x)</sub> = -2 * sin x * (1 – 2 * cos x) ≠ f<sub>(x)</sub>  
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<SUB>(-x)</sub> = -(-2 * sin x * (1 – 2 * cos x)) 
+
+-f<SUB>(-x)</sub> = 2 * sin x * (1 – 2 * cos x) = f<sub>(x)</sub>
+
+--> <span style="color:red">Punktsymmetrie</span> 
+
+Nullstellen:  
+
+f<sub>(x)</sub> = 0
+
+2 * sin x * (1 - 2 * cos x) = 0  
+
+2 * sin x = 0 |:2
+
+sin x = 0
+
+x<sub>1</sub> = 0   <span style="color:red">N<sub>1</sub>(0|0)</span>   
+
+x<sub>2</sub> = π = 3,14 ≙ 180°    <span style="color:red">N<sub>2</sub>(3,14|0) </span>
+
+x<sub>3</sub> = 2π = 6,28 ≙ 360°    <span style="color:red">N<sub>3</sub>(6,28|0) </span>
+
+1 - 2 * cos x = 0 |+2 * cos x
+
+2 * cos x = 1 |:2
+
+cos x = 0,5
+
+x<sub>4</sub> = π/3 = 1,05 ≙ 60°  <span style="color:red">N<sub>4</sub>(1,05|0)</span>
+ 
+x<sub>4</sub> = (5/3)π = 5,24 ≙ 300°   <span style="color:red">N<sub>5</sub>(5,24|0)</span>
+
+Schnittpunkt mit der y-Achse: 
+
+X = 0
+
+f<sub>(0)</sub> = 2 * sin 0 * (1 - 2 * cos 0) = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+2 * cos x - 4 * cos<sup>2</sup> x + 4 * sin<sup>2</sup> x = 0 
+
+Wertetabelle:
+
+x      0      1       2       3       4
+f'<sub>(x)</sub> -2      2,7     1,8    -5,8    -0,7     
+
+x     5        6        2π
+f'<sub>(x)</sub> 3,9    -1,4      -3
+
+Vorzeichenwechsel zwischen 0 und 1, 
+gewählt Nullstelle x<sub>01</sub> = 0,43
+
+Vorzeichenwechsel zwischen 2 und 3, 
+gewählt Nullstelle x<sub>02</sub> = 2,24 
+
+Vorzeichenwechsel zwischen 4 und 5, 
+gewählt Nullstelle x<sub>03</sub> = 4,15 
+
+Vorzeichenwechsel zwischen 5 und 6, 
+gewählt Nullstelle x<sub>04</sub> = 5,74
+
+Näherungsverfahren von Newton:
+
+           f<sub>(x0)</sub>   
+x<sub>1</sub> = x<sub>0</sub> - -------
+           f'<sub>(x0)</sub>  
+              
+x<sub>1</sub> = 0,43 -  
+              
+   2*cos0,43 - 4*cos<sup>2</sup>0,43 + 4*sin<sup>2</sup>0,43  
+- -------------------------------------
+    16*sin0,43 * cos0,43 - 2*sin0,43
+   
+x<sub>1</sub> = 0,43 - (- 0,15) = 0,58 
+
+f<sub>(0,58)</sub> = 2*sin0,58 * (1 - 2*cos 0,58) = -0,74
+                
+x<sub>2</sub> = 2,24 - 
+
+   2*cos 2,24 - 4 * cos<sup>2</sup> 2,24 + 4 * sin<sup>2</sup> 2,24
+- --------------------------------------------- 
+    16 * sin 2,24 * cos 2,24 - 2 * sin 2,24
+   
+x<sub>2</sub> = 2,24 - 0,03 = 2,21
+
+f<sub>(2,21)</sub> = 2*sin 2,21 * (1 - 2*cos 2,21) = 3,52
+
+x<sub>3</sub> = 4,15 - 
+
+    2 * cos4,15 - 4 * cos<sup>2</sup>4,15 + 4 * sin<sup>2</sup>4,15
+- -------------------------------------------- 
+      16 * sin4,15 * cos4,15 - 2 * sin4,15
+   
+x<sub>3</sub> = 4,15 - 0,07 = 4,08
+
+f<sub>(4,08)</sub> = 2 * sin4,08 * (1 - 2 * cos4,08) = -3,52
+
+x<sub>4</sub> = 5,74 - 
+
+   2 * cos 5,74 - 4 * cos<sup>2</sup> 5,74 + 4 * sin<sup>2</sup> 5,74
+- ---------------------------------------------- 
+     16 * sin 5,74 * cos 5,74 - 2 * sin 5,74
+   
+x<sub>4</sub> = 5,74 - 0,02 = 5,72
+
+f<sub>(5,72)</sub> = 2 * sin5,72 * (1 - 2 * cos5,72) = 0,74
+
+f''<sub>(0,58)</sub> = 16*sin0,58 * cos0,58 - 2*sin 0,58 > 0
+
+--> <span style="color:red">Tiefpunkt(0,58|-0,74)</span>
+
+f''<sub>(2,21)</sub> = 16*sin2,21 * cos2,21 - 2*sin 2,21 < 0
+
+--> <span style="color:red">Hochpunkt(2,21|3,52)</span>
+
+f''<sub>(4,08)</sub> = 16*sin4,08 * cos4,08 - 2*sin 4,08 > 0
+
+--> <span style="color:red">Tiefpunkt(4,08|-3,52)</span>
+
+f''<sub>(5,72)</sub> = 16*sin5,72 * cos5,72 - 2*sin 5,72 < 0
+
+--> <span style="color:red">Hochpunkt(5,72|0,74)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+16 * sin x * cos x - 2 * sin x = 0
+
+2 * sin x * (8cos x - 1) = 0
+
+sin x = 0
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = 0, 
+
+f'''<sub>(0)</sub> = 16*cos<sup>2</sup>0 - 16*sin<sup>2</sup>0 - 2*cos0 ≠ 0
+
+--> <span style="color:red">WP<sub>1</sub>(0|0)</span>
+
+x<sub>2</sub> = π = 3,14, f<sub>(3,14)</sub> = 0 
+
+f'''<sub>(3,14)</sub> = 16 * cos<sup>2</sup> 3,14 - 16 * sin<sup>2</sup> 3,14 - 
+
+- 2 * cos 3,14 ≠ 0
+
+--> <span style="color:red">WP<sub>2</sub>(3,14|0)</span>
+
+x<sub>3</sub> = 2π = 6,28, f<sub>(6,28)</sub> = 0 
+
+f'''<sub>(6,28)</sub> = 16 * cos<sup>2</sup> 6,28 - 16 * sin<sup>2</sup> 6,28 - 
+
+- 2 * cos 6,28 ≠ 0
+
+--> <span style="color:red">WP<sub>3</sub>(6,28|0)</span>
+
+8 * cos x - 1 = 0 |+1
+
+8 * cos x = 1 | :8
+
+cos x = 0,125
+
+x<sub>4</sub> = 1,45 ≙ 82,8°
+
+f<sub>(1,45)</sub> = 2*sin1,45 * (1 - 2*cos1,45) = 1,51
+
+f'''<sub>(1,45)</sub> = 16 * cos<sup>2</sup> 1,445 - 16 * sin<sup>2</sup> 1,445 - 
+
+- 2 * cos 1,445 ≠ 0
+
+--> <span style="color:red">WP<sub>4</sub>(1,45|1,51)</span>
+
+x<sub>4</sub> = 4,84 ≙ 277,2°
+
+f<sub>(4,84)</sub> = 2*sin4,84 * (1 - 2*cos4,84) = -1,48
+
+f<sub>(4,84)</sub> = 16 * cos<sup>2</sup> 4,84 - 16 * sin<sup>2</sup> 4,84 - 
+
+- 2 * cos 4,84 ≠ 0
+
+--> <span style="color:red">WP<sub>5</sub>(4,84|-1,48)</span>
+
+Graph:
+
+<img src="Aufgabe178.jpg" >
+
+</b></p></pre></body></html>

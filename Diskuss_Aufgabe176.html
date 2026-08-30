@@ -1,0 +1,207 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 176
+
+f<sub>(x)</sub> = x * sin x           x im Bogenmaß
+
+Produktregel erste Ableitung:
+
+u = x, u' = 1
+
+v = sin x, v' = cos x
+
+f'<sub>(x)</sub> = 1 * sin x + cos x * x 
+
+f'<sub>(x)</sub> = sin x + x * cos x
+
+Summen- und Produktregel zweite Ableitung:
+
+u = x, u' = 1
+
+v = cos x, v' = -sin x
+
+f''<sub>(x)</sub> = cos x + 1 * cos x + (-sin x) * x 
+
+f''<sub>(x)</sub> = 2 * cos x - x * sin x 
+
+Summen- und Produktregel dritte Ableitung:
+
+u = -x, u' = -1
+
+v = sin x, v' = cos x
+
+f'''<sub>(x)</sub> = -2 * sin x + (-1) * sin x + cos x*(-x)
+
+f'''<sub>(x)</sub> = -3 * sin x - x * cos x
+
+Definitionsbereich:    <span style="color:red">0 ≤ x ≤ 2π</span>
+
+Wertebereich:  <span style="color:red">-4,81 ≤ f<sub>(x)</sub> ≤ 1,82 </span> 
+(siehe Extrempunkte)
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (-x) * sin (-x) = (-x) * -sin x 
+
+f<sub>(-x)</sub> = x * sin x = f<sub>(x)</sub>  
+
+--> <span style="color:red">Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -x * sin x ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Punktsymmetrie</span> 
+
+Nullstellen:
+
+f<sub>(x)</sub> = 0
+
+x * sin x = 0 |-2
+
+x<sub>1</sub> = 0   <span style="color:red">N<sub>1</sub>(0|0)</span>
+
+sin x = 0
+
+x<sub>2</sub> = π = 3,14 ≙ 180°    <span style="color:red">N<sub>2</sub>(3,14|0)</span> 
+
+x<sub>3</sub> = 2π = 6,28 ≙ 360°    <span style="color:red">N<sub>3</sub>(6,28|0) </span>
+ 
+Schnittpunkt mit der y-Achse: 
+
+x = 0
+
+f<sub>(0)</sub> = 0 * sin 0 = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+sin x + x * cos x = 0 
+
+Wertetabelle:
+
+x     0        1    2       3        4
+f'<sub>(x)</sub> 0      1,4    0,1    -2,8     -3,4
+
+x     5        6        2π
+f'<sub>(x)</sub> 0,5     5,5     6,28 
+
+Nullstelle x<sub>1</sub> = 0
+
+Vorzeichenwechsel zwischen 2 und 3, 
+gewählt Nullstelle x<sub>02</sub> = 2,03
+
+Vorzeichenwechsel zwischen 4 und 5, 
+gewählt Nullstelle x<sub>03</sub> = 4,87
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = 0 
+
+f''<sub>(0)</sub> = 2 * cos 0 - 0 * sin 0 > 0 
+
+--> <span style="color:red">Tiefpunkt (0|0)</span>
+
+Näherungsverfahren von Newton:
+
+           f<sub>(x<sub>0</sub>)</sub>   
+x<sub>1</sub> = x<sub>0</sub> - -------
+           f'<sub>(x<sub>0</sub>)</sub>  
+
+                sin 2,03 + 2,03 * cos 2,03
+x<sub>2</sub> = 2,03 - ----------------------------------
+              2 * cos 2,03 - 2,03 * sin 2,03
+              
+x<sub>2</sub> = 2,03 - 0,00 = 2,03
+
+f<sub>(2,03)</sub> = 2,03 * sin 2,03 = 1,82
+
+               sin 4,87 + 4,87 * cos 4,87
+x<sub>3</sub> = 4,87 - --------------------------------
+             2 * cos 4,87 - 4,87 * sin 4,87
+             
+x<sub>3</sub> = 4,87 - 0,04 = 4,91
+
+f<sub>(4,91)</sub> = 4,91 * sin 4,91 = -4,81
+
+f''<sub>(2,03)</sub> = 2 * cos 2,03 - 2,03 * sin 2,03 < 0
+
+--> <span style="color:red">Hochpunkt (2,03|1,82)</span>
+
+f''<sub>(4,91)</sub> = 2 * cos 4,91 - 4,91 * sin 4,91 > 0 
+
+--> <span style="color:red">Tiefpunkt (4,91|-4,81)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+2 * cos x - x * sin x = 0
+
+Wertetabelle:
+
+x      0       1     2       3       4
+f''<sub>(x)</sub> 2       0,2  -2,7    -2,4     1,7
+
+x      5       6        2π
+f''<sub>(x)</sub> 5,4     3,6       2  
+
+Vorzeichenwechsel zwischen 1 und 2, 
+gewählt Nullstelle x<sub>01</sub> = 1,07
+
+Vorzeichenwechsel zwischen 3 und 4, 
+gewählt Nullstelle x<sub>02</sub> = 3,6
+
+Näherungsverfahren von Newton:
+
+           f<sub>(x<sub>0</sub>)</sub>   
+x<sub>1</sub> = x<sub>0</sub> - -------
+           f'<sub>(x<sub>0</sub>)</sub>  
+
+              2 * cos 1,07 - 1,07 * cos 1,07
+x<sub>1</sub> = 1,07 - ---------------------------------- 
+             -3 * sin 1,07 - 1,07 * cos 1,07
+             
+x<sub>1</sub> = 1,07 - (- 0,01) = 1,08
+
+f<sub>(1,08)</sub> = 1,08 * sin 1,08 = 0,95
+
+              2 * cos 3,6 - 3,6 * cos 3,6
+x<sub>2</sub> = 3,6 - -------------------------------- 
+             -3 * sin 3,6 - 3,6 * cos 3,6 
+             
+x<sub>2</sub> = 3,6 - (-0,04) = 3,64
+
+f<sub>(3,64)</sub> = 3,64 * sin 3,64 = -1,74
+
+f'''<sub>(1,08)</sub> = -3 * sin 1,08 - 1,08 * cos 1,08 ≠ 0 
+
+--> <span style="color:red">WP<sub>1</sub>(1,08|0,95)</span>
+ 
+f'''<sub>(3,64)</sub> = -3 * sin 3,64 - 3,64 * cos 3,64 ≠ 0 
+
+--> <span style="color:red">WP<sub>2</sub>(3,64|-1,74)</span>
+
+Graph:
+
+<img src="Aufgabe176.jpg" >
+
+</b></p></pre></body></html>

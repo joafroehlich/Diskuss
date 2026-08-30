@@ -1,0 +1,215 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 180
+
+Kurven Aufgabe 180
+
+        3 * sin x            x im Bogenmaß
+f<sub>(x)</sub> = ------------
+        2 - cos x 
+
+Quotientenregel erste Ableitung:
+
+u = 3 * sin x, u' = 3 * cos x
+
+v = 2 – cos x, v' = -(-sin x) = sin x
+
+         3*cos x * (2 - cos x) - sinx*3*sin x
+f'<sub>(x)</sub> = --------------------------------------
+                    (2 - cos x)<sup>2</sup>  
+
+          6 * cos x - 3 cos<sup>2</sup> x - 3 sin<sup>2</sup> x      
+f'<sub>(x)</sub> = ---------------------------------- 
+                      
+          6 * cos x - 3 * (cos<sup>2</sup> x + sin<sup>2</sup>x)
+f'<sub>(x)</sub> = -----------------------------------
+                    (2 - cos x)<sup>2</sup>
+
+         6 * cos x - 3 
+f'<sub>(x)</sub> = ----------------
+          (2 - cos x)<sup>2</sup>
+     
+Quotientenregel und Kettenregel zweite Ableitung:
+
+u = 6 * cos x - 3, u' = -6 * sin x
+
+v = (2 - cos x)<sup>2</sup>, v' = 2 * (2 - cos x) * sin x 
+
+v' = 2 * sin x * (2 - cos x) 
+
+          -6 * sin x * (2 - cos x)<sup>2</sup>  
+f''<sub>(x)</sub> = --------------------------- -
+                (2 - cos x)<sup>4</sup> 
+
+   2 * sin x * (2 - cos x) * (6 * cos x - 3) 
+- ---------------------------------------------
+                    (2 - cos x)<sup>4</sup> 
+
+          (2 - cos x)*[-12*sin x + 6*cos x*sinx  
+f''<sub>(x)</sub> = --------------------------------------- - 
+                     (2 - cos x)<sup>4</sup>
+
+    12*sin x*cos x + 6*sin x]
+- ----------------------------
+           (2 - cos x)<sup>4</sup>
+
+           -6 * sin x - 6 * sin x * cos x
+f''<sub>(x)</sub> = --------------------------------- 
+                     (2 - cos x)<sup>3</sup>
+                     
+          -6 * sin x * (1 + cos x)
+f''<sub>(x)</sub> = ----------------------------
+               (2 - cos x)<sup>3</sup>
+
+Zur Beurteilung, ob f'''<sub>(x)</sub> ≠ 0:
+
+u = -6 * sin x * (1 + cos x)
+
+Produktregel:
+
+u' = -6 * cos x * (1 + cos x) - 
+
+- sin x * (-6 * sin x)
+
+u' = -6cos x - 6 cos<sup>2</sup> x + 6sin<sup>2</sup>x
+
+           u'
+f'''<sub>(x)</sub> = ---   
+           v                    
+           
+           -6 cos x - 6 cos<sup>2</sup> x + 6 sin<sup>2</sup> x
+f'''<sub>(x)</sub> = ---------------------------------
+                      (2 - cos x)<sup>3</sup> 
+                      
+ist ≠ 0 für alle x                      
+
+Definitionsbereich:    <span style="color:red">0 ≤ x ≤ 2π</span> 
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+         3 * sin (-x)    -3 * sin x        
+f<sub>(-x)</sub> = -------------- = ------------ ≠ f<sub>(x)</sub>   
+         2 - cos (-x)     2 - cosx
+ 
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+            -3 * sin x      3 * sin x 
+-f<sub>(-x)</sub> = - ------------- = ------------ = f<sub>(x)</sub>   
+             2 – cosx       2 – cos x
+
+--> <span style="color:red">Punktsymmetrie </span>
+
+Wertebereich:
+
+  <span style="color:red">-1,73 ≤ f<sub>(x)</sub> ≤ 1,73</span>  (siehe Extrempunkte)
+
+Nullstellen: 
+
+f<sub>(x)</sub> = 0
+
+ 3 * sin x
+----------- = 0 |*(2 - cos x)
+ 2 - cos x
+
+3 * sin x = 0 |:3
+
+sin x = 0
+
+x<sub>1</sub> = 0     <span style="color:red">N<sub>1</sub>(0|0)</span>
+
+x<sub>2</sub> = π = 3,14 ≙ 180°    <span style="color:red">N<sub>2</sub>(3,14|0)</span> 
+
+x<sub>3</sub> = 2π = 6,28 ≙ 360°    <span style="color:red">N<sub>3</sub>(6,28|0)</span> 
+
+Schnittpunkt mit der y-Achse: 
+
+x = 0 
+
+        3 * sin 0  
+f<sub>(0)</sub> = ----------- = 0
+        2 - cos 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+ 6 * cos x - 3
+--------------- = 0 |*(2 - cos x)<sup>2</sup>
+ (2 - cos x)<sup>2</sup>
+
+6 * cos x - 3 = 0 |+3
+
+6 * cos x = 3 |:6
+
+cos x = 0,5
+
+x<sub>1</sub> = π/3 = 1,05 ≙ 60° 
+
+           3 * sin 1,05
+f<sub>(1,05)</sub> = --------------- = 1,73 
+             -cos 1,05  
+
+             -6 * sin 1,05 * (cos 1,05 + 2)
+f''<sub>(1,05)</sub> = -------------------------------- < 0 
+                     (2 - cos 1,05)<sup>3</sup>
+
+--> <span style="color:red">Hochpunkt(1,05|1,73) </span>
+
+x<sub>2</sub> = (5/3)π = 5,24 ≙ 300° 
+
+           3 * sin 5,24  
+f<sub>(5,24)</sub> = --------------- = -1,73 
+           2 - cos 5,24  
+
+             -6 * sin 5,24 * (cos 5,24 + 2)
+f''<sub>(5,24)</sub> = -------------------------------- > 0 
+                     (2 - cos 5,24)<sup>3</sup>
+
+--> <span style="color:red">Tiefpunkt(5,24|-1,73)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+ -6 * sin x * (cos x + 1)
+--------------------------- = 0 |*(2 - cos x)<sup>3</sup>
+         (2 - cos x)<sup>3</sup>
+
+-6 * sin x * (cos x + 1) = 0
+
+-6 * sin x = 0|:(-6)
+
+sin x = 0
+
+x<sub>1</sub> = 0     <span style="color:red">WP<sub>1</sub>(0|0)</span>
+
+x<sub>2</sub> = 3,14   <span style="color:red">WP<sub>2</sub>(3,14|0)</span>
+
+x<sub>3</sub> = 6,28   <span style="color:red">WP<sub>3</sub>(6,28|0)</span>
+
+Graph:
+
+<img src="Aufgabe180.jpg" >
+
+</b></p></pre></body></html>

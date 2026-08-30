@@ -1,0 +1,244 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+    <pre><p class ="Aufgabe"><b>Aufgabe 177
+
+f<sub>(x)</sub> = x<sup>2</sup> * sin x             x im Bogenmaß
+
+Produktregel erste Ableitung:
+
+u = x<sup>2</sup>, u' = 2x
+
+v = sin x, v' = cos x
+
+f'<sub>(x)</sub> = 2x * sin x + cos x * x<sup>2</sup> 
+ 
+Summen- und 2mal-Produktregel zweite Ableitung:
+
+u = 2x, u' = 2
+
+v = sin x, v' = cos x
+
+f''1 = 2 * sin x + cos x * 2x 
+
+u = x<sup>2</sup>, u' = 2x
+
+v = cos x, v' = -sin x
+
+f''2 = 2x * cos x + (-sin x) * x<sup>2</sup> 
+
+f''<sub>(x)</sub> = 2*sin x + 2x*cos x + 2x*cos x - x<sup>2</sup>*sin x
+
+f''<sub>(x)</sub> = 2 * sin x + 4x * cos x - x<sup>2</sup> * sin x
+
+Summen- und 2mal-Produktregel dritte Ableitung:
+
+u = - x<sup>2</sup>, u' = -2x
+
+v = sin x, v' = cos x
+
+f'''1 = -2x * sin x + cos x * (-x<sup>2</sup>)
+
+u = 4x, u' = 4
+
+v = cos x, v' = -sin x
+
+f'''2 = 4 * cos x + (-sin x) * 4x
+
+f'''<sub>(x)</sub> = 2*cos x + 4*cos x - 4x*sin x - 
+
+- 4*sin x + (-2x)*sin x + cos x*(-x<sup>2</sup>)
+
+f'''<sub>(x)</sub> = 6 * cos x - 6x * sin x - x<sup>2</sup> * cos x
+
+Definitionsbereich:    <span style="color:red">0 ≤ x ≤ 2π</span> 
+
+Wertebereich:  <span style="color:red">-24,08 ≤ f<sub>(x)</sub> ≤ 3,95</span>  
+(siehe Extrempunkte)
+
+Symmetrie zur y-Achse bzw. zum Punkt (0|0):
+
+f<sub>(-x)</sub> = (-x)<sup>2</sup> * sin (-x) = x<sup>2</sup> * -sin x ≠ f<sub>(x)</sub>
+
+--> <span style="color:red">keine Achsensymmetrie</span>
+
+-f<sub>(-x)</sub> = -(x<sup>2</sup> * -sin x) = x<sup>2</sup> * sin x = f<sub>(x)</sub>
+
+--> <span style="color:red">Punktsymmetrie</span> 
+
+Nullstellen: 
+
+f<sub>(x)</sub> = 0
+
+x<sup>2</sup> * sin x = 0 |-2
+
+x<sup>2</sup> = 0
+
+x<sub>1,2</sub> = 0   <span style="color:red">N<sub>1</sub>(0|0) </span>  
+
+sin x = 0
+
+x<sub>2</sub> = π = 3,14 ≙ 180°    <span style="color:red">N<sub>2</sub>(3,14|0)</span> 
+
+x<sub>3</sub> = 2π = 6,28 ≙ 360°    <span style="color:red">N<sub>3</sub>(6,28|0)</span> 
+ 
+Schnittpunkt mit der y-Achse:
+
+x = 0  
+
+f<sub>(0)</sub> = 0<sup>2</sup> * sin 0 = 0
+
+<span style="color:red">Sy(0|0)</span>
+
+Extrempunkte:
+
+f'<sub>(x)</sub> = 0
+
+2x * sin x + x<sup>2</sup> * cos x = 0 
+
+Wertetabelle:
+
+x     0      1       2      3       4
+f'<sub>(x)</sub> 0      1,4     2     -8,1   -16,5    
+
+x      5      6       2π
+f'<sub>(x)</sub> -2,5   31,2     19,7
+
+Nullstelle x<sub>1</sub> = 0
+
+Vorzeichenwechsel zwischen 2 und 3, 
+gewählt Nullstelle x<sub>(02)</sub> = 2,2
+
+Vorzeichenwechsel zwischen 5 und 6, 
+gewählt Nullstelle x<sub>(03)</sub> = 5,07
+
+x<sub>1</sub> = 0, f<sub>(0)</sub> = 0 
+
+f''<sub>(0)</sub> = 2*sin 0 + 4*0 * cos 0 - 0<sup>2</sup>*sin 0 = 0
+
+f'''<sub>(0)</sub> = 6*cos 0 - 6*0 * sin 0 - 0<sup>2</sup>*cos 0 ≠ 0 
+
+--> <span style="color:red">Wendepunkt(0|0)</span>
+
+Näherungsverfahren von Newton:
+
+           f<sub>(x0)</sub>   
+x<sub>2</sub> = x0 - -------
+           f'<sub>(x0)</sub>  
+
+             2 * 2,2 * sin 2,2 + 2,2<sup>2</sup> * cos 2,2
+x<sub>2</sub> = 2,2 - --------------------------------------
+            2*sin 2,2+4*2,2*cos 2,2-2,2<sup>2</sup>*sin 2,2
+    
+x<sub>2</sub> = 2,2 - (-0,09) = 2,29
+
+f<sub>(2,29)</sub> = 2,29<sup>2</sup> * sin 2,29 = 3,95
+
+                           
+x<sub>3</sub> = 5,07 - 
+             
+            2 * 5,07 * sin 5,07    
+- ------------------------------------------ +
+   2*sin 5,07+4*5,07*cos 5,07-5,07<sup>2</sup>*sin 5,07
+                  
+             5,07<sup>2</sup> * cos 5,07
++ ------------------------------------------
+   2*sin 5,07+4*5,07*cos 5,07-5,07<sup>2</sup>*sin 5,07
+
+x<sub>3</sub> = 5,07 - (-0,02) = 5,09
+
+f<sub>(5,09)</sub> = 5,09<sup>2</sup> * sin 5,09 = -24,08
+
+f''<sub>(2,29)</sub> = 2 * sin 2,29 + 4 * 2,29 * cos 2,29 - 
+
+- 2,29<sup>2</sup> * sin 2,29 < 0
+
+--> <span style="color:red">Hochpunkt(2,29|3,95)</span>
+
+f''<sub>(5,09)</sub> = 2 * sin 5,09 + 4 * 5,09 * cos 5,09 - 
+
+- 5,09<sup>2</sup> * sin 5,09 > 0
+
+--> <span style="color:red">Tiefpunkt(5,09|-24,08)</span>
+
+Wendepunkte:
+
+f''<sub>(x)</sub> = 0
+
+2 * sin x + 4 * x * cos x - x<sup>2</sup> * sin x = 0
+
+Wertetabelle:
+
+x      0        1       2        3      4
+f''<sub>(x)</sub> 0        3      -5,15   -12,9    0,1
+
+x       5       6      2π
+f''<sub>(x)</sub> 27,7    32,5    25,1  
+
+Wendepunkt x<sub>1</sub> = 0 siehe oben.
+
+Vorzeichenwechsel zwischen 1 und 2, 
+gewählt Nullstelle x<sub>(02)</sub> = 1,4
+
+Vorzeichenwechsel zwischen 3 und 4, 
+gewählt Nullstelle x<sub>(03)</sub> = 4
+
+Näherungsverfahren von Newton:
+
+           f<sub>(x0)</sub>   
+x<sub>1</sub> = x<sub>0</sub> - -------
+           f'<sub>(x0)</sub>  
+
+x<sub>2</sub> = 1,4 -  
+                 
+   2*sin 1,4 + 4*1,4 * cos 1,4 - 1,4<sup>2</sup>*sin 1,4 
+- -------------------------------------------- =
+   6*cos 1,4 - 6*1,4 * sin 1,4 - 1,4<sup>2</sup>*cos 1,4
+
+x<sub>2</sub> = 1,4 -(-0,13) = 1,53
+
+f<sub>(1,53)</sub> = 1,53<sup>2</sup> * sin 1,53 = 2,34
+
+          2 * sin 4 + 4 * 4 * cos 4 - 4<sup>2</sup> * sin 4
+x<sub>3</sub> = 4 - ---------------------------------------- 
+          6 * cos 4 - 6 * 4 * sin 4 - 4<sup>2</sup> * cos 4
+          
+x<sub>3</sub> = 4 - 0,005 = 3,995          
+
+f<sub>(3,995)</sub> = 3,995<sup>2</sup> * sin 3,995 = -12
+
+f'''<sub>(1,53)</sub> = 6 * cos 1,53 - 6 * 1,53 * sin 1,53 - 
+
+- 1,53<sup>2</sup> * cos 1,53 ≠ 0 
+
+--> <span style="color:red">WP<sub>2</sub>(1,53|2,34)</span>
+ 
+f'''<sub>(3,995)</sub> = 6 * cos 3,995 - 6 * 3,995 * sin 3,995 - 
+
+- 3,995<sup>2</sup> * cos 3,995 ≠ 0 
+
+--> <span style="color:red">WP<sub>3</sub>(3,995|-12)</span>
+
+Graph:
+
+<img src="Aufgabe177.jpg" >
+
+</b></p></pre></body></html>
