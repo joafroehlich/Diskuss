@@ -7,41 +7,102 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kurvendiskussion</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
 
-    <p class="Text1">Wie löse ich Matheaufgaben?</p>
-		<span style="color:blue"><b><p class="Text2">Kurvendiskussion<br>Ganzrationale Funktionen 2.Grades</p></b></span> 
+    <main>
 
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+    <p class="Text1">Kurvendiskussion<br>Ganzrationale Funktionen 2.Grades</p> 
+		
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
         
+<div class="check">
+
 <!--//Aufgabe 1-->
 
-  <pre><b><p class="Aufgabe">Aufgabe 1
+  <h2>Aufgabe 1</h2><p>
 
-f<sub>(x)</sub> = x<sup>2</sup>
+f<sub>(x)</sub> = x<sup>2</sup></p>
 
 <button  onclick="window.open('Diskuss_Aufgabe1.html');" >Lösung</button></pre></p>
 
 <!--//Aufgabe 2-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2><p>
 
-f<sub>(x)</sub> = x<sup>2</sup> - x - 12
+f<sub>(x)</sub> = x<sup>2</sup> - x - 12</p>
 
-Tiefpunkt (<input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow >|-12,25) </input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+Tiefpunkt (?|-12,25)</p>
+
+? = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow > </input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe2() { 
